@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://wiki.seeed.cc/</loc>
+     <lastmod>2017-01-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://wiki.seeed.cc/Grove-OLED_Display_1.12inch_new/</loc>
+     <lastmod>2017-01-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://wiki.seeed.cc/Wifi_Shield_V2.0.1/</loc>
+     <lastmod>2017-01-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://wiki.seeed.cc/acc/</loc>
+     <lastmod>2017-01-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+</urlset>
