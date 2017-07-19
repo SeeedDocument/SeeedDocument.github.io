@@ -3,32 +3,96 @@
 
     
     <url>
-     <loc>http://wiki.seeed.cc/</loc>
-     <lastmod>2017-01-19</lastmod>
+     <loc>http://seeed.wiki/</loc>
+     <lastmod>2017-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>http://wiki.seeed.cc/Grove-OLED_Display_1.12inch_new/</loc>
-     <lastmod>2017-01-19</lastmod>
+     <loc>http://seeed.wiki/getting-started/</loc>
+     <lastmod>2017-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://seeed.wiki/extensions/admonition/</loc>
+     <lastmod>2017-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/extensions/codehilite/</loc>
+     <lastmod>2017-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/extensions/footnotes/</loc>
+     <lastmod>2017-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/extensions/metadata/</loc>
+     <lastmod>2017-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/extensions/permalinks/</loc>
+     <lastmod>2017-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/extensions/pymdown/</loc>
+     <lastmod>2017-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>http://seeed.wiki/specimen/</loc>
+     <lastmod>2017-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>http://wiki.seeed.cc/Wifi_Shield_V2.0.1/</loc>
-     <lastmod>2017-01-19</lastmod>
+     <loc>http://seeed.wiki/customization/</loc>
+     <lastmod>2017-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>http://wiki.seeed.cc/acc/</loc>
-     <lastmod>2017-01-19</lastmod>
+     <loc>http://seeed.wiki/release-notes/</loc>
+     <lastmod>2017-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://seeed.wiki/contributing/</loc>
+     <lastmod>2017-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://seeed.wiki/license/</loc>
+     <lastmod>2017-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
