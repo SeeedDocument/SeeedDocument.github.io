@@ -2,48 +2,43 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Seeed Documentation\n\n\nHere you can find FAQ in Chinese of some of the Seeed's products, including Grove modules, Seeeduino series, LinkIt series as well as the others product. \n\n\nTo view the Documentation, visit \nseeed.wiki\n, where the Documentation is hosted. The Documentation system is drive by \nMkDocs\n. \n\n\nContributions\n\n\nThis Documentation is managed by Seeed, and we warmly welcome contribution to this documentation project.\n\n\n\n\nImprove grammar or fix wrong typing. \n\n\nAdditional content to help provide a better understanding for the users\n\n\nA better image for a better performance\n\n\nTranslations to other languages\n\n\nOthers edits that is necessary.\n\n\n\n\nHow to edit a document\n\n\nMkDocs\n\n\nProject documentation with Markdown.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView the \nMkDocs documentation\n.\n\n\nProject \nrelease notes\n.\n\n\nVisit the \nMkDocs wiki\n for community\n  resources, including third party themes and a list of MkDocs users.\n\n\nIRC channel: \n#mkdocs\n on freenode.\n\n\nDiscussions and support: \nhttps://groups.google.com/forum/#!forum/mkdocs\n\n\n\n\nLICENSE\n\n\nCopyright \n 2008-2016 Seeed Development Limited (\nwww.seeedstudio.com\n / \nwww.seeed.cc\n)\n\n\nDocuments and Images\n\n\n\nThis work (product documents and associated images) are licensed under a \nCreative Commons Attribution-ShareAlike 4.0 International License\n. \n \n\n\nThird-party content\n\n\nThe resources provided with the product documents also contains datasheets, software examples and other content copyrighted by 3\nrd\n party authors and companies. All such items are copyright of respective owners. The use of such items are governed by their respective licenses. \n\n\nAll trademarks are the property of their respective owners.\n\n\nTo Contact\n\n\nWrite to us at \n with subject line \"Wiki\". Thanks", 
-            "title": "Seeed.Wiki"
+            "text": "Seeed\u4e2d\u6587\u6587\u6863\n\n\n\u8fd9\u91cc\u4f60\u53ef\u4ee5\u627e\u5230\u90e8\u5206Seeed\u4ea7\u54c1\u7684\n\u4e2d\u6587\u6587\u6863\n\uff0c\u7531\u4e8e\u8fd9\u4e2a\u7ad9\u70b9\u521a\u5efa\u7acb\uff0c\u6240\u4ee5\u53ea\u6709\u90e8\u5206\u5df2\u7ecf\u7ffb\u8bd1\u7684\u6587\u6863\u3002\n\n\n\u6ca1\u6709\u4e2d\u6587\u6587\u6863\u7684\u4ea7\u54c1\uff0c\u4ecd\u7136\u9700\u8981\u5230\n\u82f1\u6587\u7ad9\u70b9\n.\n\n\n\u8fd9\u4e2a\u7ad9\u70b9\u57fa\u4e8e\u4f18\u79c0\u7684\u5e76\u4e14\u5f00\u6e90\u7684\u6587\u6863\u7cfb\u7edf\nMkDocs\n\u4ee5\u53ca\u4e3b\u9898\nMaterial\n.\n\n\n\u57fa\u672c\u64cd\u4f5c\n\n\nGit clone \u8fd9\u4e2a\u5e93\u5230\u672c\u5730\uff0c\u53ef\u4ee5\u5728docs\u6587\u4ef6\u5939\u91cc\u9762\u6dfb\u52a0\u6587\u6863\uff0c\u5728docs/images\u6dfb\u52a0\u56fe\u7247\uff0c\u5728docs/res\u6587\u4ef6\u5939\u6dfb\u52a0\u8d44\u6e90\u3002\n\u6dfb\u52a0\u5b8c\u6587\u6863\u540e\uff0c\u9700\u8981\u624b\u52a8\u4fee\u6539mkdocs.yml\u6587\u4ef6\u3002\n\n\n# Page tree\npages:\n  - Seeed.Wiki: index.md\n  - Respeaker\u9ea6\u514b\u98ce\u6574\u5217FAQ: respeaker_array_faq.md\n  - \u65b0\u6dfb\u52a0\u7684\u6587\u6863: new_docs_name.md\n  - License: license.md\n\n\n\u6267\u884c \nmkdocs serve\n \u8fdb\u884c\u9884\u89c8\u6ca1\u6709\u95ee\u9898\u540e\uff0c\u6267\u884c \nmkdocs build --clean\n\uff0c\u7f16\u8bd1\u7684\u9759\u6001\u6587\u4ef6\u4f1a\u51fa\u73b0\u5728 \nsite\n \u6587\u4ef6\u5939\u3002\n\n\nGit clone \nSeeedDocument.github.io\n \u5230\u672c\u5730\uff0c\u628aSite\u7684\u5185\u5bb9\u66ff\u4ee3\u539f\u6765\u7684\u5185\u5bb9\uff0c\u91cd\u65b0\u4e0a\u4f20\uff0c\u65e2\u53ef\u4ee5\u66f4\u65b0\u7f51\u9875\u3002\n\n\n\n\nNote\n\n\nCNAME\u6587\u4ef6\u4e0d\u8981\u5220\u6389\n\n\n\n\n\u8d21\u732e\n\n\n\u8fd9\u4e2a\u6587\u6863\u7cfb\u7edf\u6709Seeed\u7ef4\u62a4\uff0c\u5e76\u4e14\u6b22\u8fce\u4f60\u5bf9\u6587\u6863\u7684\u5185\u5bb9\u5206\u6790\u4f60\u7684\u8d21\u732e\uff0c\u8d21\u732e\u5305\u62ec\u4f46\u4e0d\u9650\u4e8e\uff1a\n\n\n\n\n\u9519\u522b\u5b57\u6216\u8005\u4e0d\u6070\u5f53\u7684\u8bcd\u6c47\u8868\u8fbe\n\n\n\u589e\u52a0\u5185\u5bb9\u4ee5\u4f7f\u6559\u7a0b\u66f4\u52a0\u7684\u6e05\u6670\n\n\n\u4e0a\u4f20\u66f4\u597d\u7684\u56fe\u7247\n\n\n\u5176\u4ed6\u5fc5\u8981\u7684\u4fee\u6539\u6216\u4f18\u5316\n\n\n\n\nMkDocs\n\n\n\u8fd9\u4e2a\u9879\u76ee\u57fa\u4e8e\u5f00\u6e90\u7684\u6587\u6863\u7cfb\u7edfMKDocs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView the \nMkDocs documentation\n.\n\n\nProject \nrelease notes\n.\n\n\nVisit the \nMkDocs wiki\n for community\n  resources, including third party themes and a list of MkDocs users.\n\n\nIRC channel: \n#mkdocs\n on freenode.\n\n\nDiscussions and support: \nhttps://groups.google.com/forum/#!forum/mkdocs\n\n\n\n\n\u534f\u8bae\n\n\nCopyright \n 2018-2017 Seeed Inc. (\nhttps://www.seeedstudio.com\n)\n\n\n\u6587\u6863\u53ca\u56fe\u7247\n\n\n\n\u8fd9\u91cc\u6240\u6709\u7684\u56fe\u7247\u548c\u6587\u6863\u987a\u4ece \nCreative Commons Attribution-ShareAlike 4.0 International License\n. \n \n\n\u7684\u534f\u8bae\n\n\n\u8054\u7cfb\u6211\u4eec\n\n\n\u5982\u679c\u4f60\u6709\u6587\u6863\u6216\u8005\u6280\u672f\u4e0a\u7684\u4efb\u4f55\u7591\u95ee\uff0c\u8bf7\u8054\u7cfb", 
+            "title": "Seeed\u6587\u6863\u4e2d\u6587\u7ad9\u70b9\u4ecb\u7ecd"
         }, 
         {
-            "location": "/#seeed-documentation", 
-            "text": "Here you can find FAQ in Chinese of some of the Seeed's products, including Grove modules, Seeeduino series, LinkIt series as well as the others product.   To view the Documentation, visit  seeed.wiki , where the Documentation is hosted. The Documentation system is drive by  MkDocs .", 
-            "title": "Seeed Documentation"
+            "location": "/#seeed", 
+            "text": "\u8fd9\u91cc\u4f60\u53ef\u4ee5\u627e\u5230\u90e8\u5206Seeed\u4ea7\u54c1\u7684 \u4e2d\u6587\u6587\u6863 \uff0c\u7531\u4e8e\u8fd9\u4e2a\u7ad9\u70b9\u521a\u5efa\u7acb\uff0c\u6240\u4ee5\u53ea\u6709\u90e8\u5206\u5df2\u7ecf\u7ffb\u8bd1\u7684\u6587\u6863\u3002  \u6ca1\u6709\u4e2d\u6587\u6587\u6863\u7684\u4ea7\u54c1\uff0c\u4ecd\u7136\u9700\u8981\u5230 \u82f1\u6587\u7ad9\u70b9 .  \u8fd9\u4e2a\u7ad9\u70b9\u57fa\u4e8e\u4f18\u79c0\u7684\u5e76\u4e14\u5f00\u6e90\u7684\u6587\u6863\u7cfb\u7edf MkDocs \u4ee5\u53ca\u4e3b\u9898 Material .", 
+            "title": "Seeed\u4e2d\u6587\u6587\u6863"
         }, 
         {
-            "location": "/#contributions", 
-            "text": "This Documentation is managed by Seeed, and we warmly welcome contribution to this documentation project.   Improve grammar or fix wrong typing.   Additional content to help provide a better understanding for the users  A better image for a better performance  Translations to other languages  Others edits that is necessary.   How to edit a document", 
-            "title": "Contributions"
+            "location": "/#_1", 
+            "text": "Git clone \u8fd9\u4e2a\u5e93\u5230\u672c\u5730\uff0c\u53ef\u4ee5\u5728docs\u6587\u4ef6\u5939\u91cc\u9762\u6dfb\u52a0\u6587\u6863\uff0c\u5728docs/images\u6dfb\u52a0\u56fe\u7247\uff0c\u5728docs/res\u6587\u4ef6\u5939\u6dfb\u52a0\u8d44\u6e90\u3002\n\u6dfb\u52a0\u5b8c\u6587\u6863\u540e\uff0c\u9700\u8981\u624b\u52a8\u4fee\u6539mkdocs.yml\u6587\u4ef6\u3002  # Page tree\npages:\n  - Seeed.Wiki: index.md\n  - Respeaker\u9ea6\u514b\u98ce\u6574\u5217FAQ: respeaker_array_faq.md\n  - \u65b0\u6dfb\u52a0\u7684\u6587\u6863: new_docs_name.md\n  - License: license.md \n\u6267\u884c  mkdocs serve  \u8fdb\u884c\u9884\u89c8\u6ca1\u6709\u95ee\u9898\u540e\uff0c\u6267\u884c  mkdocs build --clean \uff0c\u7f16\u8bd1\u7684\u9759\u6001\u6587\u4ef6\u4f1a\u51fa\u73b0\u5728  site  \u6587\u4ef6\u5939\u3002  Git clone  SeeedDocument.github.io  \u5230\u672c\u5730\uff0c\u628aSite\u7684\u5185\u5bb9\u66ff\u4ee3\u539f\u6765\u7684\u5185\u5bb9\uff0c\u91cd\u65b0\u4e0a\u4f20\uff0c\u65e2\u53ef\u4ee5\u66f4\u65b0\u7f51\u9875\u3002   Note  CNAME\u6587\u4ef6\u4e0d\u8981\u5220\u6389", 
+            "title": "\u57fa\u672c\u64cd\u4f5c"
+        }, 
+        {
+            "location": "/#_2", 
+            "text": "\u8fd9\u4e2a\u6587\u6863\u7cfb\u7edf\u6709Seeed\u7ef4\u62a4\uff0c\u5e76\u4e14\u6b22\u8fce\u4f60\u5bf9\u6587\u6863\u7684\u5185\u5bb9\u5206\u6790\u4f60\u7684\u8d21\u732e\uff0c\u8d21\u732e\u5305\u62ec\u4f46\u4e0d\u9650\u4e8e\uff1a   \u9519\u522b\u5b57\u6216\u8005\u4e0d\u6070\u5f53\u7684\u8bcd\u6c47\u8868\u8fbe  \u589e\u52a0\u5185\u5bb9\u4ee5\u4f7f\u6559\u7a0b\u66f4\u52a0\u7684\u6e05\u6670  \u4e0a\u4f20\u66f4\u597d\u7684\u56fe\u7247  \u5176\u4ed6\u5fc5\u8981\u7684\u4fee\u6539\u6216\u4f18\u5316", 
+            "title": "\u8d21\u732e"
         }, 
         {
             "location": "/#mkdocs", 
-            "text": "", 
+            "text": "\u8fd9\u4e2a\u9879\u76ee\u57fa\u4e8e\u5f00\u6e90\u7684\u6587\u6863\u7cfb\u7edfMKDocs        View the  MkDocs documentation .  Project  release notes .  Visit the  MkDocs wiki  for community\n  resources, including third party themes and a list of MkDocs users.  IRC channel:  #mkdocs  on freenode.  Discussions and support:  https://groups.google.com/forum/#!forum/mkdocs", 
             "title": "MkDocs"
         }, 
         {
-            "location": "/#project-documentation-with-markdown", 
-            "text": "View the  MkDocs documentation .  Project  release notes .  Visit the  MkDocs wiki  for community\n  resources, including third party themes and a list of MkDocs users.  IRC channel:  #mkdocs  on freenode.  Discussions and support:  https://groups.google.com/forum/#!forum/mkdocs", 
-            "title": "Project documentation with Markdown."
+            "location": "/#_3", 
+            "text": "Copyright   2018-2017 Seeed Inc. ( https://www.seeedstudio.com )", 
+            "title": "\u534f\u8bae"
         }, 
         {
-            "location": "/#license", 
-            "text": "Copyright   2008-2016 Seeed Development Limited ( www.seeedstudio.com  /  www.seeed.cc )", 
-            "title": "LICENSE"
+            "location": "/#_4", 
+            "text": "\u8fd9\u91cc\u6240\u6709\u7684\u56fe\u7247\u548c\u6587\u6863\u987a\u4ece  Creative Commons Attribution-ShareAlike 4.0 International License .    \n\u7684\u534f\u8bae", 
+            "title": "\u6587\u6863\u53ca\u56fe\u7247"
         }, 
         {
-            "location": "/#documents-and-images", 
-            "text": "This work (product documents and associated images) are licensed under a  Creative Commons Attribution-ShareAlike 4.0 International License .", 
-            "title": "Documents and Images"
-        }, 
-        {
-            "location": "/#third-party-content", 
-            "text": "The resources provided with the product documents also contains datasheets, software examples and other content copyrighted by 3 rd  party authors and companies. All such items are copyright of respective owners. The use of such items are governed by their respective licenses.   All trademarks are the property of their respective owners.", 
-            "title": "Third-party content"
-        }, 
-        {
-            "location": "/#to-contact", 
-            "text": "Write to us at   with subject line \"Wiki\". Thanks", 
-            "title": "To Contact"
+            "location": "/#_5", 
+            "text": "\u5982\u679c\u4f60\u6709\u6587\u6863\u6216\u8005\u6280\u672f\u4e0a\u7684\u4efb\u4f55\u7591\u95ee\uff0c\u8bf7\u8054\u7cfb", 
+            "title": "\u8054\u7cfb\u6211\u4eec"
         }, 
         {
             "location": "/respeaker_array_faq/", 
@@ -98,7 +93,7 @@
         {
             "location": "/license/", 
             "text": "License\n\n\nMIT License\n\n\nCopyright \n 2008 - 2017 Seeed INC.\n\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to\ndeal in the Software without restriction, including without limitation the\nrights to use, copy, modify, merge, publish, distribute, sublicense, and/or\nsell copies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS\nIN THE SOFTWARE.", 
-            "title": "License"
+            "title": "\u6587\u6863\u534f\u8bae"
         }, 
         {
             "location": "/license/#license", 
