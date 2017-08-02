@@ -1,0 +1,811 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Seeed产品文档-中文">
+      
+      
+        <link rel="canonical" href="http://seeed.wiki/Respeaker_Mic_Array/">
+      
+      
+        <meta name="author" content="Loovee">
+      
+      
+        <link rel="shortcut icon" href="../images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+    
+    
+      
+        <title>ReSpeaker Mic Array</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-769c285a91.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="light-green" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://seeed.wiki" title="Seeed产品文档" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            Respeaker_Mic_Array
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      SeeedDocument/SeeedDocument.github.io
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Seeed产品文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      SeeedDocument/SeeedDocument.github.io
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Seeed文档中文站点介绍" class="md-nav__link">
+      Seeed文档中文站点介绍
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../2KM_Long_Range_RF_link_kits_w_encoder_and_decoder/" title="2KM Long Range RF link kits w encoder and decoder" class="md-nav__link">
+      2KM Long Range RF link kits w encoder and decoder
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Encoder/" title="Grove-Encoder" class="md-nav__link">
+      Grove-Encoder
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-MP3_v2.0/" title="Grove-MP3_v2.0" class="md-nav__link">
+      Grove-MP3_v2.0
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Multichannel_Gas_Sensor/" title="Grove-Multichannel_Gas_Sensor" class="md-nav__link">
+      Grove-Multichannel_Gas_Sensor
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Respeaker_Mic_Array
+      </label>
+    
+    <a href="./" title="Respeaker_Mic_Array" class="md-nav__link md-nav__link--active">
+      Respeaker_Mic_Array
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="产品简介" class="md-nav__link">
+    产品简介
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="规格参数" class="md-nav__link">
+    规格参数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="技术规格" class="md-nav__link">
+    技术规格
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respeaker" title="ReSpeaker 麦克风阵列驱动" class="md-nav__link">
+    ReSpeaker 麦克风阵列驱动
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respeaker-core" title="用ReSpeaker Core提取声音" class="md-nav__link">
+    用ReSpeaker Core提取声音
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcmaclinuxraspberry-pi" title="在PC或Mac或Linux或Raspberry Pi上提取语音" class="md-nav__link">
+    在PC或Mac或Linux或Raspberry Pi上提取语音
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respeaker_1" title="ReSpeaker麦克风阵列固件" class="md-nav__link">
+    ReSpeaker麦克风阵列固件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respeakerhid" title="用于控制ReSpeaker麦克风阵列的HID" class="md-nav__link">
+    用于控制ReSpeaker麦克风阵列的HID
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" title="FAQ" class="md-nav__link">
+    FAQ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="资源下载" class="md-nav__link">
+    资源下载
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../license/" title="文档协议" class="md-nav__link">
+      文档协议
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="产品简介" class="md-nav__link">
+    产品简介
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="规格参数" class="md-nav__link">
+    规格参数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="技术规格" class="md-nav__link">
+    技术规格
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respeaker" title="ReSpeaker 麦克风阵列驱动" class="md-nav__link">
+    ReSpeaker 麦克风阵列驱动
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respeaker-core" title="用ReSpeaker Core提取声音" class="md-nav__link">
+    用ReSpeaker Core提取声音
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcmaclinuxraspberry-pi" title="在PC或Mac或Linux或Raspberry Pi上提取语音" class="md-nav__link">
+    在PC或Mac或Linux或Raspberry Pi上提取语音
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respeaker_1" title="ReSpeaker麦克风阵列固件" class="md-nav__link">
+    ReSpeaker麦克风阵列固件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respeakerhid" title="用于控制ReSpeaker麦克风阵列的HID" class="md-nav__link">
+    用于控制ReSpeaker麦克风阵列的HID
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" title="FAQ" class="md-nav__link">
+    FAQ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="资源下载" class="md-nav__link">
+    资源下载
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Respeaker_Mic_Array</h1>
+                
+                <p><img alt="" src="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/img/respeaker_mic_array.jpeg" /></p>
+<h2 id="_1">产品简介<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>ReSpeaker麦克风阵列可以堆叠（连接）到ReSpeaker Core的顶部，以显着提高语音交互体验。它是基于XMOS的XVSM-2000智能麦克风开发的。该板集成了7个PDM麦克风，以帮助将ReSpeaker的声学DSP性能提升到更高的水平。</p>
+<p><a href="https://world.taobao.com/item/539003048162.htm?fromSite=main&amp;spm=a1z10.5-c.w4002-11172345288.13.3c690061fgdpXG"><img alt="" src="https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG" /></a></p>
+<h2 id="_2">规格参数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>远场语音捕获</li>
+<li>声源定位</li>
+<li>波束成形</li>
+<li>噪声抑制</li>
+<li>消混响</li>
+<li>回音消除</li>
+</ul>
+<h2 id="_3">技术规格<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/img/respeaker_mic_array.jpeg" /></p>
+<ul>
+<li>XVSM-2000内置16个内核:<ul>
+<li>在2个xCore titles上的16个实时逻辑内核</li>
+<li>核在dual issue mode下共享2000 MIPS</li>
+<li>内部single cycle 512KB SRAM和2MB内置闪存</li>
+<li>16KB内部OTP（最大8KB每tile）</li>
+<li>USB PHY，完全符合USB 2.0规范</li>
+<li>可编程 I/O.</li>
+<li>提供DFU模式.</li>
+</ul>
+</li>
+<li>7 数字麦克风:<ul>
+<li>用于远场语音识别或声音定位.</li>
+<li>ST MP34DT01-M.</li>
+<li>-26 dBFS 灵敏度.</li>
+<li>120 dBSPL 声学过载点.</li>
+<li>61 dB 信噪比.</li>
+<li>全向灵敏度.</li>
+<li>PDM 输出.</li>
+</ul>
+</li>
+<li>12 RGB LEDs:<ul>
+<li>256级亮度.</li>
+<li>800kHz线数据传输.</li>
+</ul>
+</li>
+<li>音频输出:<ul>
+<li>板载3.5mmAUX输出.</li>
+<li>WOLFSON WM8960.</li>
+<li>24 or 16bit 16kHz立体声输出.</li>
+<li>40 mW 输出功率 16 Ω @ 3.3 V.</li>
+</ul>
+</li>
+<li>时钟同步：<ul>
+<li>板载 PLL.</li>
+<li>用于 DAC,MIC的可编程采样时钟.
+(如果在XVSM-2000中使用DSP，则禁用).</li>
+</ul>
+</li>
+<li>电源:<ul>
+<li>Micro USB或扩展接头提供5V电源.</li>
+</ul>
+</li>
+<li>尺寸:<ul>
+<li>直径 70mm.</li>
+</ul>
+</li>
+<li>重量:<ul>
+<li>15.25g</li>
+</ul>
+</li>
+</ul>
+<h2 id="respeaker">ReSpeaker 麦克风阵列驱动<a class="headerlink" href="#respeaker" title="Permanent link">&para;</a></h2>
+<ul>
+<li>对于Windows用户, 请单击 <a href="https://github.com/Fuhua-Chen/ReSpeaker_Microphone_Array_Driver">此处</a> 安装驱动程序</li>
+<li>对于Linux或Mac用户，不需要安装驱动程序</li>
+</ul>
+<h2 id="respeaker-core">用ReSpeaker Core提取声音<a class="headerlink" href="#respeaker-core" title="Permanent link">&para;</a></h2>
+<p>当麦克风阵列堆叠在ReSpeaker Core上时，将自动检测（也可以通过aplay -l来手动检测）。我们建议您可以使用<a href="https://github.com/respeaker/respeaker_python_library">respeaker_python_library</a>来开发语音交互应用程序，以便您不需要关心Mic Array是否打开。我们的库文件会检查并选择麦克风阵列。</p>
+<p>此外，在该库中，基于Pyaudio的麦克风类具有名为listen的方法来提取语音。请参阅我们的示例代码以供使用。</p>
+<p>此外，在该库中， <a href="https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/microphone.py"><em>class Microphone</em></a>, 基于 <strong>Pyaudio</strong>, 用 <a href="https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/microphone.py#L207"><em>listen</em></a>, 来提取声音. 请查阅 <a href="https://github.com/respeaker/respeaker_python_library/blob/master/examples/SpeechRecognition_translator.py">example code</a> 关于如何使用.</p>
+<h2 id="pcmaclinuxraspberry-pi">在PC或Mac或Linux或Raspberry Pi上提取语音<a class="headerlink" href="#pcmaclinuxraspberry-pi" title="Permanent link">&para;</a></h2>
+<p>这是一个基于Pyaudio的例子：</p>
+<p>首先，您需要运行以下脚本来获取Mic Array的设备索引号：</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">pyaudio</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">pyaudio</span><span class="o">.</span><span class="n">PyAudio</span><span class="p">()</span>
+<span class="n">info</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">get_host_api_info_by_index</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">numdevices</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;deviceCount&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">numdevices</span><span class="p">):</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_device_info_by_host_api_device_index</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;maxInputChannels&#39;</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s2">&quot;Input Device id &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot; - &quot;</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">get_device_info_by_host_api_device_index</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">)</span>
+</pre></div>
+
+<p>然后，更改RESPEAKER_INDEX = 1为您的索引号。运行脚本来录制语音。</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">pyaudio</span>
+<span class="kn">import</span> <span class="nn">wave</span>
+
+<span class="n">RESPEAKER_RATE</span> <span class="o">=</span> <span class="mi">16000</span>
+<span class="n">RESPEAKER_CHANNELS</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">RESPEAKER_WIDTH</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="c1"># run getDeviceInfo.py to get index</span>
+<span class="n">RESPEAKER_INDEX</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">CHUNK</span> <span class="o">=</span> <span class="mi">1024</span>
+<span class="n">RECORD_SECONDS</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">WAVE_OUTPUT_FILENAME</span> <span class="o">=</span> <span class="s2">&quot;output.wav&quot;</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">pyaudio</span><span class="o">.</span><span class="n">PyAudio</span><span class="p">()</span>
+
+<span class="n">stream</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">open</span><span class="p">(</span>
+            <span class="n">rate</span><span class="o">=</span><span class="n">RESPEAKER_RATE</span><span class="p">,</span>
+            <span class="n">format</span><span class="o">=</span><span class="n">p</span><span class="o">.</span><span class="n">get_format_from_width</span><span class="p">(</span><span class="n">RESPEAKER_WIDTH</span><span class="p">),</span>
+            <span class="n">channels</span><span class="o">=</span><span class="n">RESPEAKER_CHANNELS</span><span class="p">,</span>
+            <span class="nb">input</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+            <span class="n">input_device_index</span><span class="o">=</span><span class="n">RESPEAKER_INDEX</span><span class="p">,)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;* recording&quot;</span><span class="p">)</span>
+
+<span class="n">frames</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">RESPEAKER_RATE</span> <span class="o">/</span> <span class="n">CHUNK</span> <span class="o">*</span> <span class="n">RECORD_SECONDS</span><span class="p">)):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">stream</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">CHUNK</span><span class="p">)</span>
+    <span class="n">frames</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;* done recording&quot;</span><span class="p">)</span>
+
+<span class="n">stream</span><span class="o">.</span><span class="n">stop_stream</span><span class="p">()</span>
+<span class="n">stream</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">p</span><span class="o">.</span><span class="n">terminate</span><span class="p">()</span>
+
+<span class="n">wf</span> <span class="o">=</span> <span class="n">wave</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">WAVE_OUTPUT_FILENAME</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span>
+<span class="n">wf</span><span class="o">.</span><span class="n">setnchannels</span><span class="p">(</span><span class="n">RESPEAKER_CHANNELS</span><span class="p">)</span>
+<span class="n">wf</span><span class="o">.</span><span class="n">setsampwidth</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_sample_size</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_format_from_width</span><span class="p">(</span><span class="n">RESPEAKER_WIDTH</span><span class="p">)))</span>
+<span class="n">wf</span><span class="o">.</span><span class="n">setframerate</span><span class="p">(</span><span class="n">RESPEAKER_RATE</span><span class="p">)</span>
+<span class="n">wf</span><span class="o">.</span><span class="n">writeframes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">frames</span><span class="p">))</span>
+<span class="n">wf</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+<h2 id="respeaker_1">ReSpeaker麦克风阵列固件<a class="headerlink" href="#respeaker_1" title="Permanent link">&para;</a></h2>
+<p>You could download ReSpeaker Mic array firmwares for DFU <a href="https://github.com/Fuhua-Chen/ReSpeaker_Microphone_Array_Firmware">here</a>. We have provided two versions:</p>
+<ul>
+<li><em>xvsm version</em> : initial version, outputs 2 channels data with dsp support.</li>
+<li><em>raw version</em> : outputs 8 channels mic raw data, this firmware is without xvsm dsp support, so it does not support some functions such as DOA, AEC and so on.</li>
+</ul>
+<p>您可以在<a href="https://github.com/Fuhua-Chen/ReSpeaker_Microphone_Array_Firmware">这里</a>下载适用于DFU的ReSpeaker麦克风阵列固件。我们提供了两个版本：</p>
+<ul>
+<li><strong>xvsm版本</strong>：初始版本，支持dsp输出2通道数据。</li>
+<li><strong>原始版本</strong>：输出8路麦克风原始数据，此固件不支持xvsm dsp，因此不支持某些功能，如DOA，AEC等。</li>
+</ul>
+<p>关于请查阅如何在Mac或Linux上更新固件， 请查阅 <a href="https://github.com/respeaker/mic_array_dfu">这里</a> 。</p>
+<h2 id="respeakerhid">用于控制ReSpeaker麦克风阵列的HID<a class="headerlink" href="#respeakerhid" title="Permanent link">&para;</a></h2>
+<p>用户可以通过USB HID控制ReSpeaker麦克风阵列。请参阅我们的<a href="https://github.com/Fuhua-Chen/ReSpeaker-Microphone-Array-HID-tool">通信协议</a>.</p>
+<p>请注意，如果您使用 <strong>最新的原始版本</strong>，则只能控制LED。</p>
+<p>这里是一个python例子：</p>
+<div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+
+<span class="kn">import</span> <span class="nn">respeaker.usb_hid</span> <span class="kn">as</span> <span class="nn">usb_hid</span>
+
+<span class="k">class</span> <span class="nc">MicArray</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hid</span> <span class="o">=</span> <span class="n">usb_hid</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_bytearray</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">hid</span><span class="p">:</span>
+            <span class="n">packet</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">([</span><span class="n">address</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="p">(</span><span class="n">address</span> <span class="o">&gt;&gt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0x7F</span><span class="p">,</span> <span class="n">length</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="p">(</span><span class="n">length</span> <span class="o">&gt;&gt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">])</span> <span class="o">+</span> <span class="n">data</span>
+            <span class="n">packet</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">hid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">bytearray</span><span class="p">([</span><span class="n">address</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="p">(</span><span class="n">address</span> <span class="o">&gt;&gt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span> <span class="o">|</span> <span class="mh">0x80</span><span class="p">,</span> <span class="n">length</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="p">(</span><span class="n">length</span> <span class="o">&gt;&gt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">])))</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hid</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+            <span class="c1"># print [int(x) for x in data]</span>
+            <span class="c1"># skip VAD data</span>
+            <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">!=</span> <span class="mh">0xFF</span> <span class="ow">and</span> <span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">!=</span> <span class="mh">0xFF</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">data</span><span class="p">[</span><span class="mi">4</span><span class="p">:(</span><span class="mi">4</span> <span class="o">+</span> <span class="n">length</span><span class="p">)]</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">to_bytearray</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">int</span><span class="p">:</span>
+            <span class="n">array</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">([</span><span class="n">data</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">])</span>
+        <span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">bytearray</span><span class="p">:</span>
+            <span class="n">array</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">str</span><span class="p">:</span>
+            <span class="n">array</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span><span class="p">:</span>
+            <span class="n">array</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> is not supported&#39;</span> <span class="o">%</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">array</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="kn">import</span> <span class="nn">sys</span>
+    <span class="kn">import</span> <span class="nn">struct</span>
+
+    <span class="n">mic</span> <span class="o">=</span> <span class="n">MicArray</span><span class="p">()</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Using: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">usb_hid</span><span class="o">.</span><span class="n">usb_backend</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Usage: python {} w 0x0 0x000003&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;0x&#39;</span><span class="p">):</span>
+            <span class="n">address</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="mi">16</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">address</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+
+        <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;w&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;0x&#39;</span><span class="p">):</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="mi">16</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+
+            <span class="k">if</span> <span class="n">data</span> <span class="o">&gt;</span> <span class="mh">0xFFFF</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&lt;I&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">data</span> <span class="o">&gt;</span> <span class="mh">0xFF</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&lt;H&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+
+            <span class="n">mic</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">address</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">mic</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">address</span><span class="p">,</span> <span class="mi">4</span><span class="p">)]</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Q1：如何使用 <strong>xvsm版本固件</strong> 从Mic Array获取音频源方向？</p>
+<ul>
+<li>使用Windows时, 请遵循<a href="https://github.com/respeaker/get_started_with_respeaker/wiki/Mic-Array">指南</a> 或者使用 <a href="https://github.com/Fuhua-Chen/ReSpeaker-Microphone-Array-HID-tool">HID tool</a>.</li>
+<li><a href="https://github.com/elthef/respeaker-xmos-hid">Python &amp; C hidapi 示例</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="_4">资源下载<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>[Eagle]</strong><a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0.sch">ReSpeaker Microphone Array SCH</a></li>
+<li><strong>[Eagle]</strong><a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0.brd">ReSpeaker Microphone Array BRD</a></li>
+<li><strong>[PDF]</strong> <a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0%20Sch.pdf">ReSpeaker Microphone Array SCH</a></li>
+<li><strong>[PDF]</strong> <a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0%20PCB.pdf">ReSpeaker Microphone Array PCB</a></li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Grove-Multichannel_Gas_Sensor/" title="Grove-Multichannel_Gas_Sensor" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Grove-Multichannel_Gas_Sensor
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../license/" title="文档协议" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                文档协议
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Seeedstudio 2017
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.facebook.com/seeedstudiosz/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://github.com/SeeedDocument" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-c35428f87f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>
