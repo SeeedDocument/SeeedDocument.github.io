@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://seeed.wiki/</loc>
-     <lastmod>2017-08-02</lastmod>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>http://seeed.wiki/2KM_Long_Range_RF_link_kits_w_encoder_and_decoder/</loc>
-     <lastmod>2017-08-02</lastmod>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +20,7 @@
     
     <url>
      <loc>http://seeed.wiki/Grove-Encoder/</loc>
-     <lastmod>2017-08-02</lastmod>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -28,7 +28,7 @@
     
     <url>
      <loc>http://seeed.wiki/Grove-MP3_v2.0/</loc>
-     <lastmod>2017-08-02</lastmod>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -36,7 +36,7 @@
     
     <url>
      <loc>http://seeed.wiki/Grove-Multichannel_Gas_Sensor/</loc>
-     <lastmod>2017-08-02</lastmod>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -44,7 +44,15 @@
     
     <url>
      <loc>http://seeed.wiki/Respeaker_Mic_Array/</loc>
-     <lastmod>2017-08-02</lastmod>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://seeed.wiki/Respeaker_Core/</loc>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -52,7 +60,7 @@
     
     <url>
      <loc>http://seeed.wiki/license/</loc>
-     <lastmod>2017-08-02</lastmod>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
