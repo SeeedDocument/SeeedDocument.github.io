@@ -10,14 +10,6 @@
     
 
     
-    <url>
-     <loc>http://seeed.wiki/2KM_Long_Range_RF_link_kits_w_encoder_and_decoder/</loc>
-     <lastmod>2017-08-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
         
     <url>
      <loc>http://seeed.wiki/Grove_System/</loc>
@@ -65,6 +57,16 @@
         
     <url>
      <loc>http://seeed.wiki/How_to_install_Arduino_Library/</loc>
+     <lastmod>2017-08-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://seeed.wiki/2KM_Long_Range_RF_link_kits_w_encoder_and_decoder/</loc>
      <lastmod>2017-08-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
