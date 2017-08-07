@@ -17,6 +17,18 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>http://seeed.wiki</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
@@ -41,22 +53,6 @@
         
     <url>
      <loc>http://seeed.wiki/Grove-Multichannel_Gas_Sensor/</loc>
-     <lastmod>2017-08-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>http://seeed.wiki/Respeaker_Mic_Array/</loc>
-     <lastmod>2017-08-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://seeed.wiki/Respeaker_Core/</loc>
      <lastmod>2017-08-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
