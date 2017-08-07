@@ -67,6 +67,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>http://seeed.wiki/Getting_Started_with_Seeeduino/</loc>
+     <lastmod>2017-08-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
