@@ -12,6 +12,16 @@
     
         
     <url>
+     <loc>http://seeed.wiki</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
      <loc>http://seeed.wiki/Grove_System/</loc>
      <lastmod>2017-08-07</lastmod>
      <changefreq>daily</changefreq>
