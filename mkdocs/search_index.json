@@ -2,17 +2,17 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Platform\n\n\n\n\n\n\n\n\nArduino\n\n\nBeaglebone\n\n\nRaspberry\n\n\nLinkIt\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWio\n\n\nmbed\n\n\nRePhone\n\n\nReSpeaker\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGrove\n\n\n\n\n\n\n\n\nSensor\n\n\nActuator\n\n\nDisplay\n\n\nCommunication\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOthers\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIOT\n\n\n\n\n\n\n\n\nIOT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaker Pro\n\n\n\n\n\n\n\n\nMaker Pro\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTutorial\n\n\n\n\n\n\n\n\nTutorial\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u534f\u8bae\n\n\nCopyright \n 2018-2017 Seeed Inc. (\nhttps://www.seeedstudio.com\n)\n\n\n\u6587\u6863\u53ca\u56fe\u7247\n\n\n\n\u8fd9\u91cc\u6240\u6709\u7684\u56fe\u7247\u548c\u6587\u6863\u987a\u4ece \nCreative Commons Attribution-ShareAlike 4.0 International License\n. \n \n\n\u7684\u534f\u8bae\n\n\n\u8054\u7cfb\u6211\u4eec\n\n\n\u5982\u679c\u4f60\u6709\u6587\u6863\u6216\u8005\u6280\u672f\u4e0a\u7684\u4efb\u4f55\u7591\u95ee\uff0c\u8bf7\u8054\u7cfb", 
+            "text": "Platform\n\n\n\n\n\n\n\n\nArduino\n\n\nBeaglebone\n\n\nRaspberry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWio\n\n\nmbed\n\n\nRePhone\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinkIt\n\n\nReSpeaker\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGrove\n\n\n\n\n\n\n\n\nSensor\n\n\nActuator\n\n\nDisplay\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommunication\n\n\nOthers\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIOT\n\n\n\n\n\n\n\n\nIOT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaker Pro\n\n\n\n\n\n\n\n\nMaker Pro\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTutorial\n\n\n\n\n\n\n\n\nTutorial\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u534f\u8bae\n\n\nCopyright \n 2018-2017 Seeed Inc. (\nhttps://www.seeedstudio.com\n)\n\n\n\u6587\u6863\u53ca\u56fe\u7247\n\n\n\n\u8fd9\u91cc\u6240\u6709\u7684\u56fe\u7247\u548c\u6587\u6863\u987a\u4ece \nCreative Commons Attribution-ShareAlike 4.0 International License\n. \n \n\n\u7684\u534f\u8bae\n\n\n\u8054\u7cfb\u6211\u4eec\n\n\n\u5982\u679c\u4f60\u6709\u6587\u6863\u6216\u8005\u6280\u672f\u4e0a\u7684\u4efb\u4f55\u7591\u95ee\uff0c\u8bf7\u8054\u7cfb", 
             "title": "Seeed\u4ea7\u54c1\u4e2d\u6587Wiki"
         }, 
         {
             "location": "/#platform", 
-            "text": "Arduino  Beaglebone  Raspberry  LinkIt                Wio  mbed  RePhone  ReSpeaker", 
+            "text": "Arduino  Beaglebone  Raspberry               Wio  mbed  RePhone               LinkIt  ReSpeaker", 
             "title": "Platform"
         }, 
         {
             "location": "/#grove", 
-            "text": "Sensor  Actuator  Display  Communication                Others", 
+            "text": "Sensor  Actuator  Display               Communication  Others", 
             "title": "Grove"
         }, 
         {
