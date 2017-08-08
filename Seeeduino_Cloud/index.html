@@ -368,6 +368,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seeeduino_LoRAWAN/" title="Seeeduino_LoRAWAN" class="md-nav__link">
+      Seeeduino_LoRAWAN
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -931,7 +943,7 @@ password: seeeduino
 <li>接收来自Internet的命令，并将其直接传递到Arduino。</li>
 </ul>
 <p><a href="https://www.arduino.cc/en/Reference/YunBridgeLibrary">Arduino Official Website</a>有详细的解释和很多例子来展示如何使用Bridge. 以下是使用Bridge Library的一些示例.</p>
-<p><strong>Example 1: Say hello to Linux</strong></p>
+<p><strong>Example 1: 跟Linux打招呼</strong></p>
 <p>This example is a hello test between the Arduino and Seeeduino Cloud. The example can be found on the Arduino IDE&rarr; File &rarr; Examples &rarr; Bridge &rarr; ConsoleRead. A tutorial of this example can be found <a href="https://www.arduino.cc/en/Tutorial/ConsoleRead">here</a>. You can see the code below with some additional details to understand it with the Seeeduino Cloud:
 这个例子是Arduino和Seeeduino Cloud之间的一个hello测试。该示例可以在Arduino IDE-&gt; File - &gt; Examples - &gt; Bridge - &gt; ConsoleRead中找到。这个例子的教程可以在<a href="https://www.arduino.cc/en/Tutorial/ConsoleRead">这里</a>找到。您可以在下面的代码中查看一些其他详细信息:</p>
 <div class="codehilite"><pre><span></span>#include &lt;Console.h&gt;
@@ -970,7 +982,7 @@ void loop() {
 }
 </pre></div>
 
-<p><strong>Example 2: Upload data to IoT Server</strong></p>
+<p><strong>例程 2: 上传数据到物联网服务器</strong></p>
 <p>此示例显示如何将数据记录到公共IoT服务器“Xively”。示例是从Arduino IDE-&gt; File - &gt; Examples - &gt; Bridge - &gt; XivelyClient. 这个例子的教程可以在<a href="https://www.arduino.cc/en/Tutorial/YunXivelyClient">这里</a>这里参考。上传程序之前，请确保：</p>
 <ul>
 <li>Seeeduino Cloud 接入互联网。</li>
@@ -1083,9 +1095,7 @@ void sendData() {
 </pre></div>
 
 <p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Seeeduino_Cloud/master/img/500px-SeeeduinoCloud_Sketch_xively.png" /></p>
-<p><strong>Example 3: Log Data to USB flash</strong></p>
-<p>This example shows how to log data to a USB flash. The sketch used in this example is same as <a href="http://wiki.dragino.com/index.php?title=Arduino_Yun_examples#Log_sensor_data_to_USB_flash">here</a>. And the source code can be found there.
-The Seeeduino Cloud will auto mount the USB flash to directory /mnt/sda1. And the sketch will append the sensor data to the file /mnt/sda1/data/datalog.csv. So make sure there is such a file in the USB flash before running the sketch.</p>
+<p><strong>例程 3: 将数据记录在USB闪存中</strong></p>
 <p>此示例显示如何将数据记录到USB闪存。本示例中使用的程序与<a href="http://wiki.dragino.com/index.php?title=Arduino_Yun_examples#Log_sensor_data_to_USB_flash">此处</a>相同。并且可以在那里找到源代码。Seeeduino Cloud将自动将USB闪存映射到目录/ mnt /sda1。而程序会将传感器数据附加到文件/mnt/sda1/data/datalog.csv。因此，在运行程序之前，请确保在USB闪存中有这样的文件。</p>
 <div class="codehilite"><pre><span></span>#include &lt;FileIO.h&gt;     //FileIO class allow user to operate Linux file system
 #include &lt;Console.h&gt;    //Console class provide the interactive between IDE and Yun Shield
@@ -1149,7 +1159,7 @@ String getTimeStamp() {
 </pre></div>
 
 <p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Seeeduino_Cloud/master/img/500px-SeeeduinoCloud_Sketch_USB.png" /></p>
-<p><strong>IoT Server Configuration</strong></p>
+<p><strong>物联网服务器配置</strong></p>
 <p>IoT Server页面允许您将数据上传到诸如Xively之类的IoT网站，而您只需要将传感器数据写入串口。</p>
 <p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Seeeduino_Cloud/master/img/500px-SeeeduinoCloud_IoTServer.png" /></p>
 <p>程序如下：</p>
@@ -1188,20 +1198,20 @@ void loop() {
 <h2 id="_6">资源下载<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>Schematic</strong></p>
+<p><strong>原理图</strong></p>
 <ul>
 <li><a href="https://github.com/SeeedDocument/Seeeduino_Cloud/raw/master/res/Seeeduino_Cloud_v1.0.zip">Seeeduino Cloud Eagle file</a></li>
 <li><a href="https://github.com/SeeedDocument/Seeeduino_Cloud/raw/master/res/Seeeduino_Cloud_PDF.pdf">Seeeduino Cloud PDF file</a></li>
 </ul>
 </li>
 <li>
-<p><strong>Firmware</strong></p>
+<p><strong>固件</strong></p>
 <ul>
 <li><a href="https://github.com/SeeedDocument/Seeeduino_Cloud/raw/master/res/Seeeduino_Cloud_Firmware--v1.3.4--20140815-1100.zip">Seeeduino Cloud Firmware</a></li>
 </ul>
 </li>
 <li>
-<p><strong>References</strong></p>
+<p><strong>参考资料</strong></p>
 <ul>
 <li><a href="https://www.arduino.cc/en/Guide/HomePage">Getting Started with Arduino</a></li>
 <li><a href="https://www.arduino.cc/en/Reference/HomePage">Arduino Language Reference</a></li>
@@ -1253,13 +1263,13 @@ void loop() {
           </a>
         
         
-          <a href="../Respeaker_Mic_Array/" title="Respeaker_Mic_Array" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Seeeduino_LoRAWAN/" title="Seeeduino_LoRAWAN" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Respeaker_Mic_Array
+                Seeeduino_LoRAWAN
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
