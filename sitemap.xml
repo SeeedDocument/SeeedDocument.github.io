@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://seeed.wiki/</loc>
-     <lastmod>2017-08-08</lastmod>
+     <lastmod>2017-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -35,25 +35,19 @@
         
     <url>
      <loc>http://seeed.wiki/Grove_System/</loc>
-     <lastmod>2017-08-08</lastmod>
+     <lastmod>2017-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://seeed.wiki/Grove-Encoder/</loc>
-     <lastmod>2017-08-08</lastmod>
+     <loc>http://seeed.wiki</loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://seeed.wiki/Grove-MP3_v2.0/</loc>
-     <lastmod>2017-08-08</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://seeed.wiki/Grove-Multichannel_Gas_Sensor/</loc>
-     <lastmod>2017-08-08</lastmod>
+     <loc>http://seeed.wiki</loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -63,25 +57,19 @@
         
     <url>
      <loc>http://seeed.wiki/How_to_install_Arduino_Library/</loc>
-     <lastmod>2017-08-08</lastmod>
+     <lastmod>2017-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/Upload_Code/</loc>
-     <lastmod>2017-08-08</lastmod>
+     <lastmod>2017-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/Getting_Started_with_Seeeduino/</loc>
-     <lastmod>2017-08-08</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://seeed.wiki/How_to_edit_Wiki/</loc>
-     <lastmod>2017-08-08</lastmod>
+     <lastmod>2017-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -91,7 +79,7 @@
         
     <url>
      <loc>http://seeed.wiki/2KM_Long_Range_RF_link_kits_w_encoder_and_decoder/</loc>
-     <lastmod>2017-08-08</lastmod>
+     <lastmod>2017-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -100,7 +88,7 @@
     
     <url>
      <loc>http://seeed.wiki/license/</loc>
-     <lastmod>2017-08-08</lastmod>
+     <lastmod>2017-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
