@@ -623,6 +623,40 @@
     FAQ
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-respeaker-mic-array" title="Q1： Respeaker Mic Array驱动安装问题？" class="md-nav__link">
+    Q1： Respeaker Mic Array驱动安装问题？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-respeaker-mic-array" title="Q2： Respeaker Mic Array如何采集音频？" class="md-nav__link">
+    Q2： Respeaker Mic Array如何采集音频？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-respeaker-mic-array" title="Q3： Respeaker Mic Array如何定位？" class="md-nav__link">
+    Q3： Respeaker Mic Array如何定位？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q4-respeaker-mic-array-python" title="Q4： Respeaker Mic Array Python程序下载？" class="md-nav__link">
+    Q4： Respeaker Mic Array Python程序下载？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1330,6 +1364,40 @@
     FAQ
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-respeaker-mic-array" title="Q1： Respeaker Mic Array驱动安装问题？" class="md-nav__link">
+    Q1： Respeaker Mic Array驱动安装问题？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-respeaker-mic-array" title="Q2： Respeaker Mic Array如何采集音频？" class="md-nav__link">
+    Q2： Respeaker Mic Array如何采集音频？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-respeaker-mic-array" title="Q3： Respeaker Mic Array如何定位？" class="md-nav__link">
+    Q3： Respeaker Mic Array如何定位？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q4-respeaker-mic-array-python" title="Q4： Respeaker Mic Array Python程序下载？" class="md-nav__link">
+    Q4： Respeaker Mic Array Python程序下载？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1585,19 +1653,77 @@
 </pre></div>
 
 <h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
+<h3 id="q1-respeaker-mic-array">Q1： Respeaker Mic Array驱动安装问题？<a class="headerlink" href="#q1-respeaker-mic-array" title="Permanent link">&para;</a></h3>
+<p>Windows需要安装驱动，linux（Ubuntu,Raspberry,MAC等）不需要安装驱动。点击<a href="https://github.com/Fuhua-Chen/ReSpeaker_Microphone_Array_Driver/raw/master/ReSpeakerMicrophoneArrayDriver.exe">这里</a>下载驱动。在windows系统的设备管理器，看到麦克风阵列不能被识别，请安装以下流程来操作。</p>
 <ul>
 <li>
-<p>Q1：如何使用 <strong>xvsm版本固件</strong> 从Mic Array获取音频源方向？</p>
+<p><a href="https://github.com/Fuhua-Chen/ReSpeaker_Microphone_Array_Driver/raw/master/ReSpeakerMicrophoneArrayDriver.exe">安装驱动</a></p>
+</li>
+<li>
+<p>换USB线</p>
+</li>
+<li>
+<p><a href="http://jingyan.baidu.com/article/624e74594dbc8d34e8ba5aa6.html">禁用数字签名</a></p>
+</li>
+<li>
+<p>换其他电脑尝试</p>
+</li>
+</ul>
+<h3 id="q2-respeaker-mic-array">Q2： Respeaker Mic Array如何采集音频？<a class="headerlink" href="#q2-respeaker-mic-array" title="Permanent link">&para;</a></h3>
 <ul>
-<li>使用Windows时, 请遵循<a href="https://github.com/respeaker/get_started_with_respeaker/wiki/Mic-Array">指南</a> 或者使用 <a href="https://github.com/Fuhua-Chen/ReSpeaker-Microphone-Array-HID-tool">HID tool</a>.</li>
-<li><a href="https://github.com/elthef/respeaker-xmos-hid">Python &amp; C hidapi 示例</a></li>
+<li>下载<a href="http://www.audacityteam.org/">Audacity</a>软件来采集, 在windows下具体参数设置，请参卡<img alt="" src="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/img/audacity.png" /> 。</li>
+</ul>
+<p>如果按照以上设置采集数据失败，请重新安装驱动。</p>
+<ul>
+<li>
+<p>利用Python脚本来采集音频数据：</p>
+<ul>
+<li>
+<p>XVSM固件采集2通道音频： （支持Unbuntu/Raspberry/Mac）</p>
+<ul>
+<li>
+<p>首先用<a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker_Mic_array_Scripts/2_Channel_XVSM_firmware_Python_Scripts/Record_Audio/XVSM_RecordAudio_Ubuntu_Raspberry_Mac_getDeviceInfo.py">XVSM_RecordAudio_Ubuntu_Raspberry_Mac_getDeviceInfo.py</a>   检测麦克风阵列的输入通道。</p>
+</li>
+<li>
+<p>然后更改<a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker_Mic_array_Scripts/2_Channel_XVSM_firmware_Python_Scripts/Record_Audio/XVSM_RecordAudio_Ubuntu_Raspberry_Mac_recordaudio.py">XVSM_RecordAudio_Ubuntu_Raspberry_Mac_recordaudio.py</a> 的 <strong>RESPEAKER_INDEX = 2</strong> 的 2为检测到的通道， 运行程序来采集音频。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>RAW固件采集8通道音频：（支持Unbuntu/Raspberry/Mac）</p>
+<ul>
+<li>
+<p>首先用<a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker_Mic_array_Scripts/8_Channel_Raw_firmware_Python_Scripts/Record_Audio/Raw_RecordAudio_Ubuntu_Raspberry_Mac_getDeviceInfo.py">Raw_RecordAudio_Ubuntu_Raspberry_Mac_getDeviceInfo.py</a> 麦克风阵列的输入通道。</p>
+</li>
+<li>
+<p>然后更改<a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker_Mic_array_Scripts/8_Channel_Raw_firmware_Python_Scripts/Record_Audio/Raw_RecordAudio_Ubuntu_Raspberry_Mac_recordaudio.py">Raw_RecordAudio_Ubuntu_Raspberry_Mac_recordaudio.py</a> 的**RESPEAKER_INDEX = 2** 的 2为检测到的通道 ， 运行程序来采集音频。</p>
+</li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+<h3 id="q3-respeaker-mic-array">Q3： Respeaker Mic Array如何定位？<a class="headerlink" href="#q3-respeaker-mic-array" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>XVSM固件来定位： （支持Unbuntu/Raspberry/Mac）</p>
+<ul>
+<li>运行脚本<a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker_Mic_array_Scripts/2_Channel_XVSM_firmware_Python_Scripts/VAD/XVSM_VAD_Ubuntu_Raspberry_Mac_get_direction.py">XVSM_VAD_Ubuntu_Raspberry_Mac_get_direction.py</a> 来定位</li>
+</ul>
+</li>
+<li>
+<p>RAW固件来定位： （支持Unbuntu）</p>
+<ul>
+<li>运行脚本<a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker_Mic_array_Scripts/8_Channel_Raw_firmware_Python_Scripts/VAD/Raw_vad_doa_Ubuntu_get_direction.py">Raw_vad_doa_Ubuntu_get_direction.py</a> 来定位， 注意需要下载 <a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker_Mic_array_Scripts/8_Channel_Raw_firmware_Python_Scripts/VAD/gcc_phat.py">gcc_phat.py</a>， <a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker_Mic_array_Scripts/8_Channel_Raw_firmware_Python_Scripts/VAD/mic_array.py">mic_array.py</a>， <a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker_Mic_array_Scripts/8_Channel_Raw_firmware_Python_Scripts/VAD/pixel_ring.py">pixel_ring.py</a>3个库文件，放在同一个目录下。 </li>
+</ul>
+</li>
+</ul>
+<h3 id="q4-respeaker-mic-array-python">Q4： Respeaker Mic Array Python程序下载？<a class="headerlink" href="#q4-respeaker-mic-array-python" title="Permanent link">&para;</a></h3>
+<p>请点击<a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker_Mic_array_Scripts.zip">这里</a>下载Python采集音频和定位的全部程序。</p>
 <h2 id="_4">资源下载<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>[Eagle]</strong><a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0.sch">ReSpeaker Microphone Array SCH</a></li>
-<li><strong>[Eagle]</strong><a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0.brd">ReSpeaker Microphone Array BRD</a></li>
+<li><strong>[Eagle]</strong><a href="hhttps://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0.sch.zip">ReSpeaker Microphone Array SCH</a></li>
+<li><strong>[Eagle]</strong><a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0.brd.zip">ReSpeaker Microphone Array BRD</a></li>
 <li><strong>[PDF]</strong> <a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0%20Sch.pdf">ReSpeaker Microphone Array SCH</a></li>
 <li><strong>[PDF]</strong> <a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0%20PCB.pdf">ReSpeaker Microphone Array PCB</a></li>
 </ul>
