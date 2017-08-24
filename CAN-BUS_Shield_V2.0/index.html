@@ -764,8 +764,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#can-bus" title="大众 CAN BUS 游戏" class="md-nav__link">
-    大众 CAN BUS 游戏
+  <a href="#can-bus" title="大众 CAN BUS 小游戏" class="md-nav__link">
+    大众 CAN BUS 小游戏
   </a>
   
 </li>
@@ -1467,8 +1467,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#can-bus" title="大众 CAN BUS 游戏" class="md-nav__link">
-    大众 CAN BUS 游戏
+  <a href="#can-bus" title="大众 CAN BUS 小游戏" class="md-nav__link">
+    大众 CAN BUS 小游戏
   </a>
   
 </li>
@@ -1615,7 +1615,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>CAN BUS Shield V1.2的新特性</strong></p>
+<p><strong>CAN BUS Shield V2.0 的新特性</strong></p>
 <h3 id="_1">硬件<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <ol>
 <li>原本DB9接口是OBD标准，通过增加跳线，兼容CAN OPEN标准</li>
@@ -1758,7 +1758,7 @@
 <p><strong>DB9&amp;OBDii 接口</strong></p>
 <p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/CAN_BUS_Shield/master/image/OBD.png" /></p>
 <p><strong>CS_CAN 引脚</strong></p>
-<p>默认情况下，V2.0的SPI_CS引脚连接到**D9**。如果要更改为**D10**，请按照以下说明进行操作。</p>
+<p>默认情况下，V2.0的SPI_CS引脚连接到 <strong>D9</strong>。如果要更改为 <strong>D10</strong> ，请按照以下说明进行操作。</p>
 <ul>
 <li>步骤1：查看PCB的背面，你会发现一个名为 CS_CAN 的焊盘。</li>
 </ul>
@@ -1776,19 +1776,20 @@
 <ul>
 <li>切割的时候请您小心，不要伤到自己或者割坏PCB板子。</li>
 </ul>
+</div>
 <p><strong>INT pin 引脚</strong></p>
 <p>默认情况下，V2.0的INT引脚连接到**D2**。如果要更改为**D3**，请按照以下说明进行操作。</p>
-<ul>
-<li>步骤1：查看PCB的背面，你会发现一个名为 INT 的焊盘。</li>
-</ul>
-</div>
+<div class="codehilite"><pre><span></span>- 步骤1：查看PCB的背面，你会发现一个名为 INT 的焊盘。
+</pre></div>
+
+
 <p><img alt="" src="https://github.com/SeeedDocument/CAN-BUS-Shield-V2.0/raw/master/img/cs_view.png" /></p>
-<div class="codehilite"><pre><span></span> - 步骤2: 割断焊盘9和中间焊盘之间的导线
+<div class="codehilite"><pre><span></span> - 步骤2: 割断焊盘2和中间焊盘之间的导线
 </pre></div>
 
 
 <p><img alt="" src="https://github.com/SeeedDocument/CAN-BUS-Shield-V2.0/raw/master/img/INT_1.png" /></p>
-<div class="codehilite"><pre><span></span> - 步骤3: 将中间焊盘和焊盘10焊接在一起。
+<div class="codehilite"><pre><span></span> - 步骤3: 将中间焊盘和焊盘3焊接在一起。
 </pre></div>
 
 
@@ -2013,8 +2014,8 @@ CAN.sendMsgBuf(0x00, 0, 8, stmp); //send out the message &#39;stmp&#39; to the b
 <p>然后，您就可以使用您需要的波特率了。当您使用的波特率时，请给我们一个github的请求，这样我可以添加到库来帮助其他人。感谢！</p>
 <h2 id="_7">项目工程<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <hr />
-<p>如果您想使用CAN-BUS 扩张板做一些酷炫的项目，这里有一些项目可供参考。</p>
-<h3 id="can-bus">大众 CAN BUS 游戏<a class="headerlink" href="#can-bus" title="Permanent link">&para;</a></h3>
+<p>如果您想使用CAN-BUS 扩展板做一些酷炫的项目，这里有一些项目可供参考。</p>
+<h3 id="can-bus">大众 CAN BUS 小游戏<a class="headerlink" href="#can-bus" title="Permanent link">&para;</a></h3>
 <p><img alt="" src="https://github.com/SeeedDocument/CAN_BUS_Shield/blob/master/image/project1.JPG?raw=true" /></p>
 <p>Ever wanted to play a car/truck simulator with a real dashboard on your PC? Me too! I'm trying to control a VW Polo 6R dashboard via CAN Bus with an Arduino Uno and a Seeed CAN Bus Shield. Inspired by Silas Parker. Thanks Sepp and Is0-Mick for their great support!</p>
 <p><a href="http://www.seeed.cc/project_detail.html?id=291"><img alt="" src="https://github.com/SeeedDocument/CAN_BUS_Shield/blob/master/image/Wiki_makeitnow_logo.png?raw=true" /></a></p>
@@ -2032,7 +2033,7 @@ CAN.sendMsgBuf(0x00, 0, 8, stmp); //send out the message &#39;stmp&#39; to the b
 <li>检查波特率设置是否正确</li>
 </ul>
 <p><strong>Q2: 串行监视器打印失败。</strong></p>
-<p>*检查CS引脚设置是否与代码匹配。对于CAN总线扩展板V1.1 / 1.2，CS引脚连接到D9，其他则为D10。</p>
+<p>*检查CS引脚设置是否与代码匹配。对于CAN总线扩展板V1.1 / 1.2 /2.0 CS 引脚默认连接到 D9，其他则为 D10。</p>
 <p><strong>Q3. 如果我有其他问题，我在哪里可以找到技术支持。</strong></p>
 <ul>
 <li>您可以在 Seeed 论坛 <a href="http://www.seeed.cc/discover.html?t=Arduino">Seeed Forum</a> 留言或者or 给下列邮箱发送邮件至 <strong><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#101;&#99;&#104;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#115;&#101;&#101;&#101;&#100;&#46;&#99;&#99;">&#116;&#101;&#99;&#104;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#115;&#101;&#101;&#101;&#100;&#46;&#99;&#99;</a></strong>.</li>
