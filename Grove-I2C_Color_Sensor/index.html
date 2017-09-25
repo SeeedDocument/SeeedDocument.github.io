@@ -1,0 +1,2218 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Seeed产品文档-中文">
+      
+      
+        <link rel="canonical" href="http://seeed.wiki/Grove-I2C_Color_Sensor/">
+      
+      
+        <meta name="author" content="Loovee">
+      
+      
+        <link rel="shortcut icon" href="../images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+    
+    
+      
+        <title>Grove - I2C Color Sensor</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-769c285a91.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="light-green" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://seeed.wiki" title="Seeed产品文档" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Grove
+                </span>
+              
+                <span class="md-header-nav__parent">
+                  传感器
+                </span>
+              
+            
+            Grove-I2C_Color_Sensor
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      SeeedDocument/SeeedDocument.github.io
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Seeed产品文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      SeeedDocument/SeeedDocument.github.io
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Seeed文档中文站点介绍" class="md-nav__link">
+      Seeed文档中文站点介绍
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      平台
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        平台
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Arduino
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Arduino
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Arduino/" title="Arduino" class="md-nav__link">
+      Arduino
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seeeduino_Cloud/" title="Seeeduino_Cloud" class="md-nav__link">
+      Seeeduino_Cloud
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seeeduino_LoRAWAN/" title="Seeeduino_LoRAWAN" class="md-nav__link">
+      Seeeduino_LoRAWAN
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_Starter_kit_for_Arduino_101/" title="Grove_Starter_kit_for_Arduino_101" class="md-nav__link">
+      Grove_Starter_kit_for_Arduino_101
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      BeagleBone
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        BeagleBone
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BeagleBone/" title="BeagleBone" class="md-nav__link">
+      BeagleBone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BeagleBone_Green/" title="BeagleBone_Green" class="md-nav__link">
+      BeagleBone_Green
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Raspberry
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        Raspberry
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Raspberry/" title="Raspberry" class="md-nav__link">
+      Raspberry
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Wio
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        Wio
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wio/" title="Wio" class="md-nav__link">
+      Wio
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      LinkIt
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        LinkIt
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LinkIt/" title="LinkIt" class="md-nav__link">
+      LinkIt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LinkIt_Smart_7688/" title="LinkIt_Smart_7688" class="md-nav__link">
+      LinkIt_Smart_7688
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
+      mbed
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        mbed
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mbed/" title="mbed" class="md-nav__link">
+      mbed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
+      Rephone
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        Rephone
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Rephone/" title="Rephone" class="md-nav__link">
+      Rephone
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8" type="checkbox" id="nav-2-8">
+    
+    <label class="md-nav__link" for="nav-2-8">
+      Respeaker
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-8">
+        Respeaker
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker/" title="Respeaker" class="md-nav__link">
+      Respeaker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_Mic_Array/" title="Respeaker_Mic_Array" class="md-nav__link">
+      Respeaker_Mic_Array
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_Core/" title="Respeaker_Core" class="md-nav__link">
+      Respeaker_Core
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_4-Mics_Pi_HAT/" title="Respeaker_4-Mics_Pi_HAT" class="md-nav__link">
+      Respeaker_4-Mics_Pi_HAT
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-9" type="checkbox" id="nav-2-9">
+    
+    <label class="md-nav__link" for="nav-2-9">
+      Shield
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-9">
+        Shield
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Shield/" title="Shield" class="md-nav__link">
+      Shield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Base_Shield_V2/" title="Base_Shield_V2" class="md-nav__link">
+      Base_Shield_V2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../CAN-BUS_Shield_V1.2/" title="CAN-BUS_Shield_V1.2" class="md-nav__link">
+      CAN-BUS_Shield_V1.2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../CAN-BUS_Shield_V2.0/" title="CAN-BUS_Shield_V2.0" class="md-nav__link">
+      CAN-BUS_Shield_V2.0
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-10" type="checkbox" id="nav-2-10">
+    
+    <label class="md-nav__link" for="nav-2-10">
+      Essentials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-10">
+        Essentials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Essentials/" title="Essentials" class="md-nav__link">
+      Essentials
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-11" type="checkbox" id="nav-2-11">
+    
+    <label class="md-nav__link" for="nav-2-11">
+      Wireless
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-11">
+        Wireless
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wireless/" title="Wireless" class="md-nav__link">
+      Wireless
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Grove
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Grove
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_System/" title="Grove系统" class="md-nav__link">
+      Grove系统
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
+    
+    <label class="md-nav__link" for="nav-3-2">
+      传感器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        传感器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sensor/" title="Sensor" class="md-nav__link">
+      Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Encoder/" title="Grove-Encoder" class="md-nav__link">
+      Grove-Encoder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Multichannel_Gas_Sensor/" title="Grove-Multichannel_Gas_Sensor" class="md-nav__link">
+      Grove-Multichannel_Gas_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Piezo_Vibration_Sensor/" title="Grove-Piezo_Vibration_Sensor" class="md-nav__link">
+      Grove-Piezo_Vibration_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Sound_Sensor/" title="Grove-Sound_Sensor" class="md-nav__link">
+      Grove-Sound_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Ultrasonic_Ranger/" title="Grove-Ultrasonic_Ranger" class="md-nav__link">
+      Grove-Ultrasonic_Ranger
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-GSR_Sensor/" title="Grove-GSR_Sensor" class="md-nav__link">
+      Grove-GSR_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Dust_Sensor/" title="Grove-Dust_Sensor" class="md-nav__link">
+      Grove-Dust_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Air_Quality_Sensor_v1.3/" title="Grove-Air_Quality_Sensor_v1.3" class="md-nav__link">
+      Grove-Air_Quality_Sensor_v1.3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Barometer_Sensor-BMP280/" title="Grove-Barometer_Sensor-BMP280" class="md-nav__link">
+      Grove-Barometer_Sensor-BMP280
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Ear-clip_Heart_Rate_Sensor/" title="Grove-Ear-clip_Heart_Rate_Sensor" class="md-nav__link">
+      Grove-Ear-clip_Heart_Rate_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gas_Sensor-O2/" title="Grove-Gas_Sensor-O2" class="md-nav__link">
+      Grove-Gas_Sensor-O2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Light_Sensor/" title="Grove-Light_Sensor" class="md-nav__link">
+      Grove-Light_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-MOSFET/" title="Grove-MOSFET" class="md-nav__link">
+      Grove-MOSFET
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_Sensor/" title="Grove-Temperature_Sensor" class="md-nav__link">
+      Grove-Temperature_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_Sensor_V1.2/" title="Grove-Temperature_Sensor_V1.2" class="md-nav__link">
+      Grove-Temperature_Sensor_V1.2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-TemptureAndHumidity_Sensor_High_Accuracy_AndMini-v1.0/" title="Grove-TemptureAndHumidity_Sensor_High_Accuracy_AndMini-v1.0" class="md-nav__link">
+      Grove-TemptureAndHumidity_Sensor_High_Accuracy_AndMini-v1.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_and_Humidity_Sensor_Pro/" title="Grove-Temperature_and_Humidity_Sensor_Pro" class="md-nav__link">
+      Grove-Temperature_and_Humidity_Sensor_Pro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_and_Humidity_Sensor/" title="Grove-Temperature_and_Humidity_Sensor" class="md-nav__link">
+      Grove-Temperature_and_Humidity_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-UV_Sensor/" title="Grove-UV_Sensor" class="md-nav__link">
+      Grove-UV_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Vibration_Motor/" title="Grove-Vibration_Motor" class="md-nav__link">
+      Grove-Vibration_Motor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-4-Digit_Display/" title="Grove-4-Digit_Display" class="md-nav__link">
+      Grove-4-Digit_Display
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Barometer_High_Accuracy/" title="Grove-Barometer_High_Accuracy" class="md-nav__link">
+      Grove-Barometer_High_Accuracy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Digital_Light_Sensor/" title="Grove-Digital_Light_Sensor" class="md-nav__link">
+      Grove-Digital_Light_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Electromagnet/" title="Grove-Electromagnet" class="md-nav__link">
+      Grove-Electromagnet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-EMG_Detector/" title="Grove-EMG_Detector" class="md-nav__link">
+      Grove-EMG_Detector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Flame_Sensor/" title="Grove-Flame_Sensor" class="md-nav__link">
+      Grove-Flame_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gas_Sensor-MQ9/" title="Grove-Gas_Sensor-MQ9" class="md-nav__link">
+      Grove-Gas_Sensor-MQ9
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-HCHO_Sensor/" title="Grove-HCHO_Sensor" class="md-nav__link">
+      Grove-HCHO_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Grove-I2C_Color_Sensor
+      </label>
+    
+    <a href="./" title="Grove-I2C_Color_Sensor" class="md-nav__link md-nav__link--active">
+      Grove-I2C_Color_Sensor
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="版本信息" class="md-nav__link">
+    版本信息
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="产品特性" class="md-nav__link">
+    产品特性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="产品规格" class="md-nav__link">
+    产品规格
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platforms-supported" title="Platforms Supported" class="md-nav__link">
+    Platforms Supported
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="入门指导" class="md-nav__link">
+    入门指导
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="硬件连接" class="md-nav__link">
+    硬件连接
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="软件安装" class="md-nav__link">
+    软件安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="演示" class="md-nav__link">
+    演示
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="彩色传感器库" class="md-nav__link">
+    彩色传感器库
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="开始建立" class="md-nav__link">
+    开始建立
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="功能说明" class="md-nav__link">
+    功能说明
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rgb" title="通过库函数读取RGB数据" class="md-nav__link">
+    通过库函数读取RGB数据
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="颜色传感器示例/应用" class="md-nav__link">
+    颜色传感器示例/应用
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Infrared_Receiver/" title="Grove-Infrared_Receiver" class="md-nav__link">
+      Grove-Infrared_Receiver
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-LCD_RGB_Backlight/" title="Grove-LCD_RGB_Backlight" class="md-nav__link">
+      Grove-LCD_RGB_Backlight
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Loudness_Sensor/" title="Grove-Loudness_Sensor" class="md-nav__link">
+      Grove-Loudness_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Moisture_Sensor/" title="Grove-Moisture_Sensor" class="md-nav__link">
+      Grove-Moisture_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Touch_Sensor/" title="Grove-Touch_Sensor" class="md-nav__link">
+      Grove-Touch_Sensor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      执行器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        执行器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Actuator/" title="Actuator" class="md-nav__link">
+      Actuator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-MP3_v2.0/" title="Grove-MP3_v2.0" class="md-nav__link">
+      Grove-MP3_v2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3W_Solar_Panel_138x160/" title="3W_Solar_Panel_138x160" class="md-nav__link">
+      3W_Solar_Panel_138x160
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Relay/" title="Grove-Relay" class="md-nav__link">
+      Grove-Relay
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      Display
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        Display
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Display/" title="Display" class="md-nav__link">
+      Display
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
+    
+    <label class="md-nav__link" for="nav-3-5">
+      Communication
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-5">
+        Communication
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Communication/" title="Communication" class="md-nav__link">
+      Communication
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-6" type="checkbox" id="nav-3-6">
+    
+    <label class="md-nav__link" for="nav-3-6">
+      Others
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-6">
+        Others
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      IoT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        IoT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../IoT/" title="IoT" class="md-nav__link">
+      IoT
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      MakerPro
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        MakerPro
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MakerPro/" title="MakerPro" class="md-nav__link">
+      MakerPro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../2KM_Long_Range_RF_link_kits_w_encoder_and_decoder/" title="2KM_Long_Range_RF_link_kits_w_encoder_and_decoder" class="md-nav__link">
+      2KM_Long_Range_RF_link_kits_w_encoder_and_decoder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Piezo_Sensor-MiniSense_100/" title="Piezo_Sensor-MiniSense_100" class="md-nav__link">
+      Piezo_Sensor-MiniSense_100
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Arduboy/" title="Arduboy" class="md-nav__link">
+      Arduboy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      使用教程
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        使用教程
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial/" title="Tutorial" class="md-nav__link">
+      Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../How_to_install_Arduino_Library/" title="如何安装Arduino库" class="md-nav__link">
+      如何安装Arduino库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Upload_Code/" title="如何上传代码" class="md-nav__link">
+      如何上传代码
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Getting_Started_with_Seeeduino/" title="Seeeduino入门指导" class="md-nav__link">
+      Seeeduino入门指导
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../How_to_edit_Wiki/" title="How_to_edit_Wiki" class="md-nav__link">
+      How_to_edit_Wiki
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../license/" title="文档协议" class="md-nav__link">
+      文档协议
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="版本信息" class="md-nav__link">
+    版本信息
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="产品特性" class="md-nav__link">
+    产品特性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="产品规格" class="md-nav__link">
+    产品规格
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platforms-supported" title="Platforms Supported" class="md-nav__link">
+    Platforms Supported
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="入门指导" class="md-nav__link">
+    入门指导
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="硬件连接" class="md-nav__link">
+    硬件连接
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="软件安装" class="md-nav__link">
+    软件安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="演示" class="md-nav__link">
+    演示
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="彩色传感器库" class="md-nav__link">
+    彩色传感器库
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="开始建立" class="md-nav__link">
+    开始建立
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="功能说明" class="md-nav__link">
+    功能说明
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rgb" title="通过库函数读取RGB数据" class="md-nav__link">
+    通过库函数读取RGB数据
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="颜色传感器示例/应用" class="md-nav__link">
+    颜色传感器示例/应用
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Grove-I2C_Color_Sensor</h1>
+                
+                <p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/img/Grove-I2C-Color-Sensor.jpg" /></p>
+<p>该模块基于有 <strong>I2C</strong> 数字输出端口的 color sensor TCS3414CS。 也基于 8×2 阵列的滤波光电二极管和 16位模数转换器，可以测量环境光的色度或物体的颜色。 在16个光电二极管中，4个具有红色滤光片，4个具有绿色滤光片，4个具有蓝色滤光片，4个没有滤光片（透明）。 他们使用同步输入引脚，外部脉冲光源可以提供精确的同步转换控制。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>请注意，最新版本V2.0已经用 TCS3472 替换了 IC ，而旧的库也已更新，如果您使用V2.0版本，请使用 <a href="https://github.com/Seeed-Studio/Grove_I2C_Color_Sensor_TCS3472"><strong>新的库文件</strong></a>。</p>
+</div>
+<h2 id="_1">版本信息<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>版本调整</th>
+<th>描述</th>
+<th>发布日期</th>
+<th>购买链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v1.2</td>
+<td>初次公开发布（测试版）</td>
+<td>2013年1月17日</td>
+<td>无</td>
+</tr>
+<tr>
+<td>v2.0</td>
+<td>用 TCS34725FN 替换 TCS3472（EOL）并优化了 PCB 布局</td>
+<td>2010年4月27日</td>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.711afee6QwYr3g&amp;id=45574348383">马上购买</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">产品特性<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>能够兼容 Grove 接口</li>
+<li>带 I2C 端口的 16位数字输出</li>
+<li>SYNC 输入将积分周期同步到调制光源</li>
+<li>工作温度范围为 -40°C 至 85°C</li>
+<li>可以通过编程实现中断功能，可以设置上限和下限阈值</li>
+<li>符合RoHS</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>关于Grove模块的更多细节请参考 <a href="http://seeed.wiki/Grove_System/">Grove System</a></p>
+</div>
+<h2 id="_3">产品规格<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值/范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PCB尺寸</td>
+<td>2.0 cm x 4.0 cm</td>
+</tr>
+<tr>
+<td>接口</td>
+<td>2.0mm节距的引脚</td>
+</tr>
+<tr>
+<td>VCC</td>
+<td>3.3 - 6.0 V</td>
+</tr>
+<tr>
+<td>I2C 频率</td>
+<td>400 kHz</td>
+</tr>
+</tbody>
+</table>
+<h2 id="platforms-supported">Platforms Supported<a class="headerlink" href="#platforms-supported" title="Permanent link">&para;</a></h2>
+<h2 id="_4">入门指导<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>以下文档可以帮助用户使用 Grove 进行入门学习。</p>
+<ul>
+<li><a href="http://seeed.wiki/Getting_Started_with_Seeeduino/">入门指导</a></li>
+<li><a href="http://seeed.wiki/Grove_System/">关于 grove</a></li>
+</ul>
+<h3 id="_5">硬件连接<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>Grove产品具有环保性，并且都具有可插入<a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.3ff19e11crrag2&amp;id=520233320144">Grove Base Shield</a> 的相同连接口。 将此模块连接到 Base Shield 的 <strong>I2C</strong> 端口。 如果你没有 Base Shield，您也可以通过连接线将 Grove - I2C Color Sensor 连接到 Arduino。</p>
+<table>
+<thead>
+<tr>
+<th>Arduino UNO</th>
+<th>Grove - I2C Color Sensor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5V</td>
+<td>VCC</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>SDA</td>
+<td>SDA</td>
+</tr>
+<tr>
+<td>SCL</td>
+<td>SCL</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_6">软件安装<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><a href="http://seeed.wiki/Getting_Started_with_Seeeduino/">Seeed入门指导</a></p>
+<h2 id="_7">演示<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>该模块可用于检测光源的颜色或物体的颜色。 当用于检测光源的颜色时，应关闭 LED 开关，并且光源应直接照射到传感器上。 当用于检测物体的颜色时，LED 应该是打开的，你应该传感器放在物体的上面。通过反射理论来感知颜色。 如下图所示。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/img/Reflcect.jpg" /></p>
+<h3 id="_8">彩色传感器库<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>我们创建了一个库，以帮助您快速开始使用 Seeeduino / Arduino，本节将介绍如何设置库。</p>
+<h4 id="_9">开始建立<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<ol>
+<li>从 Grove_I2C_Color_Sensor github 页面下载 <a href="https://github.com/Seeed-Studio/Grove_I2C_Color_Sensor">库代码</a>。 如果您使用的是最新版本V2.0（IC 为 TCS3472），请使用
+ <a href="https://github.com/Seeed-Studio/Grove_I2C_Color_Sensor_TCS3472">新库</a></li>
+<li>将下载的文件解压缩到... / arduino / libraries 中。</li>
+<li>可以解压后重命名文件夹为 “Color_Sensor”</li>
+<li>启动 Arduino IDE（如果打开，请重新启动）。</li>
+</ol>
+<h4 id="_10">功能说明<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<p>这是库中最重要/最有用的功能，我们邀请您自己查看 .h 和 .cpp 文件，以查看所有可用的功能。</p>
+<h5 id="rgb">通过库函数读取RGB数据<a class="headerlink" href="#rgb" title="Permanent link">&para;</a></h5>
+<p><strong>readRGB(int *red, int *green, int *blue)</strong></p>
+<ul>
+<li><strong>red:</strong> 使用可变地址保存 <strong>R</strong>.</li>
+<li><strong>green:</strong> 使用可变地址保存为 <strong>G</strong>.</li>
+<li><strong>blue:</strong> 使用可变地址保存为 <strong>B</strong>.</li>
+</ul>
+<div class="codehilite"><pre><span></span>void loop()
+{
+    int red, green, blue;
+    GroveColorSensor colorSensor;
+    colorSensor.ledStatus = 1;            // When turn on the color sensor LED, ledStatus = 1; When turn off the color sensor LED, ledStatus = 0.
+    while(1)
+    {
+        colorSensor.readRGB(&amp;red, &amp;green, &amp;blue);    //Read RGB values to variables.
+        delay(300);
+        Serial.print(&quot;The RGB value are: RGB( &quot;);
+        Serial.print(red,DEC);
+        Serial.print(&quot;, &quot;);
+        Serial.print(green,DEC);
+        Serial.print(&quot;, &quot;);
+        Serial.print(blue,DEC);
+        Serial.println(&quot; )&quot;);
+        colorSensor.clearInterrupt();
+    }
+}
+</pre></div>
+
+<h3 id="_11">颜色传感器示例/应用<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>此示例显示如何使用 Grove - I2C Color Sensor 的功能，并使用 <a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.9.4a676fa41TunBo&amp;id=45573760464">Chainable RGB LED Grove</a> 显示检测到的颜色。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+如果您之前尚未将 <a href="https://github.com/Seeed-Studio/Grove_Chainable_RGB_LED">Grove-Chainable RGB LED 库</a> 下载到你的 Arduino IDE , 请先下载并设置库。
+
+-   打开 **File（文件） - >Examples（示例） - >Color_Sensor - >example - >ColorSensorWithRGB-LED** 使用 RGB-LED 完整的示例，或将代码复制并粘贴到新的 Arduino 编辑页面上。
+
+**描述**: 该示例可以测量环境光的颜色色度或物体的颜色，并通过可连接的 RGB LED Grove，显示检测到的颜色。
+
+您还可以使用其他显示模块通过 Grove - I2C Color Sensor 显示检测到的颜色。
+
+wzxhzdk:1
+
+-   将代码上传到开发板。
+-   然后 Grove _ Chainable_RGB_LED 将显示检测到的颜色。
+
+
+其他参考
+---------------
+
+该模块基于 color sensor TCS3414CS。 TCS3414CS digital color sensor 从四个通道返回数据：红色（R），绿色（G），蓝色（B）和清除（C）（未过滤）。 红色，绿色和蓝色通道（RGB）的响应可用于确定特定光源的色度坐标（x，y）。 这些标准由国际法委员会（CIE）制定。 CIE是涉及颜色和颜色测量的主要国际组织。为了使用 TCS3414CS 获取给定对象的颜色，我们必须首先将传感器响应（RGB）映射到CIE的标准值（XYZ）。 然后需要计算色度坐标（x，y）。
+
+![](https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/img/Coordinates_transform.png)
+
+色度计算过程概述
+
+进行转换的方程式：
+
+![](https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/img/Equations.png)
+
+变换方程
+
+-   当我们得到坐标（x，y）时，请参考下图，以获得推荐的颜色。
+
+![](https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/img/Chromaticity_Diagram.jpg)
+
+
+资源下载
+---------
+
+-   **[Library]**[Library for Grove - I2C Color Sensor V1.2](https://github.com/Seeed-Studio/Grove_I2C_Color_Sensor)
+-   **[Library]**[Library for Grove - I2C Color Sensor V2.0](https://github.com/Seeed-Studio/Grove_I2C_Color_Sensor_TCS3472)
+-   **[Eagle]**[Grove-I2C Color Sensor Eagle File V1.2](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove-I2C%20Color%20Sensor%20Eagle%20File%20V1.2.zip)
+-   **[Eagle]**[Grove-I2C Color Sensor Eagle File V2.0](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20I2C%20Color%20Sensor%20v2.0.zip)
+-   **[PDF]**[Grove-I2C Color Sensor SCH File V1.2](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20-%20I2C%20Color%20sensor%20v1.2%20SCH.pdf)
+-   **[PDF]**[Grove-I2C Color Sensor SCH File V2.0](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20-%20I2C%20Color%20sensor%20v2.0%20SCH.pdf)
+-   **[PDF]**[Grove-I2C Color Sensor PCB File V1.2](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20-%20I2C%20Color%20sensor%20v1.2%20PCB.pdf)
+-   **[PDF]**[Grove-I2C Color Sensor PCB File V2.0](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20-%20I2C%20Color%20sensor%20v2.0%20PCB.pdf)
+-   **[Datasheet]**[TCS3414-A Datasheet](https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/res/TCS3404_TCS3414-A.pdf)
+-  **[Datasheet]**[TCS3472 Datasheet](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/TCS3472%20Datasheet.pdf)
+
+</li>
+
+<!-- This Markdown file was created from http://www.seeedstudio.com/wiki/Grove_-_I2C_Color_Sensor -->
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Grove-HCHO_Sensor/" title="Grove-HCHO_Sensor" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Grove-HCHO_Sensor
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Grove-Infrared_Receiver/" title="Grove-Infrared_Receiver" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Grove-Infrared_Receiver
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Seeedstudio 2017
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.facebook.com/seeedstudiosz/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://github.com/SeeedDocument" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-c35428f87f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>
