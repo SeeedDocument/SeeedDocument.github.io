@@ -91,7 +91,7 @@
                 </span>
               
             
-            Respeaker_2-Mics_Pi_HAT
+            Respeaker 2-Mics Pi HAT
           
         </span>
       </div>
@@ -595,11 +595,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Respeaker_2-Mics_Pi_HAT
+        Respeaker 2-Mics Pi HAT
       </label>
     
-    <a href="./" title="Respeaker_2-Mics_Pi_HAT" class="md-nav__link md-nav__link--active">
-      Respeaker_2-Mics_Pi_HAT
+    <a href="./" title="Respeaker 2-Mics Pi HAT" class="md-nav__link md-nav__link--active">
+      Respeaker 2-Mics Pi HAT
     </a>
     
       
@@ -688,8 +688,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#alsamixer" title="用**alsamixer**配置声音设置和调整音量" class="md-nav__link">
-    用**alsamixer**配置声音设置和调整音量
+  <a href="#alsamixer" title="用alsamixer配置声音设置和调整音量" class="md-nav__link">
+    用alsamixer配置声音设置和调整音量
   </a>
   
 </li>
@@ -1742,8 +1742,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#alsamixer" title="用**alsamixer**配置声音设置和调整音量" class="md-nav__link">
-    用**alsamixer**配置声音设置和调整音量
+  <a href="#alsamixer" title="用alsamixer配置声音设置和调整音量" class="md-nav__link">
+    用alsamixer配置声音设置和调整音量
   </a>
   
 </li>
@@ -1892,10 +1892,10 @@
               
                 
                 
-                  <h1>Respeaker_2-Mics_Pi_HAT</h1>
+                  <h1>Respeaker 2-Mics Pi HAT</h1>
                 
                 <p><img alt="" src="https://github.com/SeeedDocument/MIC_HATv1.0_for_raspberrypi/blob/master/img/2mics-zero-high-res.jpg?raw=true" /></p>
-<p>ReSpeaker 2-Mics Pi HAT是专为AI和语音应用设计的Raspberry Pi双麦克风扩展板。 这意味着您可以构建一个集成Amazon Amazona语音服务，Google助手等的功能更强大，更灵活的语音产品，。</p>
+<p>ReSpeaker 2-Mics Pi HAT是专为AI和语音应用设计的Raspberry Pi双麦克风扩展板。 这意味着您可以构建一个集成Amazon Amazona语音服务，Google助手等的功能更强大，更灵活的语音产品。</p>
 <p>该板是基于WM8960开发的低功耗立体声编解码器。 电路板两侧有两个麦克风采集声音，还提供3个APA102 RGB LED，1个用户按钮和2个板载Grove接口，用于扩展应用程序。 此外，3.5mm音频插孔或JST 2.0扬声器输出均可用于音频输出。</p>
 <p><a href="https://item.taobao.com/item.htm?spm=a230r.1.14.14.626377d6xcV1p7&amp;id=553438198956&amp;ns=1&amp;abbucket=5#detail"><img alt="" src="https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG" /></a></p>
 <h2 id="_1">产品特征<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
@@ -1977,7 +1977,7 @@ pi@raspberrypi:~/seeed-voicecard $
 <div class="codehilite"><pre><span></span>arecord -f cd -Dhw:1 | aplay -Dhw:1
 </pre></div>
 
-<h3 id="alsamixer">用**alsamixer**配置声音设置和调整音量<a class="headerlink" href="#alsamixer" title="Permanent link">&para;</a></h3>
+<h3 id="alsamixer">用alsamixer配置声音设置和调整音量<a class="headerlink" href="#alsamixer" title="Permanent link">&para;</a></h3>
 <p><strong>alsamixer</strong> 是用于配置声音设置和调整音量，高级Linux声音体系结构（ALSA）的图形混音器程序。</p>
 <div class="codehilite"><pre><span></span>pi@raspberrypi:~ $ alsamixer
 </pre></div>
@@ -1989,17 +1989,14 @@ pi@raspberrypi:~/seeed-voicecard $
 </div>
 <p>左和右箭头键用于选择通道或设备，“向上和向下箭头”控制当前所选设备的音量。 退出程序使用ALT + Q或按Esc键。 <a href="https://en.wikipedia.org/wiki/Alsamixer">More information</a></p>
 <h3 id="google-assistant">让我们开始来玩 <strong>Google Assistant</strong><a class="headerlink" href="#google-assistant" title="Permanent link">&para;</a></h3>
-<div class="admonition warn">
-<p class="admonition-title">Warn</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>因为我们在中国，无法直接使用Google的服务。必须搭建可以访问google的路由器，然后连接到路由。</p>
 </div>
-<p>在开始使用Google助手（[Google Assistant]（<a href="https://assistant.google.com/">https://assistant.google.com/</a>））之前，首先您应该将Google Assistant Library整合到您的raspberry pi系统中。 以下是[Google官方指导]（<a href="https://developers.google.com/assistant/sdk/prototype/getting-started-pi-python/run-sample">https://developers.google.com/assistant/sdk/prototype/getting-started-pi-python/run-sample</a>）的链接。</p>
+<p>在开始使用<a href="https://assistant.google.com/">Google Assistant</a>之前，首先您应该将Google Assistant Library整合到您的raspberry pi系统中。 以下是<a href="https://developers.google.com/assistant/sdk/prototype/getting-started-pi-python/run-sample">Google官方指导</a>的链接。</p>
 <p>以下指南还将向您介绍如何开始使用Google助手。</p>
 <h4 id="1-json">1. 配置开发人员项目，并获取JSON文件<a class="headerlink" href="#1-json" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>请根据[指南](https://developers.google.com/assistant/sdk/prototype/getting-started-pi-python/config-dev-project-and-account#config-dev-project) 第一步到第四步在Google Cloud Platform上配置项目，并创建一个OAuth Client ID JSON文件。 不要忘记将JSON文件复制到您的Raspberry Pi。
-</pre></div>
-
-
+<p>请根据<a href="https://developers.google.com/assistant/sdk/prototype/getting-started-pi-python/config-dev-project-and-account#config-dev-project">指南</a> 第一步到第四步在Google Cloud Platform上配置项目，并创建一个OAuth Client ID JSON文件。 不要忘记将JSON文件复制到您的Raspberry Pi。</p>
 <h4 id="2-pythonsdkpython">2. 使用Python虚拟环境，隔离SDK与系统Python包关系。<a class="headerlink" href="#2-pythonsdkpython" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>sudo apt-get update
 sudo apt-get install python3-dev python3-venv # Use python3.4-venv if the package cannot be found.
@@ -2018,15 +2015,21 @@ source env/bin/activate
 <div class="codehilite"><pre><span></span>pi@raspberrypi:~ $ google-oauthlib-tool --client-secrets /home/pi/client_secret_client-id.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless
 </pre></div>
 
-<ul>
-<li><strong>/home/pi/client_secret_client-id.json</strong> 是你的JSON文件的路径，确保Json文件的名字匹配。 运行命令后，应该显示如下所示。 复制URL并将其粘贴到浏览器中（这可以在您的树莓派或任何其他电脑上完成）。 同意后，您的浏览器将显示代码，例如“4 / XXXX”。 复制并将此代码粘贴到终端中。</li>
-</ul>
-<p><div class="codehilite"><pre><span></span>Please go to this URL: https://...
+<p><strong>/home/pi/client_secret_client-id.json</strong> 是你的JSON文件的路径，确保Json文件的名字匹配。 运行命令后，应该显示如下所示。 复制URL并将其粘贴到浏览器中（这可以在您的树莓派或任何其他电脑上完成）。 同意后，您的浏览器将显示代码，例如“4 / XXXX”。 复制并将此代码粘贴到终端中。</p>
+<div class="codehilite"><pre><span></span>Please go to this URL: https://...
 Enter the authorization code:
 </pre></div>
-   * 这个时候应该显示: OAuth credentials initialized.
-   * 如果显示: InvalidGrantError then an invalid code was entered. 请重试, 确保拷贝整个code.</p>
+
+<p>这个时候应该显示: OAuth credentials initialized. 如果显示: InvalidGrantError then an invalid code was entered. 请重试, 确保拷贝整个code.</p>
 <h4 id="5-pulseaudio">5. 安装 <strong>pulseaudio</strong> 并且让他在后台运行<a class="headerlink" href="#5-pulseaudio" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>pi@raspberrypi:~ $ sudo apt install pulseaudio
+pi@raspberrypi:~ $ pulseaudio &amp;
+[1] 1244
+pi@raspberrypi:~ $ W: [pulseaudio] server-lookup.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+W: [pulseaudio] main.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+E: [pulseaudio] bluez4-util.c: org.bluez.Manager.GetProperties() failed: org.freedesktop.DBus.Error.UnknownMethod: Method &quot;GetProperties&quot; with signature &quot;&quot; on interface &quot;org.bluez.Manager&quot; doesn&#39;t exist
+</pre></div>
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>请忽略pulseaudio错误信息。</p>
