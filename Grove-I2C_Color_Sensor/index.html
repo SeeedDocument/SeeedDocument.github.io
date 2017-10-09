@@ -1301,6 +1301,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_12" title="其他参考" class="md-nav__link">
+    其他参考
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" title="资源下载" class="md-nav__link">
+    资源下载
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1546,6 +1560,18 @@
   <li class="md-nav__item">
     <a href="../Others/" title="Others" class="md-nav__link">
       Others
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Bus_Pirate_v3_assembled/" title="Bus_Pirate_v3_assembled" class="md-nav__link">
+      Bus_Pirate_v3_assembled
     </a>
   </li>
 
@@ -1897,6 +1923,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_12" title="其他参考" class="md-nav__link">
+    其他参考
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" title="资源下载" class="md-nav__link">
+    资源下载
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -2070,53 +2110,80 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 如果您之前尚未将 <a href="https://github.com/Seeed-Studio/Grove_Chainable_RGB_LED">Grove-Chainable RGB LED 库</a> 下载到你的 Arduino IDE , 请先下载并设置库。
+</div>
 
--   打开 **File（文件） - >Examples（示例） - >Color_Sensor - >example - >ColorSensorWithRGB-LED** 使用 RGB-LED 完整的示例，或将代码复制并粘贴到新的 Arduino 编辑页面上。
+<p>打开 <strong>File（文件） - &gt;Examples（示例） - &gt;Color_Sensor - &gt;example - &gt;ColorSensorWithRGB-LED</strong> 使用 RGB-LED 完整的示例，或将代码复制并粘贴到新的 Arduino 编辑页面上。</p>
+<p><strong>描述</strong>: 该示例可以测量环境光的颜色色度或物体的颜色，并通过可连接的 RGB LED Grove，显示检测到的颜色。</p>
+<p>您还可以使用其他显示模块通过 Grove - I2C Color Sensor 显示检测到的颜色。</p>
+<div class="codehilite"><pre><span></span>#include &lt;Wire.h&gt;
+#include &lt;GroveColorSensor.h&gt;
+#include &lt;ChainableLED.h&gt;
+ 
+#define CLK_PIN   7
+#define DATA_PIN  8
+#define NUM_LEDS  1            //The number of Chainable RGB LED
+ 
+ChainableLED leds(CLK_PIN, DATA_PIN, NUM_LEDS);
+ 
+void setup()
+{
+    Serial.begin(9600);
+    Wire.begin();
+}
+ 
+void loop()
+{
+    int red, green, blue;
+    GroveColorSensor colorSensor;
+    colorSensor.ledStatus = 1;            // When turn on the color sensor LED, ledStatus = 1; When turn off the color sensor LED, ledStatus = 0.
+    while(1)
+    {
+        colorSensor.readRGB(&amp;red, &amp;green, &amp;blue);    //Read RGB values to variables.
+        delay(300);
+        Serial.print(&quot;The RGB value are: RGB( &quot;);
+        Serial.print(red,DEC);
+        Serial.print(&quot;, &quot;);
+        Serial.print(green,DEC);
+        Serial.print(&quot;, &quot;);
+        Serial.print(blue,DEC);
+        Serial.println(&quot; )&quot;);
+        colorSensor.clearInterrupt();
+        for(int i = 0; i&lt;NUM_LEDS; i++)
+        {
+            leds.setColorRGB(i, red, green, blue);
+        }
+    }
+}
+</pre></div>
 
-**描述**: 该示例可以测量环境光的颜色色度或物体的颜色，并通过可连接的 RGB LED Grove，显示检测到的颜色。
-
-您还可以使用其他显示模块通过 Grove - I2C Color Sensor 显示检测到的颜色。
-
-wzxhzdk:1
-
--   将代码上传到开发板。
--   然后 Grove _ Chainable_RGB_LED 将显示检测到的颜色。
-
-
-其他参考
----------------
-
-该模块基于 color sensor TCS3414CS。 TCS3414CS digital color sensor 从四个通道返回数据：红色（R），绿色（G），蓝色（B）和清除（C）（未过滤）。 红色，绿色和蓝色通道（RGB）的响应可用于确定特定光源的色度坐标（x，y）。 这些标准由国际法委员会（CIE）制定。 CIE是涉及颜色和颜色测量的主要国际组织。为了使用 TCS3414CS 获取给定对象的颜色，我们必须首先将传感器响应（RGB）映射到CIE的标准值（XYZ）。 然后需要计算色度坐标（x，y）。
-
-![](https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/img/Coordinates_transform.png)
-
-色度计算过程概述
-
-进行转换的方程式：
-
-![](https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/img/Equations.png)
-
-变换方程
-
--   当我们得到坐标（x，y）时，请参考下图，以获得推荐的颜色。
-
-![](https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/img/Chromaticity_Diagram.jpg)
-
-
-资源下载
----------
-
--   **[Library]**[Library for Grove - I2C Color Sensor V1.2](https://github.com/Seeed-Studio/Grove_I2C_Color_Sensor)
--   **[Library]**[Library for Grove - I2C Color Sensor V2.0](https://github.com/Seeed-Studio/Grove_I2C_Color_Sensor_TCS3472)
--   **[Eagle]**[Grove-I2C Color Sensor Eagle File V1.2](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove-I2C%20Color%20Sensor%20Eagle%20File%20V1.2.zip)
--   **[Eagle]**[Grove-I2C Color Sensor Eagle File V2.0](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20I2C%20Color%20Sensor%20v2.0.zip)
--   **[PDF]**[Grove-I2C Color Sensor SCH File V1.2](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20-%20I2C%20Color%20sensor%20v1.2%20SCH.pdf)
--   **[PDF]**[Grove-I2C Color Sensor SCH File V2.0](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20-%20I2C%20Color%20sensor%20v2.0%20SCH.pdf)
--   **[PDF]**[Grove-I2C Color Sensor PCB File V1.2](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20-%20I2C%20Color%20sensor%20v1.2%20PCB.pdf)
--   **[PDF]**[Grove-I2C Color Sensor PCB File V2.0](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20-%20I2C%20Color%20sensor%20v2.0%20PCB.pdf)
--   **[Datasheet]**[TCS3414-A Datasheet](https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/res/TCS3404_TCS3414-A.pdf)
--  **[Datasheet]**[TCS3472 Datasheet](https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/TCS3472%20Datasheet.pdf)
-
+<ul>
+<li>将代码上传到开发板。</li>
+<li>然后 Grove _ Chainable_RGB_LED 将显示检测到的颜色。</li>
+</ul>
+<h2 id="_12">其他参考<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<p>该模块基于 color sensor TCS3414CS。 TCS3414CS digital color sensor 从四个通道返回数据：红色（R），绿色（G），蓝色（B）和清除（C）（未过滤）。 红色，绿色和蓝色通道（RGB）的响应可用于确定特定光源的色度坐标（x，y）。 这些标准由国际法委员会（CIE）制定。 CIE是涉及颜色和颜色测量的主要国际组织。为了使用 TCS3414CS 获取给定对象的颜色，我们必须首先将传感器响应（RGB）映射到CIE的标准值（XYZ）。 然后需要计算色度坐标（x，y）。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/img/Coordinates_transform.png" /></p>
+<p>色度计算过程概述</p>
+<p>进行转换的方程式：</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/img/Equations.png" /></p>
+<p>变换方程</p>
+<ul>
+<li>当我们得到坐标（x，y）时，请参考下图，以获得推荐的颜色。</li>
+</ul>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/img/Chromaticity_Diagram.jpg" /></p>
+<h2 id="_13">资源下载<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>[Library]</strong><a href="https://github.com/Seeed-Studio/Grove_I2C_Color_Sensor">Library for Grove - I2C Color Sensor V1.2</a></li>
+<li><strong>[Library]</strong><a href="https://github.com/Seeed-Studio/Grove_I2C_Color_Sensor_TCS3472">Library for Grove - I2C Color Sensor V2.0</a></li>
+<li><strong>[Eagle]</strong><a href="https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove-I2C%20Color%20Sensor%20Eagle%20File%20V1.2.zip">Grove-I2C Color Sensor Eagle File V1.2</a></li>
+<li><strong>[Eagle]</strong><a href="https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20I2C%20Color%20Sensor%20v2.0.zip">Grove-I2C Color Sensor Eagle File V2.0</a></li>
+<li><strong>[PDF]</strong><a href="https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20-%20I2C%20Color%20sensor%20v1.2%20SCH.pdf">Grove-I2C Color Sensor SCH File V1.2</a></li>
+<li><strong>[PDF]</strong><a href="https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20-%20I2C%20Color%20sensor%20v2.0%20SCH.pdf">Grove-I2C Color Sensor SCH File V2.0</a></li>
+<li><strong>[PDF]</strong><a href="https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20-%20I2C%20Color%20sensor%20v1.2%20PCB.pdf">Grove-I2C Color Sensor PCB File V1.2</a></li>
+<li><strong>[PDF]</strong><a href="https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/Grove%20-%20I2C%20Color%20sensor%20v2.0%20PCB.pdf">Grove-I2C Color Sensor PCB File V2.0</a></li>
+<li><strong>[Datasheet]</strong><a href="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Color_Sensor/master/res/TCS3404_TCS3414-A.pdf">TCS3414-A Datasheet</a></li>
+<li><strong>[Datasheet]</strong><a href="https://github.com/SeeedDocument/Grove-I2C_Color_Sensor/raw/master/res/TCS3472%20Datasheet.pdf">TCS3472 Datasheet</a></li>
+</ul>
 </li>
 
 <!-- This Markdown file was created from http://www.seeedstudio.com/wiki/Grove_-_I2C_Color_Sensor -->
