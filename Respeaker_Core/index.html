@@ -2570,7 +2570,7 @@ $ screen /dev/tty.usbmodem14221 57600
 <p>选择要连接的Wi-Fi并输入密码。当您按OK按钮时，ReSpeaker将加入指定的网络。</p>
 <p>现在您的ReSpeaker能够访问互联网。</p>
 <p>如果您没有弹出wifi登陆页面，可以使用putty串口模式下连接Respeaker_Core, 并且在putty中使用wictl扫描wifi并连接</p>
-<div class="codehilite"><pre><span></span>root@mylinkit:~# wictl
+<div class="codehilite"><pre><span></span>root@ReSpeaker:~# wictl
 0, SEEED-MKT
 1, Xiaomi_Youth
 2, ChinaNet-Z5C4
@@ -2595,7 +2595,7 @@ Lease of 192.168.199.153 obtained, lease time 43200
 udhcpc: ifconfig apcli0 192.168.199.153 netmask 255.255.255.0 broadcast 192.168.199.255
 udhcpc: setting default routers: 192.168.199.1
 success
-root@mylinkit:~#
+root@ReSpeaker:~#
 </pre></div>
 
 <p>!!!注意
@@ -2678,7 +2678,7 @@ tmpfs                   512.0K         0    512.0K   0% /dev
 <ul>
 <li>检查是否安装到 overlay.</li>
 </ul>
-<div class="codehilite"><pre><span></span>    root@mylinkit:/# mount /dev/mmcblk0p2 /overlay/
+<div class="codehilite"><pre><span></span>    root@ReSpeaker:/# mount /dev/mmcblk0p2 /overlay/
     root@ReSpeaker:/# df -h
   Filesystem                Size      Used Available Use% Mounted on
   rootfs                    1.8M    832.0K    960.0K  46% /
