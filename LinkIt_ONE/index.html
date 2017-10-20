@@ -1,0 +1,2737 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Seeed产品文档-中文">
+      
+      
+        <link rel="canonical" href="http://seeed.wiki/LinkIt_ONE/">
+      
+      
+        <meta name="author" content="Loovee">
+      
+      
+        <link rel="shortcut icon" href="../images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+    
+    
+      
+        <title>LinkIt ONE</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-769c285a91.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="light-green" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://seeed.wiki" title="Seeed产品文档" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  平台
+                </span>
+              
+                <span class="md-header-nav__parent">
+                  LinkIt
+                </span>
+              
+            
+            LinkIt ONE
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      SeeedDocument/SeeedDocument.github.io
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Seeed产品文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      SeeedDocument/SeeedDocument.github.io
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Seeed文档中文站点介绍" class="md-nav__link">
+      Seeed文档中文站点介绍
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      平台
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        平台
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Arduino
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Arduino
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Arduino/" title="Arduino" class="md-nav__link">
+      Arduino
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seeeduino_Cloud/" title="Seeeduino Cloud" class="md-nav__link">
+      Seeeduino Cloud
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seeeduino_LoRAWAN/" title="Seeeduino LoRAWAN" class="md-nav__link">
+      Seeeduino LoRAWAN
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      BeagleBone
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        BeagleBone
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BeagleBone/" title="BeagleBone" class="md-nav__link">
+      BeagleBone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BeagleBone_Green/" title="BeagleBone Green" class="md-nav__link">
+      BeagleBone Green
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BeagleBone_Green_Wireless/" title="BeagleBone Green Wireless" class="md-nav__link">
+      BeagleBone Green Wireless
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Raspberry
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        Raspberry
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Raspberry/" title="Raspberry" class="md-nav__link">
+      Raspberry
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Wio
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        Wio
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wio/" title="Wio" class="md-nav__link">
+      Wio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wio_Link/" title="Wio Link" class="md-nav__link">
+      Wio Link
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5" checked>
+    
+    <label class="md-nav__link" for="nav-2-5">
+      LinkIt
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        LinkIt
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LinkIt/" title="LinkIt" class="md-nav__link">
+      LinkIt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LinkIt_Smart_7688/" title="LinkIt Smart 7688" class="md-nav__link">
+      LinkIt Smart 7688
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LinkIt_Smart_7688_Duo/" title="LinkIt Smart 7688_Duo" class="md-nav__link">
+      LinkIt Smart 7688_Duo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        LinkIt ONE
+      </label>
+    
+    <a href="./" title="LinkIt ONE" class="md-nav__link md-nav__link--active">
+      LinkIt ONE
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="产品特性" class="md-nav__link">
+    产品特性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="规格参数" class="md-nav__link">
+    规格参数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="创意应用" class="md-nav__link">
+    创意应用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="硬件概况" class="md-nav__link">
+    硬件概况
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="配置开关" class="md-nav__link">
+    配置开关
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="入门指导" class="md-nav__link">
+    入门指导
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="硬件概述" class="md-nav__link">
+    硬件概述
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arduino-ide" title="安装 Arduino IDE" class="md-nav__link">
+    安装 Arduino IDE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediatek-linkit-one-sdk" title="安装Mediatek LinkIt ONE SDK" class="md-nav__link">
+    安装Mediatek LinkIt ONE SDK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="安装驱动" class="md-nav__link">
+    安装驱动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="更新固件" class="md-nav__link">
+    更新固件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blinky" title="上传代码（Blinky）" class="md-nav__link">
+    上传代码（Blinky）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="连接天线" class="md-nav__link">
+    连接天线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simsd" title="插入SIM卡和SD卡" class="md-nav__link">
+    插入SIM卡和SD卡
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linkit-one-sdk" title="探索 LinkIt ONE SDK 示例" class="md-nav__link">
+    探索 LinkIt ONE SDK 示例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkit-one-groves-shields" title="LinkIt ONE 兼容的 Groves 和 Shields" class="md-nav__link">
+    LinkIt ONE 兼容的 Groves 和 Shields
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkit-one-sidekick-basic-kit" title="Linkit ONE 的 Sidekick Basic Kit 教程" class="md-nav__link">
+    Linkit ONE 的 Sidekick Basic Kit 教程
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" title="资源下载" class="md-nav__link">
+    资源下载
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
+      mbed
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        mbed
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mbed/" title="mbed" class="md-nav__link">
+      mbed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
+      Rephone
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        Rephone
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Rephone/" title="Rephone" class="md-nav__link">
+      Rephone
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8" type="checkbox" id="nav-2-8">
+    
+    <label class="md-nav__link" for="nav-2-8">
+      Respeaker
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-8">
+        Respeaker
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker/" title="Respeaker" class="md-nav__link">
+      Respeaker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_Mic_Array/" title="Respeaker Mic Array" class="md-nav__link">
+      Respeaker Mic Array
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_Core/" title="Respeaker Core" class="md-nav__link">
+      Respeaker Core
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_2-Mics_Pi_HAT/" title="Respeaker 2-Mics Pi HAT" class="md-nav__link">
+      Respeaker 2-Mics Pi HAT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_4-Mics_Pi_HAT/" title="Respeaker 4-Mics Pi HAT" class="md-nav__link">
+      Respeaker 4-Mics Pi HAT
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-9" type="checkbox" id="nav-2-9">
+    
+    <label class="md-nav__link" for="nav-2-9">
+      Shield
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-9">
+        Shield
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Shield/" title="Shield" class="md-nav__link">
+      Shield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Base_Shield_V2/" title="Base Shield V2" class="md-nav__link">
+      Base Shield V2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../CAN-BUS_Shield_V1.2/" title="CAN-BUS Shield V1.2" class="md-nav__link">
+      CAN-BUS Shield V1.2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../CAN-BUS_Shield_V2.0/" title="CAN-BUS Shield V2.0" class="md-nav__link">
+      CAN-BUS Shield V2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Music_Shield_V2.2/" title="Music Shield_V2.2" class="md-nav__link">
+      Music Shield_V2.2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-10" type="checkbox" id="nav-2-10">
+    
+    <label class="md-nav__link" for="nav-2-10">
+      Essentials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-10">
+        Essentials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Essentials/" title="Essentials" class="md-nav__link">
+      Essentials
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-11" type="checkbox" id="nav-2-11">
+    
+    <label class="md-nav__link" for="nav-2-11">
+      Wireless
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-11">
+        Wireless
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wireless/" title="Wireless" class="md-nav__link">
+      Wireless
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Grove
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Grove
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_System/" title="Grove系统" class="md-nav__link">
+      Grove系统
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      传感器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        传感器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sensor/" title="Sensor" class="md-nav__link">
+      Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Encoder/" title="Grove-Encoder" class="md-nav__link">
+      Grove-Encoder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Multichannel_Gas_Sensor/" title="Grove-Multichannel Gas Sensor" class="md-nav__link">
+      Grove-Multichannel Gas Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Piezo_Vibration_Sensor/" title="Grove-Piezo Vibration Sensor" class="md-nav__link">
+      Grove-Piezo Vibration Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Sound_Sensor/" title="Grove-Sound Sensor" class="md-nav__link">
+      Grove-Sound Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Ultrasonic_Ranger/" title="Grove-Ultrasonic Ranger" class="md-nav__link">
+      Grove-Ultrasonic Ranger
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-GSR_Sensor/" title="Grove-GSR Sensor" class="md-nav__link">
+      Grove-GSR Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Dust_Sensor/" title="Grove-Dust Sensor" class="md-nav__link">
+      Grove-Dust Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Air_Quality_Sensor_v1.3/" title="Grove-Air Quality Sensor v1.3" class="md-nav__link">
+      Grove-Air Quality Sensor v1.3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Barometer_Sensor-BMP280/" title="Grove-Barometer Sensor BMP280" class="md-nav__link">
+      Grove-Barometer Sensor BMP280
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Ear-clip_Heart_Rate_Sensor/" title="Grove-Ear clip Heart Rate Sensor" class="md-nav__link">
+      Grove-Ear clip Heart Rate Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gas_Sensor-O2/" title="Grove-Gas Sensor O2" class="md-nav__link">
+      Grove-Gas Sensor O2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Light_Sensor/" title="Grove-Light Sensor" class="md-nav__link">
+      Grove-Light Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-MOSFET/" title="Grove-MOSFET" class="md-nav__link">
+      Grove-MOSFET
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_Sensor/" title="Grove-Temperature Sensor" class="md-nav__link">
+      Grove-Temperature Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_Sensor_V1.2/" title="Grove-Temperature Sensor-V1.2" class="md-nav__link">
+      Grove-Temperature Sensor-V1.2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_and_Humidity_Sensor_Pro/" title="Grove-Temperature and Humidity Sensor Pro" class="md-nav__link">
+      Grove-Temperature and Humidity Sensor Pro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_and_Humidity_Sensor/" title="Grove-Temperature and Humidity Sensor" class="md-nav__link">
+      Grove-Temperature and Humidity Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-TempAndHumi_Sensor-SHT31/" title="Grove-Temperature and Humidity Sensor-SHT31" class="md-nav__link">
+      Grove-Temperature and Humidity Sensor-SHT31
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-TemptureAndHumidity_Sensor_High_Accuracy_AndMini-v1.0/" title="Grove-Tempture and Humidity Sensor High Accuracy Mini-v1.0" class="md-nav__link">
+      Grove-Tempture and Humidity Sensor High Accuracy Mini-v1.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-UV_Sensor/" title="Grove-UV Sensor" class="md-nav__link">
+      Grove-UV Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Vibration_Motor/" title="Grove-Vibration Motor" class="md-nav__link">
+      Grove-Vibration Motor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Barometer_High_Accuracy/" title="Grove-Barometer High Accuracy" class="md-nav__link">
+      Grove-Barometer High Accuracy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Digital_Light_Sensor/" title="Grove-Digital Light Sensor" class="md-nav__link">
+      Grove-Digital Light Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Electromagnet/" title="Grove-Electromagnet" class="md-nav__link">
+      Grove-Electromagnet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-EMG_Detector/" title="Grove-EMG Detector" class="md-nav__link">
+      Grove-EMG Detector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Flame_Sensor/" title="Grove-Flame Sensor" class="md-nav__link">
+      Grove-Flame Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gas_Sensor-MQ9/" title="Grove-Gas Sensor MQ9" class="md-nav__link">
+      Grove-Gas Sensor MQ9
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-HCHO_Sensor/" title="Grove-HCHO Sensor" class="md-nav__link">
+      Grove-HCHO Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-I2C_Color_Sensor/" title="Grove-I2C Color Sensor" class="md-nav__link">
+      Grove-I2C Color Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Loudness_Sensor/" title="Grove-Loudness Sensor" class="md-nav__link">
+      Grove-Loudness Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Moisture_Sensor/" title="Grove-Moisture Sensor" class="md-nav__link">
+      Grove-Moisture Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Touch_Sensor/" title="Grove-Touch Sensor" class="md-nav__link">
+      Grove-Touch Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Q_Touch_Sensor/" title="Grove-Q_Touch_Sensor" class="md-nav__link">
+      Grove-Q_Touch_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-I2C_Touch_Sensor/" title="Grove-I2C Touch Sensor" class="md-nav__link">
+      Grove-I2C Touch Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gesture_v1.0/" title="Grove-Gesture v1.0" class="md-nav__link">
+      Grove-Gesture v1.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-IMU_9DOF_v2.0/" title="Grove-IMU 9DOF v2.0" class="md-nav__link">
+      Grove-IMU 9DOF v2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-PIR_Motion_Sensor/" title="Grove-PIR Motion Sensor" class="md-nav__link">
+      Grove-PIR Motion Sensor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      执行器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        执行器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Actuator/" title="Actuator" class="md-nav__link">
+      Actuator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-MP3_v2.0/" title="Grove-MP3 v2.0" class="md-nav__link">
+      Grove-MP3 v2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Infrared_Receiver/" title="Grove-Infrared Receiver" class="md-nav__link">
+      Grove-Infrared Receiver
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Relay/" title="Grove-Relay" class="md-nav__link">
+      Grove-Relay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Buzzer/" title="Grove-Buzzer" class="md-nav__link">
+      Grove-Buzzer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Chainable_RGB_LED/" title="Grove-Chainable RGB LED" class="md-nav__link">
+      Grove-Chainable RGB LED
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-I2C_Motor_Driver_V1.3/" title="Grove-I2C Motor Driver V1.3" class="md-nav__link">
+      Grove-I2C Motor Driver V1.3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-DMX512/" title="Grove-DMX512" class="md-nav__link">
+      Grove-DMX512
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-NFC_Tag/" title="Grove-NFC Tag" class="md-nav__link">
+      Grove-NFC Tag
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-UART_Wifi/" title="Grove-UART Wifi" class="md-nav__link">
+      Grove-UART Wifi
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      显示器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        显示器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Display/" title="Display" class="md-nav__link">
+      Display
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-LCD_RGB_Backlight/" title="Grove-LCD RGB Backlight" class="md-nav__link">
+      Grove-LCD RGB Backlight
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-4-Digit_Display/" title="Grove-4-Digit Display" class="md-nav__link">
+      Grove-4-Digit Display
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
+    
+    <label class="md-nav__link" for="nav-3-5">
+      Communication
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-5">
+        Communication
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Communication/" title="Communication" class="md-nav__link">
+      Communication
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      其他
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        其他
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3W_Solar_Panel_138x160/" title="3W Solar Panel 138x160" class="md-nav__link">
+      3W Solar Panel 138x160
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../2.5W_Solar_Panel_116x160/" title="2.5W Solar Panel 116x160" class="md-nav__link">
+      2.5W Solar Panel 116x160
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../0.5w_Solar_Panel_55x70/" title="0.5w Solar Panel 55x70" class="md-nav__link">
+      0.5w Solar Panel 55x70
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Lipo_Rider_V1.3/" title="Lipo Rider V1.3" class="md-nav__link">
+      Lipo Rider V1.3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Bus_Pirate_v3_assembled/" title="Bus Pirate v3 assembled" class="md-nav__link">
+      Bus Pirate v3 assembled
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../G3-4_Water_Flow_sensor/" title="G3-4 Water Flow sensor" class="md-nav__link">
+      G3-4 Water Flow sensor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      IoT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        IoT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../IoT/" title="IoT" class="md-nav__link">
+      IoT
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      kit套件
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        kit套件
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_Starter_kit_for_Arduino_101/" title="Grove Starter kit for Arduino 101" class="md-nav__link">
+      Grove Starter kit for Arduino 101
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      MakerPro
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        MakerPro
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MakerPro/" title="MakerPro" class="md-nav__link">
+      MakerPro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../2KM_Long_Range_RF_link_kits_w_encoder_and_decoder/" title="2KM Long Range RF link kits w encoder and decoder" class="md-nav__link">
+      2KM Long Range RF link kits w encoder and decoder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Piezo_Sensor-MiniSense_100/" title="Piezo Sensor MiniSense 100" class="md-nav__link">
+      Piezo Sensor MiniSense 100
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Arduboy/" title="Arduboy" class="md-nav__link">
+      Arduboy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      使用教程
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        使用教程
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial/" title="Tutorial" class="md-nav__link">
+      Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../How_to_install_Arduino_Library/" title="如何安装Arduino库" class="md-nav__link">
+      如何安装Arduino库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Upload_Code/" title="如何上传代码" class="md-nav__link">
+      如何上传代码
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Getting_Started_with_Seeeduino/" title="Seeeduino入门指导" class="md-nav__link">
+      Seeeduino入门指导
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../How_to_edit_Wiki/" title="如何编辑Wiki" class="md-nav__link">
+      如何编辑Wiki
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../license/" title="文档协议" class="md-nav__link">
+      文档协议
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="产品特性" class="md-nav__link">
+    产品特性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="规格参数" class="md-nav__link">
+    规格参数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="创意应用" class="md-nav__link">
+    创意应用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="硬件概况" class="md-nav__link">
+    硬件概况
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="配置开关" class="md-nav__link">
+    配置开关
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="入门指导" class="md-nav__link">
+    入门指导
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="硬件概述" class="md-nav__link">
+    硬件概述
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arduino-ide" title="安装 Arduino IDE" class="md-nav__link">
+    安装 Arduino IDE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediatek-linkit-one-sdk" title="安装Mediatek LinkIt ONE SDK" class="md-nav__link">
+    安装Mediatek LinkIt ONE SDK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="安装驱动" class="md-nav__link">
+    安装驱动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="更新固件" class="md-nav__link">
+    更新固件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blinky" title="上传代码（Blinky）" class="md-nav__link">
+    上传代码（Blinky）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="连接天线" class="md-nav__link">
+    连接天线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simsd" title="插入SIM卡和SD卡" class="md-nav__link">
+    插入SIM卡和SD卡
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linkit-one-sdk" title="探索 LinkIt ONE SDK 示例" class="md-nav__link">
+    探索 LinkIt ONE SDK 示例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkit-one-groves-shields" title="LinkIt ONE 兼容的 Groves 和 Shields" class="md-nav__link">
+    LinkIt ONE 兼容的 Groves 和 Shields
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkit-one-sidekick-basic-kit" title="Linkit ONE 的 Sidekick Basic Kit 教程" class="md-nav__link">
+    Linkit ONE 的 Sidekick Basic Kit 教程
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" title="资源下载" class="md-nav__link">
+    资源下载
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>LinkIt ONE</h1>
+                
+                <p><img alt="enter image description here" src="https://raw.githubusercontent.com/SeeedDocument/Linkit_ONE/master/image/500px-Linkit-one-page.jpg" /></p>
+<p>LinkIt ONE 开发平台是一款用于可穿戴设备和 IoT 设备的开源高性能板。 它是基于全球领先的可穿戴服装 SoC，联发科技（ATS）（<strong>MT2502</strong>）与高性能 Wi-Fi（<strong>MT5931</strong>）和 GPS（<strong>MT3332</strong>）芯片组相结合，为您提供访问 联发科 LinkIt 的所有功能。 它还为 Arduino 板提供了类似的引脚功能，可以轻松连接各种传感器，外围设备和 Arduino shields。</p>
+<p>LinkIt One 可以用于IoT /可穿戴设备 的一体化原型设计板。 将 GSM，GPRS，Wi-Fi，GPS，蓝牙功能集成到基本的 Arduino 外形. LinkIt ONE 是由 <a href="https://www.seeedstudio.com/">Seeed Studio</a> 和 <a href="http://www.mediatek.com/">MediaTek</a>一起设计生产的。 它将双方的技术结合在开源硬件，可穿戴设备和IoT设备中，以这些为参考来设计更加强大的开发板。</p>
+<p><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.1dcebac653clNY&amp;id=45453335551"><img alt="" src="https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>LinkIt ONE 板具有很多功能，其 SDK（软件开发工具包）非常全面。 在使用该板之前，请仔细阅读本文档一次。 作为共同设计产品基础级别 <a href="http://www.seeed.cc/discover.html?t=linkit">Seeedstudio LinkIt One Forum</a> 提供硬件技术支持。高级技术支持可在 <a href="https://labs.mediatek.com/forums/forums/list.page">MediaTek LinkIt 论坛</a>。这些论坛中有很多关于此板的常见问题解答。请先搜索您的要求/问题的解决方案，然后再发布问题，这样可以节省您的时间。</p>
+</div>
+<h2 id="_1">产品特性<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<hr />
+<ul>
+<li>在这个开发板上具有 ARM7 EJ-S™，GSM，GPRS，Wi-Fi，蓝牙BR / EDR / BLE，GPS，音频编解码器和 SD卡连接器。</li>
+<li>与 Arduino 类似的引脚，包括与 Arduino 兼容的数字 I / O 端口，模拟I / O 端口，PWM，I2C，SPI，UART和电源连接口。</li>
+<li>提供各种接口，用于连接大多数传感器，外设，Groves和其他小部件。</li>
+<li>使用 LinkIt ONE 和 MediaTek LinkIt SDK（对于Arduino）能够轻松的实现你的想法，使其成为现实。</li>
+</ul>
+<h2 id="_2">规格参数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<hr />
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">芯片</td>
+<td align="left">MT2502A (Aster, ARM7 EJ-S (TM) )</td>
+</tr>
+<tr>
+<td align="left">时钟速度</td>
+<td align="left">260MHz</td>
+</tr>
+<tr>
+<td align="left">外形尺寸</td>
+<td align="left">3.3x2.1英寸</td>
+</tr>
+<tr>
+<td align="left">闪存</td>
+<td align="left">16MB</td>
+</tr>
+<tr>
+<td align="left">RAM</td>
+<td align="left">4MB</td>
+</tr>
+<tr>
+<td align="left">每个I / O引脚的直流电流</td>
+<td align="left">1mA</td>
+</tr>
+<tr>
+<td align="left">模拟引脚</td>
+<td align="left">3</td>
+</tr>
+<tr>
+<td align="left">数字输出</td>
+<td align="left">3.3V</td>
+</tr>
+<tr>
+<td align="left">模拟输入</td>
+<td align="left">5V</td>
+</tr>
+<tr>
+<td align="left">UART</td>
+<td align="left">软件串口基于 USB 调制解调器端口和硬件串口 <strong>D0</strong> 和 <strong>D1</strong></td>
+</tr>
+<tr>
+<td align="left">SD 卡</td>
+<td align="left">高达32GB（10级）</td>
+</tr>
+<tr>
+<td align="left">定位</td>
+<td align="left">GPS(MT3332)</td>
+</tr>
+<tr>
+<td align="left">GSM</td>
+<td align="left">850/900/1800/1900 MHz</td>
+</tr>
+<tr>
+<td align="left">GPRS</td>
+<td align="left">12级</td>
+</tr>
+<tr>
+<td align="left">Wi-Fi</td>
+<td align="left">802.11 b/g/n</td>
+</tr>
+<tr>
+<td align="left">蓝牙</td>
+<td align="left">BR / EDR / BLE（双模）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">创意应用<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<hr />
+<ul>
+<li>物联网</li>
+<li>智慧之家</li>
+<li>可穿戴设计</li>
+<li>工业</li>
+<li>传感器中心</li>
+<li>自动化与运输</li>
+</ul>
+<p>以下是一些项目供您参考。 更棒的项目 <a href="https://www.seeed.cc/projects.html?t=LinkIt">Recipe</a> 和 <a href="http://www.instructables.com/howto/linkit+one/">Instructables</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Facebook Like Monitor</th>
+<th>Texting Door Alarm</th>
+<th>Smart Bed Alarm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="enter image description here" src="https://raw.githubusercontent.com/SeeedDocument/Linkit_ONE/master/image/project1.jpg" /></td>
+<td><img alt="enter image description here" src="https://raw.githubusercontent.com/SeeedDocument/Linkit_ONE/master/image/project2.jpg" /></td>
+<td><img alt="enter image description here" src="https://raw.githubusercontent.com/SeeedDocument/Linkit_ONE/master/image/project3.jpg" /></td>
+</tr>
+<tr>
+<td><a href="http://www.instructables.com/id/Facebook-Like-Monitor/">马上制作</a></td>
+<td><a href="http://www.instructables.com/id/LinkIt-One-Texting-Door-Alarm/">马上制作</a></td>
+<td><a href="http://www.instructables.com/id/Smart-Bed-Alarm-with-LinkIT-ONE/">马上制作</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>AWS IoT Tutorial</th>
+<th>Instructables Indicator</th>
+<th>DIY an Acrylic Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="enter image description here" src="https://raw.githubusercontent.com/SeeedDocument/Linkit_ONE/master/image/project4.jpg" /></td>
+<td><img alt="enter image description here" src="https://raw.githubusercontent.com/SeeedDocument/Linkit_ONE/master/image/project5.jpg" /></td>
+<td><img alt="enter image description here" src="https://raw.githubusercontent.com/SeeedDocument/Linkit_ONE/master/image/project6.jpg" /></td>
+</tr>
+<tr>
+<td><a href="http://www.instructables.com/id/An-AWS-IoT-Tutorial-With-LinkIt-ONE/">马上制作</a></td>
+<td><a href="http://www.instructables.com/id/Make-a-Instructables-Indicator/">马上制作</a></td>
+<td><a href="http://www.instructables.com/id/5-Design-of-Laser-Cut-Cases-for-5-Popular-Platform/">马上制作</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">硬件概况<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<hr />
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Linkit-ONE/master/image/1000px-LinkItONE_RESOURCE.png" /></p>
+<h3 id="_5">配置开关<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>LinkIt ONE上有3个滑动开关，用于配置功能/工作模式：</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Linkit-ONE/master/image/300px-LinkIt_ONE_Wiki_Button.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th align="left">开关号</th>
+<th align="left">功能</th>
+<th align="left">位置1 - 功能</th>
+<th align="left">位置2 - 功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">程式模式</td>
+<td align="left"><strong>MS</strong>： 在这个位置下，当连接到PC时，LinkIt One 板将显示为 10MB 的USB驱动器。 程序将不会在此模式下执行。 任何复制到此驱动器的文件都可以通过代码读取</td>
+<td align="left"><strong>UART</strong>： UART：该位置用于将电路板设置为编程模式。 可以在此模式下上传固件。</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">电源</td>
+<td align="left"><strong>BAT</strong>：板由锂离子电池供电。 要为电池充电，请将开关设置到此位置，并将电路板连接到PC。</td>
+<td align="left"><strong>USB</strong>：板由 USB 端口供电。 当没有电池连接来编程电路板时，将开关置于此位置。</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">SD/SPI</td>
+<td align="left"><strong>SPI</strong>：此位置允许访问外部SPI引脚（D10 - D13）</td>
+<td align="left"><strong>SD</strong>：此位置允许代码访问 SD 卡。 此模式也禁止 SPI 引脚（D10-D13）的访问。</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>当您处理 USB micro type-B 插座时，请小心，否则可能会关闭插座。</p>
+</div>
+<h2 id="_6">入门指导<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">硬件概述<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th align="left">步骤</th>
+<th align="left">阅读更多</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">安装 Arduino IDE 1.5.7 Beta（Windows或MAC OS X版本）</td>
+<td align="left"><a href="http://wiki.seeed.cc/LinkIt_ONE/#installing-arduino-ide"> 这里</a></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><a href="http://labs.mediatek.com/dpRegister/create"> 在 MediaTek 实验室中注册</a>.</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">下载<a href="http://labs.mediatek.com/fileMedia/download/5fed7907-b2ba-4000-bcb2-016a332a49fd"> Linkit开发人员指南</a> 并且阅读它</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">安装Arduino IDE（Windows或MAC OS X）的 <a href="http://labs.mediatek.com/site/znch/developer_tools/mediatek_linkit/sdk_intro/index.gsp"> LinkIt SDK</a></td>
+<td align="left"><a href="http://wiki.seeed.cc/LinkIt_ONE/#installing-mediatek-linkit-one-sdk"> 这里</a></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">安装 LinkIt ONE 驱动程序。</td>
+<td align="left"><a href="http://wiki.seeed.cc/LinkIt_ONE/#installing-drivers"> 这里</a></td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">更新机载固件版本。</td>
+<td align="left"><a href="http://wiki.seeed.cc/LinkIt_ONE/#updating-firmware"> 这里</a></td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">打开Arduino IDE，选择LinkIt ONE板并开始编码。</td>
+<td align="left"><a href="http://wiki.seeed.cc/LinkIt_ONE/#uploading-code-blinky"> 这里</a></td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">将GSM，GPS和 WiFi / BT 天线连接到 LinkIt One 板</td>
+<td align="left"><a href="http://wiki.seeed.cc/LinkIt_ONE/#connecting-antennae"> 这里</a></td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">插入 SIM 卡和 Micro SD 卡</td>
+<td align="left"><a href="http://wiki.seeed.cc/LinkIt_ONE/#inserting-sim-card-and-sd-card"> 这里</a></td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">探索更多示例和享受制作的快乐吧！</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="arduino-ide">安装 Arduino IDE<a class="headerlink" href="#arduino-ide" title="Permanent link">&para;</a></h3>
+<p>下载最新的 <a href="https://www.arduino.cc/en/Main/Software">Arduino IDE</a> .有关更高级的主题，请按照 MediaTekTM<a href="http://labs.mediatek.com/site/znch/developer_tools/mediatek_linkit/sdk_intro/index.gsp">  说明</a>.</p>
+<h3 id="mediatek-linkit-one-sdk">安装Mediatek LinkIt ONE SDK<a class="headerlink" href="#mediatek-linkit-one-sdk" title="Permanent link">&para;</a></h3>
+<ul>
+<li>下载Arduino 的 <a href="http://labs.mediatek.com/site/znch/developer_tools/mediatek_linkit/sdk_intro/index.gsp">LinkIt SDK</a> 在编写本指南时，使用了 v1.1.11 的 Windows SDK（Beta）。 阅读 Windows OS 和 MAC OS X 平台的视频指南 <a href="http://labs.mediatek.com/site/znch/developer_tools/mediatek_linkit/get-started/index.gsp"> 点击这里</a></li>
+<li>将下载的文件解压缩到 Arduino IDE 文件夹。</li>
+<li>双击.EXE文件并安装。</li>
+<li>通过安装LinkIt ONE SDK，Arduino IDE可以使用LinkIt ONE IDE。</li>
+</ul>
+<h3 id="_8">安装驱动<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>禁用 <strong>驱动程序签名强制</strong> 如果您使用的是Windows 8 / 8.1操作系统。</li>
+<li>阅读 <a href="http://www.seeedstudio.com/wiki/Download_Arduino_and_install_Arduino_driver#Installing_drivers_for_the_Seeeduino_with_window8">如何安装</a></li>
+<li>将 MS / UART 滑动开关置于 UART位置，并将 LinkIt ONE 连接到 PC。</li>
+<li>打开设备管理器，将显示以下 COM 端口。</li>
+</ul>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Linkit-ONE/master/image/LinkIt_ONE_Wiki_Temp1.jpg" /></p>
+<ul>
+<li>从 <strong>..  LinkIt_ONE_IDE  drivers  mtk</strong> 文件夹安装驱动程序。</li>
+<li>安装驱动程序后，Device Manger 应显示以下两个端口：</li>
+</ul>
+<p><strong>MTK USB调试端口</strong> 用于上传代码。</p>
+<p><strong>MTK USB调制解调器端口</strong> 用于打印消息，如Serial.println（）</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Linkit-ONE/master/image/LinkIt_ONE_Wiki_Temp2.jpg" />  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>还没有官方的 Windows 10驱动程序。 Windows 10 用户可以从 <strong>设备管理器</strong> 手动从 <strong> LinkIt_ONE_IDE  drivers  mtk</strong> 中选择 Windows 7 驱动程序文件。 这是众所周知的几台电脑。</p>
+</div>
+<h3 id="_9">更新固件<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>LinkIt ONE 主板的固件需要一段时间更新一次。 最新的 LinkIt ONE SDK 附带固件版本。</p>
+<ul>
+<li>在启动固件更新之前，请确保滑动开关处于正确的位置（ <strong>MS / UART</strong> 应处于 <strong>MS</strong> 位置。<strong>USB / BAT</strong> 在 <strong>USB</strong> 位置）：</li>
+</ul>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Linkit-ONE/master/image/LinkItONEUpdateFirmware2.jpg" />  </p>
+<ul>
+<li>从..  <strong> LinkIt_ONE_IDE  hardware  tools  mtk</strong> 文件夹运行 FirmwareUpdater.exe 应用程序。</li>
+</ul>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Linkit-ONE/master/image/400px-LinkItONEUpdateFirmware.jpg" />  </p>
+<ul>
+<li>点击按钮，然后将 LinkIt ONE 连接到 PC。 等待1分钟，更新成功完成。</li>
+</ul>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Linkit-ONE/master/image/400px-LinkItONEUpdateFirmware_ok.jpg" />  </p>
+<h3 id="blinky">上传代码（Blinky）<a class="headerlink" href="#blinky" title="Permanent link">&para;</a></h3>
+<ul>
+<li>应将滑动开关配置为固件上传（即将 MS / UART 置于 UART 位置，电源开关位于 USB 位置）。</li>
+</ul>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Linkit-ONE/master/image/LinkIt_ONE_Wiki_Temp3.jpg" /></p>
+<ul>
+<li>打开 <strong>File（文件） - &gt; Examples（示例） - &gt; Basics - &gt; Blink</strong>。</li>
+<li>在 <strong>Tools（工具）</strong> - &gt; <strong>Port（端口）</strong> 中选择对应于 <strong>MTK USB 调试端口</strong> 的 COM 端口号。</li>
+<li>编译并上传代码。</li>
+<li>LED标记 <strong>L</strong> 应闪烁。</li>
+</ul>
+<h3 id="_10">连接天线<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>LinkIt ONE 提供三个天线。 它们用于：</p>
+<ul>
+<li>GSM / GPRS</li>
+<li>Wi-Fi / BT</li>
+<li>全球定位系统</li>
+</ul>
+<p>连接天线如下图所示。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Linkit-ONE/master/image/400px-Linkit_one_antenna.jpg" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>从天线拉出天线时，请小心操作。 请不要使用暴力。</li>
+</ul>
+</div>
+<p>- 尝试使用垂直于电路板方向的力，否则可能会损坏天线垫。</p>
+<h3 id="simsd">插入SIM卡和SD卡<a class="headerlink" href="#simsd" title="Permanent link">&para;</a></h3>
+<p>LinkIt ONE 接受标准尺寸的 SIM 卡和 Micro SD 卡。 按照以下图像插入它们：</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Linkit-ONE/master/image/LinkItONE_SIM_SDCard_Insert.jpg" /></p>
+<h3 id="linkit-one-sdk">探索 LinkIt ONE SDK 示例<a class="headerlink" href="#linkit-one-sdk" title="Permanent link">&para;</a></h3>
+<p>LinkIt ONE SDK 附带许多示例/示例代码，以使用像 GSM，GPRS，WiFi，BT， Audio，GPS等外围设备。首先浏览并阅读有关API文档。 API文档可在<a href="http://labs.mediatek.com/fileMedia/download/5fed7907-b2ba-4000-bcb2-016a332a49fd">  用户指南 </a> 和 <a href="https://labs.mediatek.com/site/znch/developer_tools/mediatek_linkit/api_references/Core_Digital.gsp">  API参考网站 </a>中找到</p>
+<h2 id="linkit-one-groves-shields">LinkIt ONE 兼容的 Groves 和 Shields<a class="headerlink" href="#linkit-one-groves-shields" title="Permanent link">&para;</a></h2>
+<ul>
+<li>我们生产的产品有数百个 Groves 和 Shields，包括传感器，执行器，显示器和其他模块。</li>
+<li>您可以轻松地与 Groves 和 Shields 实现您的想法。</li>
+<li>但是，LinkIt ONE 并不完全支持所有的这些。</li>
+<li>我们准备了一个兼容的 Groves 和 Shields 列表：</li>
+</ul>
+<p><a href="https://github.com/SeeedDocument/Linkit_ONE/raw/master/resource/LinkIt_ONE_Comparability_Test.xlsx"><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Linkit-ONE/master/image/400px-Compatible_Groves_and_Shields_for_LinkIt_ONE.png" /></a></p>
+<h2 id="linkit-one-sidekick-basic-kit">Linkit ONE 的 Sidekick Basic Kit 教程<a class="headerlink" href="#linkit-one-sidekick-basic-kit" title="Permanent link">&para;</a></h2>
+<p><img alt="enter image description here" src="https://raw.githubusercontent.com/SeeedDocument/Linkit_ONE/master/image/350px-LinkitONESidebox.jpg" /></p>
+<p>LinkIt ONE 的 Sidekick Basic Kit 旨在与您的 LinkIt ONE 板一起使用。 该套件将帮助您快速与 LinkIt 的平台保持一致。 它包括许多最受欢迎的 DIY 项目配件：如面包板，跳线，彩色LED，电阻器，蜂鸣器等。所有这些都是一个方便的盒子，易于运输和模拟杂乱。 该套件包含一个完整的指南，可以让您熟悉各种电子元件，同时创建小型，简单，易于组装的电路。 这里概述了 10 种不同的课程，将为初学者熟悉 LinkIt ONE 提供一个最佳方式。</p>
+<p><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.9.52923521j573Bg&amp;id=45457487196"><img alt="" src="https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG" /></a></p>
+<ul>
+<li><a href="http://www.seeedstudio.com/wiki/LinkIt_ONE_Tutorial_-_The_Basics">The Basics</a></li>
+<li><a href="http://www.seeedstudio.com/wiki/LinkIt_ONE_Tutorial_-_Hello_World">Hello World</a></li>
+<li><a href="http://www.seeedstudio.com/wiki/LinkIt_ONE_Tutorial_-_Push_Button">Push Button</a></li>
+<li><a href="http://www.seeedstudio.com/wiki/LinkIt_ONE_Tutorial_-_Marquee">Marquee</a></li>
+<li><a href="http://www.seeedstudio.com/wiki/LinkIt_ONE_Tutorial_-_Colorful_World">Colorful World</a></li>
+<li><a href="http://www.seeedstudio.com/wiki/LinkIt_ONE_Tutorial_-_Analog_Interface">Analog Interface</a></li>
+<li><a href="http://www.seeedstudio.com/wiki/LinkIt_ONE_Tutorial_-_Mini_Servo">Mini Servo</a></li>
+<li><a href="http://www.seeedstudio.com/wiki/LinkIt_ONE_Tutorial_-_Light_Sensor">Light Sensor</a></li>
+<li><a href="http://www.seeedstudio.com/wiki/LinkIt_ONE_Tutorial_-_SMS_control_the_LED">SMS Control the LED</a></li>
+<li>
+<p><a href="http://www.seeedstudio.com/wiki/LinkIt_ONE_Tutorial_-_Get_temperature_with_Webpage">Get Temperature with Webpage</a></p>
+</li>
+<li>
+<p><a href="http://www.seeedstudio.com/wiki/LinkIt_ONE_Tutorial_-_Get_temperature_with_Webpage">Github Repo for Sidekick Basic Kit for LinkIt ONE</a></p>
+</li>
+</ul>
+<h2 id="_11">资源下载<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<p><strong>Schematic / Design Files:</strong></p>
+<ul>
+<li><a href="https://github.com/SeeedDocument/Linkit_ONE/raw/master/resource/202000437_PCBA%20Linkit%20ONE_PDF.zip">LinkIt ONE V1.0 Eagle File</a></li>
+<li><a href="https://github.com/SeeedDocument/Linkit_ONE/raw/master/resource/%5B202000437%5DLinkIt%20ONE-V1_Eagle.zip">LinkIt ONE V1.0 Schematic in PDF</a></li>
+</ul>
+<p><strong>Software:</strong></p>
+<ul>
+<li><a href="http://labs.mediatek.com/site/znch/developer_tools/mediatek_linkit/sdk_intro/index.gsp">MediaTek_LinkIt_SDK_for_Ardunio</a></li>
+</ul>
+<p><strong>Datasheets and User Guides:</strong></p>
+<ul>
+<li><a href="http://labs.mediatek.com/site/znch/access_denied/access_denied.gsp">LinkIt_ONE_Hardware_Reference_Design_v1_0</a></li>
+<li><a href="https://github.com/SeeedDocument/Linkit-ONE/blob/master/resource/LinkIt_ONE_Pinout_Diagram_v1_0.pdf">LinkIt ONE_Pinout Diagram_v1.0【PDF】</a></li>
+<li><a href="https://github.com/SeeedDocument/Linkit-ONE/blob/master/resource/MediaTek_LinkIt_ONE_Developers_Guide_v1_3.pdf">MediaTek_LinkIt_Developers_Guide_v1_0【PDF】</a></li>
+<li><a href="https://github.com/SeeedDocument/Linkit-ONE/blob/master/resource/MediaTek_MT2502A_SOC_Data_Sheet_v1_0.pdf">MediaTek_MT2502A_SOC_Data_Sheet_v1_0【PDF】</a></li>
+<li><a href="https://github.com/SeeedDocument/Linkit-ONE/blob/master/resource/MediaTek_MT5931_Wi-Fi_Data_Sheet_v1_0.pdf">MediaTek_MT5931_Wi-Fi_Data_Sheet_v1_0【PDF】</a></li>
+<li><a href="https://github.com/SeeedDocument/Linkit-ONE/blob/master/resource/MediaTek_MT3332_GPS_Data_Sheet_v1_0.pdf">MediaTek_MT3332_GPS_Data_Sheet_v1_0【PDF】</a></li>
+</ul>
+<p><strong>Getting Help</strong></p>
+<ul>
+<li><a href="http://www.seeed.cc/discover.html?t=linkit">Seeedstudio LinkIt ONE Forum</a></li>
+<li><a href="https://labs.mediatek.com/forums/forums/list.page">MediaTek LinkIt ONE Forums</a></li>
+</ul>
+<p><strong>More</strong></p>
+<ul>
+<li><a href="http://www.seeedstudio.com/wiki/Sidekick_Basic_Kit_for_LinkIt_ONE">See Also: Sidekick Base Kit for LinkIt ONE</a></li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../LinkIt_Smart_7688_Duo/" title="LinkIt Smart 7688_Duo" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                LinkIt Smart 7688_Duo
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../mbed/" title="mbed" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                mbed
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Seeedstudio 2017
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.facebook.com/seeedstudiosz/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://github.com/SeeedDocument" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-c35428f87f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>
