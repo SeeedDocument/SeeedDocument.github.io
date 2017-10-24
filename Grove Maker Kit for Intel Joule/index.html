@@ -1,0 +1,2528 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Seeed产品文档-中文">
+      
+      
+        <link rel="canonical" href="http://seeed.wiki/Grove Maker Kit for Intel Joule/">
+      
+      
+        <meta name="author" content="Loovee">
+      
+      
+        <link rel="shortcut icon" href="../images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+    
+    
+      
+        <title>Grove Maker Kit for Intel Joule</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-769c285a91.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="light-green" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://seeed.wiki" title="Seeed产品文档" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  kit套件
+                </span>
+              
+            
+            Grove Maker Kit for Intel Joule
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      SeeedDocument/SeeedDocument.github.io
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Seeed产品文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      SeeedDocument/SeeedDocument.github.io
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Seeed文档中文站点介绍" class="md-nav__link">
+      Seeed文档中文站点介绍
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      平台
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        平台
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Arduino
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Arduino
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Arduino/" title="Arduino" class="md-nav__link">
+      Arduino
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seeeduino_Cloud/" title="Seeeduino Cloud" class="md-nav__link">
+      Seeeduino Cloud
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seeeduino_LoRAWAN/" title="Seeeduino LoRAWAN" class="md-nav__link">
+      Seeeduino LoRAWAN
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      BeagleBone
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        BeagleBone
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BeagleBone/" title="BeagleBone" class="md-nav__link">
+      BeagleBone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BeagleBone_Green/" title="BeagleBone Green" class="md-nav__link">
+      BeagleBone Green
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BeagleBone_Green_Wireless/" title="BeagleBone Green Wireless" class="md-nav__link">
+      BeagleBone Green Wireless
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Raspberry
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        Raspberry
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Raspberry/" title="Raspberry" class="md-nav__link">
+      Raspberry
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Wio
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        Wio
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wio/" title="Wio" class="md-nav__link">
+      Wio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wio_Link/" title="Wio Link" class="md-nav__link">
+      Wio Link
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      LinkIt
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        LinkIt
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LinkIt/" title="LinkIt" class="md-nav__link">
+      LinkIt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LinkIt_Smart_7688/" title="LinkIt Smart 7688" class="md-nav__link">
+      LinkIt Smart 7688
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LinkIt_Smart_7688_Duo/" title="LinkIt Smart 7688_Duo" class="md-nav__link">
+      LinkIt Smart 7688_Duo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Breakout_for_LinkIt_Smart_7688_v2.0/" title="Breakout for LinkIt Smart 7688 v2.0" class="md-nav__link">
+      Breakout for LinkIt Smart 7688 v2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LinkIt_ONE/" title="LinkIt ONE" class="md-nav__link">
+      LinkIt ONE
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
+      mbed
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        mbed
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mbed/" title="mbed" class="md-nav__link">
+      mbed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
+      Rephone
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        Rephone
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Rephone/" title="Rephone" class="md-nav__link">
+      Rephone
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8" type="checkbox" id="nav-2-8">
+    
+    <label class="md-nav__link" for="nav-2-8">
+      Respeaker
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-8">
+        Respeaker
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker/" title="Respeaker" class="md-nav__link">
+      Respeaker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_Mic_Array/" title="Respeaker Mic Array" class="md-nav__link">
+      Respeaker Mic Array
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_Core/" title="Respeaker Core" class="md-nav__link">
+      Respeaker Core
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_2-Mics_Pi_HAT/" title="Respeaker 2-Mics Pi HAT" class="md-nav__link">
+      Respeaker 2-Mics Pi HAT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_4-Mics_Pi_HAT/" title="Respeaker 4-Mics Pi HAT" class="md-nav__link">
+      Respeaker 4-Mics Pi HAT
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-9" type="checkbox" id="nav-2-9">
+    
+    <label class="md-nav__link" for="nav-2-9">
+      Shield
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-9">
+        Shield
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Shield/" title="Shield" class="md-nav__link">
+      Shield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Base_Shield_V2/" title="Base Shield V2" class="md-nav__link">
+      Base Shield V2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../CAN-BUS_Shield_V1.2/" title="CAN-BUS Shield V1.2" class="md-nav__link">
+      CAN-BUS Shield V1.2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../CAN-BUS_Shield_V2.0/" title="CAN-BUS Shield V2.0" class="md-nav__link">
+      CAN-BUS Shield V2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Music_Shield_V2.2/" title="Music Shield V2.2" class="md-nav__link">
+      Music Shield V2.2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_Shield_for_Intel_Joule/" title="Grove_Shield_for_Intel_Joule" class="md-nav__link">
+      Grove_Shield_for_Intel_Joule
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-10" type="checkbox" id="nav-2-10">
+    
+    <label class="md-nav__link" for="nav-2-10">
+      Essentials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-10">
+        Essentials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Essentials/" title="Essentials" class="md-nav__link">
+      Essentials
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-11" type="checkbox" id="nav-2-11">
+    
+    <label class="md-nav__link" for="nav-2-11">
+      Wireless
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-11">
+        Wireless
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wireless/" title="Wireless" class="md-nav__link">
+      Wireless
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Grove
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Grove
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_System/" title="Grove系统" class="md-nav__link">
+      Grove系统
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      传感器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        传感器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sensor/" title="Sensor" class="md-nav__link">
+      Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Encoder/" title="Grove-Encoder" class="md-nav__link">
+      Grove-Encoder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Multichannel_Gas_Sensor/" title="Grove-Multichannel Gas Sensor" class="md-nav__link">
+      Grove-Multichannel Gas Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Piezo_Vibration_Sensor/" title="Grove-Piezo Vibration Sensor" class="md-nav__link">
+      Grove-Piezo Vibration Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Sound_Sensor/" title="Grove-Sound Sensor" class="md-nav__link">
+      Grove-Sound Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Ultrasonic_Ranger/" title="Grove-Ultrasonic Ranger" class="md-nav__link">
+      Grove-Ultrasonic Ranger
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-GSR_Sensor/" title="Grove-GSR Sensor" class="md-nav__link">
+      Grove-GSR Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Dust_Sensor/" title="Grove-Dust Sensor" class="md-nav__link">
+      Grove-Dust Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Air_Quality_Sensor_v1.3/" title="Grove-Air Quality Sensor v1.3" class="md-nav__link">
+      Grove-Air Quality Sensor v1.3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Barometer_Sensor-BMP280/" title="Grove-Barometer Sensor BMP280" class="md-nav__link">
+      Grove-Barometer Sensor BMP280
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Ear-clip_Heart_Rate_Sensor/" title="Grove-Ear clip Heart Rate Sensor" class="md-nav__link">
+      Grove-Ear clip Heart Rate Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gas_Sensor-O2/" title="Grove-Gas Sensor O2" class="md-nav__link">
+      Grove-Gas Sensor O2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-CO2_Sensor/" title="Grove-CO2_Sensor" class="md-nav__link">
+      Grove-CO2_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gas_Sensor-MQ5/" title="Grove-Gas Sensor MQ5" class="md-nav__link">
+      Grove-Gas Sensor MQ5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gas_Sensor-MQ9/" title="Grove-Gas Sensor MQ9" class="md-nav__link">
+      Grove-Gas Sensor MQ9
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Light_Sensor/" title="Grove-Light Sensor" class="md-nav__link">
+      Grove-Light Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-MOSFET/" title="Grove-MOSFET" class="md-nav__link">
+      Grove-MOSFET
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_Sensor/" title="Grove-Temperature Sensor" class="md-nav__link">
+      Grove-Temperature Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_Sensor_V1.2/" title="Grove-Temperature Sensor-V1.2" class="md-nav__link">
+      Grove-Temperature Sensor-V1.2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_and_Humidity_Sensor_Pro/" title="Grove-Temperature and Humidity Sensor Pro" class="md-nav__link">
+      Grove-Temperature and Humidity Sensor Pro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_and_Humidity_Sensor/" title="Grove-Temperature and Humidity Sensor" class="md-nav__link">
+      Grove-Temperature and Humidity Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-TempAndHumi_Sensor-SHT31/" title="Grove-Temperature and Humidity Sensor-SHT31" class="md-nav__link">
+      Grove-Temperature and Humidity Sensor-SHT31
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-TemptureAndHumidity_Sensor_High_Accuracy_AndMini-v1.0/" title="Grove-Tempture and Humidity Sensor High Accuracy Mini-v1.0" class="md-nav__link">
+      Grove-Tempture and Humidity Sensor High Accuracy Mini-v1.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-UV_Sensor/" title="Grove-UV Sensor" class="md-nav__link">
+      Grove-UV Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Vibration_Motor/" title="Grove-Vibration Motor" class="md-nav__link">
+      Grove-Vibration Motor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Barometer_High_Accuracy/" title="Grove-Barometer High Accuracy" class="md-nav__link">
+      Grove-Barometer High Accuracy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Digital_Light_Sensor/" title="Grove-Digital Light Sensor" class="md-nav__link">
+      Grove-Digital Light Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Electromagnet/" title="Grove-Electromagnet" class="md-nav__link">
+      Grove-Electromagnet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-EMG_Detector/" title="Grove-EMG Detector" class="md-nav__link">
+      Grove-EMG Detector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Flame_Sensor/" title="Grove-Flame Sensor" class="md-nav__link">
+      Grove-Flame Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-HCHO_Sensor/" title="Grove-HCHO Sensor" class="md-nav__link">
+      Grove-HCHO Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-I2C_Color_Sensor/" title="Grove-I2C Color Sensor" class="md-nav__link">
+      Grove-I2C Color Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Loudness_Sensor/" title="Grove-Loudness Sensor" class="md-nav__link">
+      Grove-Loudness Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Moisture_Sensor/" title="Grove-Moisture Sensor" class="md-nav__link">
+      Grove-Moisture Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Touch_Sensor/" title="Grove-Touch Sensor" class="md-nav__link">
+      Grove-Touch Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Q_Touch_Sensor/" title="Grove-Q_Touch_Sensor" class="md-nav__link">
+      Grove-Q_Touch_Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-I2C_Touch_Sensor/" title="Grove-I2C Touch Sensor" class="md-nav__link">
+      Grove-I2C Touch Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gesture_v1.0/" title="Grove-Gesture v1.0" class="md-nav__link">
+      Grove-Gesture v1.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-IMU_9DOF_v2.0/" title="Grove-IMU 9DOF v2.0" class="md-nav__link">
+      Grove-IMU 9DOF v2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-PIR_Motion_Sensor/" title="Grove-PIR Motion Sensor" class="md-nav__link">
+      Grove-PIR Motion Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Hall_Sensor/" title="Grove-Hall Sensor" class="md-nav__link">
+      Grove-Hall Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-6-Axis_AccelerometerAndGyroscope/" title="Grove-6 Axis AccelerometerAndGyroscope" class="md-nav__link">
+      Grove-6 Axis AccelerometerAndGyroscope
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Fingerprint_Sensor/" title="Grove-Fingerprint Sensor" class="md-nav__link">
+      Grove-Fingerprint Sensor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      执行器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        执行器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Actuator/" title="Actuator" class="md-nav__link">
+      Actuator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-MP3_v2.0/" title="Grove-MP3 v2.0" class="md-nav__link">
+      Grove-MP3 v2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Infrared_Receiver/" title="Grove-Infrared Receiver" class="md-nav__link">
+      Grove-Infrared Receiver
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Relay/" title="Grove-Relay" class="md-nav__link">
+      Grove-Relay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Dry-Reed_Relay/" title="Grove-Dry Reed Relay" class="md-nav__link">
+      Grove-Dry Reed Relay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Buzzer/" title="Grove-Buzzer" class="md-nav__link">
+      Grove-Buzzer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Chainable_RGB_LED/" title="Grove-Chainable RGB LED" class="md-nav__link">
+      Grove-Chainable RGB LED
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-I2C_Motor_Driver_V1.3/" title="Grove-I2C Motor Driver V1.3" class="md-nav__link">
+      Grove-I2C Motor Driver V1.3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Haptic_Motor/" title="Grove-Haptic Motor" class="md-nav__link">
+      Grove-Haptic Motor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-DMX512/" title="Grove-DMX512" class="md-nav__link">
+      Grove-DMX512
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-NFC/" title="Grove-NFC" class="md-nav__link">
+      Grove-NFC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-NFC_Tag/" title="Grove-NFC Tag" class="md-nav__link">
+      Grove-NFC Tag
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-UART_Wifi/" title="Grove-UART Wifi" class="md-nav__link">
+      Grove-UART Wifi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Serial_RF_Pro/" title="Grove-Serial_RF_Pro" class="md-nav__link">
+      Grove-Serial_RF_Pro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Mouse_Encoder/" title="Grove-Mouse Encoder" class="md-nav__link">
+      Grove-Mouse Encoder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Switch-P/" title="Grove-Switch-P" class="md-nav__link">
+      Grove-Switch-P
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Bee_Socket/" title="Grove-Bee Socket" class="md-nav__link">
+      Grove-Bee Socket
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Mini_Track_Ball/" title="Grove-Mini Track Ball" class="md-nav__link">
+      Grove-Mini Track Ball
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-RTC/" title="Grove-RTC" class="md-nav__link">
+      Grove-RTC
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      显示器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        显示器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Display/" title="Display" class="md-nav__link">
+      Display
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-LCD_RGB_Backlight/" title="Grove-LCD RGB Backlight" class="md-nav__link">
+      Grove-LCD RGB Backlight
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-4-Digit_Display/" title="Grove-4-Digit Display" class="md-nav__link">
+      Grove-4-Digit Display
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
+    
+    <label class="md-nav__link" for="nav-3-5">
+      Communication
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-5">
+        Communication
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Communication/" title="Communication" class="md-nav__link">
+      Communication
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      其他
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        其他
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3W_Solar_Panel_138x160/" title="3W Solar Panel 138x160" class="md-nav__link">
+      3W Solar Panel 138x160
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../2.5W_Solar_Panel_116x160/" title="2.5W Solar Panel 116x160" class="md-nav__link">
+      2.5W Solar Panel 116x160
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../0.5w_Solar_Panel_55x70/" title="0.5w Solar Panel 55x70" class="md-nav__link">
+      0.5w Solar Panel 55x70
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Lipo_Rider_V1.3/" title="Lipo Rider V1.3" class="md-nav__link">
+      Lipo Rider V1.3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Bus_Pirate_v3_assembled/" title="Bus Pirate v3 assembled" class="md-nav__link">
+      Bus Pirate v3 assembled
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../G3-4_Water_Flow_sensor/" title="G3-4 Water Flow sensor" class="md-nav__link">
+      G3-4 Water Flow sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../G1_and_2_inch_Water_Flow_Sensor/" title="G1-2 inch Water Flow Sensor" class="md-nav__link">
+      G1-2 inch Water Flow Sensor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      IoT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        IoT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../IoT/" title="IoT" class="md-nav__link">
+      IoT
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      kit套件
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        kit套件
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_Starter_kit_for_Arduino_101/" title="Grove Starter kit for Arduino 101" class="md-nav__link">
+      Grove Starter kit for Arduino 101
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Grove Maker Kit for Intel Joule
+      </label>
+    
+    <a href="./" title="Grove Maker Kit for Intel Joule" class="md-nav__link md-nav__link--active">
+      Grove Maker Kit for Intel Joule
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="产品特性" class="md-nav__link">
+    产品特性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="部分介绍" class="md-nav__link">
+    部分介绍
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grove-shield-for-intel-joule" title="Grove Shield for Intel Joule" class="md-nav__link">
+    Grove Shield for Intel Joule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grove" title="Grove 传感器" class="md-nav__link">
+    Grove 传感器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grove-actuators" title="Grove Actuators" class="md-nav__link">
+    Grove Actuators
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="资源下载" class="md-nav__link">
+    资源下载
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      MakerPro
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        MakerPro
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MakerPro/" title="MakerPro" class="md-nav__link">
+      MakerPro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../2KM_Long_Range_RF_link_kits_w_encoder_and_decoder/" title="2KM Long Range RF link kits w encoder and decoder" class="md-nav__link">
+      2KM Long Range RF link kits w encoder and decoder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Piezo_Sensor-MiniSense_100/" title="Piezo Sensor MiniSense 100" class="md-nav__link">
+      Piezo Sensor MiniSense 100
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Arduboy/" title="Arduboy" class="md-nav__link">
+      Arduboy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3.6V_Micro_hydro_generator/" title="3.6V Micro hydro generator" class="md-nav__link">
+      3.6V Micro hydro generator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../PIR_Motion_sensor_module/" title="PIR Motion sensor module" class="md-nav__link">
+      PIR Motion sensor module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RF_Explorer_Software/" title="RF Explorer Software" class="md-nav__link">
+      RF Explorer Software
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      使用教程
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        使用教程
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial/" title="Tutorial" class="md-nav__link">
+      Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../How_to_install_Arduino_Library/" title="如何安装Arduino库" class="md-nav__link">
+      如何安装Arduino库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Upload_Code/" title="如何上传代码" class="md-nav__link">
+      如何上传代码
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Getting_Started_with_Seeeduino/" title="Seeeduino入门指导" class="md-nav__link">
+      Seeeduino入门指导
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../How_to_edit_Wiki/" title="如何编辑Wiki" class="md-nav__link">
+      如何编辑Wiki
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../license/" title="文档协议" class="md-nav__link">
+      文档协议
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="产品特性" class="md-nav__link">
+    产品特性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="部分介绍" class="md-nav__link">
+    部分介绍
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grove-shield-for-intel-joule" title="Grove Shield for Intel Joule" class="md-nav__link">
+    Grove Shield for Intel Joule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grove" title="Grove 传感器" class="md-nav__link">
+    Grove 传感器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grove-actuators" title="Grove Actuators" class="md-nav__link">
+    Grove Actuators
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="资源下载" class="md-nav__link">
+    资源下载
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Grove Maker Kit for Intel Joule</h1>
+                
+                <p><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/wuVn2N00lFDeHDqruNo2IO3v.jpg" /></p>
+<p>几周前，我们发布了为 Intel Joule 定制的 Grove Shield。这次，我们来介绍一款令人难以置信的套件，它可以帮助您轻松快速地开始使用 Intel Joule，这是一款为 Intel Joule 定制的 Grove 创客套件。</p>
+<p>Joule 是 Intel 在 2016 年发布的物联网项目中最令人惊喜的板块。其凭借嵌入式 Linux 系统和丰富的硬件，Intel Joule 必将成为研发人员改进其项目，并将原型发布到市场的最佳选择。</p>
+<p>为 Intel Joule 定制的 Grove 创客套件是一款基于 Joule 的快速建造原型的最佳套件。该套件包含一个用于 Joule 的 Grove bash shield，您可以轻松添加我们专门为 Joule 选择配置的 13 个 Grove 模块。如果您有 Intel Joule，并计划构建一个快速原型，请不要犹豫，选择这款为 Intel Joule 定制的 Grove 创客套件。</p>
+<p><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.9.2939c6b1y9zgao&amp;id=548470128154"><img alt="" src="https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG" /></a></p>
+<h2 id="_1">产品特性<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_2">部分介绍<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="grove-shield-for-intel-joule"><a href="https://www.seeedstudio.com/Grove-Shield-for-Intel-Joule-p-2782.html">Grove Shield for Intel Joule</a><a class="headerlink" href="#grove-shield-for-intel-joule" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/grove%20shield%20for%20intel%20joule.jpg" /></p>
+<p>Grove Shield for Intel Joule 是将 Intel Joule 桥接到 Grove 模块系列的关键。 通过简单地将其插入到 Joule board 上，它将拥有 8 个坚固易用的 Grove 连接器，其中包括接口，如 I2C，UART，digital I/Os 和 模拟输入。 除了丰富的 Grove 连接器外，它还保留有 2x20 针头来应对您想要更多的 GPIO 用于项目。 板上的集成开关允许您选择 5V 或 3.3V 的工作电压。</p>
+<h3 id="grove">Grove 传感器<a class="headerlink" href="#grove" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>图片</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.12.78499649oR2huC&amp;id=531838497696"><strong>Grove Button</strong></a></td>
+<td><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/Grove%20-%20Button.jpg" /></td>
+<td>一个简单的瞬时开/关按钮。 把它连接到 Intel Joule 的 Grove Shield 上的任何数字端口，将其用作控制器的高/低信号输入。</td>
+</tr>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.34f3ea6b8U9sG6&amp;id=45507318433"><strong>Grove - Sound Sensor</strong></a></td>
+<td><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/grove%20-%20sound%20sensor.jpg" /></td>
+<td>声音传感器用于检测环境声强。 把它连接到模拟连接器以将声音用作激励信号。</td>
+</tr>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.366ea4efF1kAV5&amp;id=45553185547"><strong>Grove - Piezo Vibration Sensor</strong></a></td>
+<td><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/Grove%20-%20Piezo%20Vibration%20Sensor.jpg" /></td>
+<td>它可以测量振动，冲击和触感。 把它连接到用于 Intel Joule 的 Grove Shield 上的任何数字连接器，以在检测到振动时接收高信号。</td>
+</tr>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.8f7652f8sK4FE&amp;id=544373791068"><strong>Grove - Light Sensor</strong></a></td>
+<td><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/grove%20-%20light%20sensor.jpg" /></td>
+<td>与传统的光敏电阻 （LDR） 相比，光电晶体管的使用不仅提高了可靠性和灵敏度，而且增加了测量光谱。 模块输出模拟信号，8 位模拟数字转换器 （ADC） 将其转换为 0-255 的范围。</td>
+</tr>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.66dea9a797x8Aw&amp;id=520512844173"><strong>Grove - Temperature Sensor</strong></a></td>
+<td><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/Grove%20-%20Temperature%20Sensor.jpg" /></td>
+<td>使用热敏电阻检测外界温度 (范围 :-40~+125℃)，并输出模拟信号将其连接到模拟连接器。</td>
+</tr>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.9.1d1a9a88ODzwlf&amp;id=45486442714&amp;qq-pf-to=pcqq.c2c"><strong>Grove - Touch Sensor</strong></a></td>
+<td><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/Grove%20-%20Touch%20Sensor.jpg" /></td>
+<td>当手指附近时，可以检测电容的变化。 您可以使用它作为按钮，这样可以使您用触摸替换按钮。 将其连接到用于 Intel Joule 的 Grove Shield 上的任何数字连接器。</td>
+</tr>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.7f6e5a33JzdfRZ&amp;id=45554377762"><strong>Grove - Rotary Angle Sensor(P)</strong></a></td>
+<td><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/Grove%20-%20Rotary%20Angle%20Sensor.jpg" /></td>
+<td>它可以将模拟信号（从 0 到 300 分度）转换为 0 和 Vcc 之间的线性变化模拟输出。 将其连接到用于 Intel Joule 的 Grove Shield 上的模拟连接器。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="grove-actuators">Grove Actuators<a class="headerlink" href="#grove-actuators" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>图片</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.30a33025r7j5uR&amp;id=45475311124"><strong>Grove - LCD RGB Backlight</strong></a></td>
+<td><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/Grove%20-%20LCD%20RGB%20Backlight.jpg" /></td>
+<td>一个简单的用户界面，支持用户定义的字符和彩色 RGB 背光。 将其连接到用于 Intel Joule 的 Grove Shield上 的 I2C，以显示所需的信息。</td>
+</tr>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.9.2a512c21kSR662&amp;id=520245748676"><strong>Grove - Buzzer</strong></a></td>
+<td><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/grove%20-%20buzzer.jpg" /></td>
+<td>一个具有 Grove 连接器的简易蜂鸣器，可连接数字和模拟连接器。 当输出为高电平时，会发出声调。 或者，它可以连接到模拟脉冲宽度调制输出以产生各种音调和效果。</td>
+</tr>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.292f2e8aQpfNdx&amp;id=45476819992"><strong>Grove - Red LED</strong></a></td>
+<td><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/Red%20LED.jpg" /></td>
+<td>这是一组简易的 LED。 将它们连接到用于 Intel Joule 的 Grove Shield 上的任何数字端口，以高电平输出来点亮它们。</td>
+</tr>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.29.afea80201aB1k&amp;id=534288793023"><strong>Grove -Green LED</strong></a></td>
+<td><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/Grove%20-%20Green%20LED.jpg" /></td>
+<td>这是一组简易的 LED。 将它们连接到用于 Intel Joule 的 Grove Shield 上的任何数字端口，以高电平输出来点亮它们。</td>
+</tr>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.25.afea80201aB1k&amp;id=531838541569"><strong>Grove - Blue LED</strong></a></td>
+<td><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/Grove%20-%20Blue%20LED.jpg" /></td>
+<td>这是一组简易的 LED。 将它们连接到用于 Intel Joule 的 Grove Shield 上的任何数字端口，以高电平输出来点亮它们。</td>
+</tr>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.9.7975bc17YIO4PM&amp;id=534734937446"><strong>Gear Stepper Motor with Driver</strong></a></td>
+<td><img alt="" src="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/img/Motor%20with%20Driver.jpg" /></td>
+<td>它允许您通过将步进电机连接到驱动器板来驱动步进电机，并将驱动器连接到具有 PWM 输出的用于 Intel Joule 的 Grove Shield 上的任何数字端口。 然后您可以使用代码行轻松控制步进电机。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">资源下载<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>[原理图PDF]</strong> <a href="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/res/Grove%20Shield%20for%20Intel%20Joule%20v1.0.pdf">Grove Shield for Intel Joule v1.0.pdf</a></li>
+<li><strong>[Eagle文件]</strong> <a href="https://github.com/SeeedDocument/Grove_Maker_Kit_for_Intel_Joule/raw/master/res/Grove%20Shield%20for%20Intel%20Joule_eagle.zip">Grove Shield for Intel Joule_eagle.zip</a></li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Grove_Starter_kit_for_Arduino_101/" title="Grove Starter kit for Arduino 101" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Grove Starter kit for Arduino 101
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../MakerPro/" title="MakerPro" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                MakerPro
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Seeedstudio 2017
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.facebook.com/seeedstudiosz/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://github.com/SeeedDocument" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-c35428f87f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>
