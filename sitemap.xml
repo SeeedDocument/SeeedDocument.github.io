@@ -164,6 +164,12 @@
     </url>
         
     <url>
+     <loc>http://seeed.wiki/G1-8_Water_Flow_Sensor/</loc>
+     <lastmod>2017-10-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>http://seeed.wiki/Grove-Wrapper/</loc>
      <lastmod>2017-10-25</lastmod>
      <changefreq>daily</changefreq>
@@ -191,6 +197,12 @@
         
     <url>
      <loc>http://seeed.wiki/Grove-Maker_Kit_for_Intel_Joule/</loc>
+     <lastmod>2017-10-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/Grove_Indoor_Environment_Kit_for_Edison/</loc>
      <lastmod>2017-10-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
