@@ -2519,11 +2519,11 @@
 <p>这是一个我直在研究的一个项目的一部分，我会在这里分享一些，关于如何使用 Seeed Studio Depo 中的 Water Flow Sensor 读取每小时的水流量。 它使用一个简单的旋转轮并与霍尔传感器一起使用。 通过读取这些脉冲并记录数据，我们可以将液体流速精确到 3% 以内。由于端口是简单的 G&frac34;，所以找到合适的接口并不难。</p>
 <p><strong>硬件安装</strong></p>
 <p>您将需要 Seeeduino / Arduino，水流传感器，10K电阻，面包板和一些跳线。</p>
-<p>连接 Water Flow Sensor 非常简单。 有三根电线：黑色，红色和黄色。 黑色连到 Seeeduino 的 <strong>GND</strong>，红色连到 Seeeduino 的 <strong>5v</strong> 端口，黄色线将需要连接到 <strong>10k</strong> 上拉电阻，然后连接到 Seeeduino 上的**引脚 2**。</p>
+<p>连接 Water Flow Sensor 非常简单。 有三根电线：黑色，红色和黄色。 黑色连到 Seeeduino 的 <strong>GND</strong>，红色连到 Seeeduino 的 <strong>5v</strong> 端口，黄色线将需要连接到 <strong>10k</strong> 上拉电阻，然后连接到 Seeeduino 上的 <strong>引脚 2</strong> 。</p>
 <p>这是一个硬件连接图，它将告诉你如何连线。</p>
 <p><img alt="" src="https://github.com/SeeedDocument/G1-8_Water_Flow_Sensor/raw/master/img/Reading_liquid_flow_rate_with_an_Arduino.jpg" /></p>
 <p>一旦你有了它，你将需要上传以下代码到你的 Seeeduino。 上传后，使一些流体流过 Water Flow Sensor，您可以打开串行监视器，它将显示流量，每秒刷新一次。</p>
-<p>** 程序设计 **
+<p><strong>程序设计</strong>
 <div class="codehilite"><pre><span></span>// reading liquid flow rate using Seeeduino and Water Flow Sensor from Seeedstudio.com
 // Code adapted by Charles Gantt from PC Fan RPM code written by Crenn @thebestcasescenario.com
 // http:/themakersworkbench.com http://thebestcasescenario.com http://seeedstudio.com
@@ -2589,12 +2589,6 @@ void loop ()
 </li>
 <li>
 <p><strong>[创意应用]</strong><a href="http://www.seeedstudio.com/forum/viewtopic.php?f=4&amp;amp;t=989&amp;amp;p=3632#p3632">Reading Water Flow rate with Water Flow Sensor</a></p>
-</li>
-<li>
-<p><strong>[<font color =“Red”>已失效]</strong><a href="http://www.practicalarduino.com/projects/water-flow-gauge">Water Flow rate display on LCD</a></p>
-</li>
-<li>
-<p><strong>[<font color =“Red”>已失效]</strong><a href="http://garden.seeedstudio.com/images/4/4e/YEE70G30HSLNC..pdf">datasheet for the material</a></p>
 </li>
 </ul>
                 
