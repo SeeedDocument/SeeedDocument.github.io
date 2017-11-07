@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://seeed.wiki/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -83,7 +83,7 @@
         
     <url>
      <loc>http://seeed.wiki/Grove_System/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -117,55 +117,67 @@
         
     <url>
      <loc>http://seeed.wiki/Others/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/3W_Solar_Panel_138x160/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/2.5W_Solar_Panel_116x160/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/1w_Solar_Panel_80x100/</loc>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/0.5w_Solar_Panel_55x70/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/Lipo_Rider_V1.3/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/Bus_Pirate_v3_assembled/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/G3-4_Water_Flow_sensor/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/G1_and_2_inch_Water_Flow_Sensor/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/G1-8_Water_Flow_Sensor/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/Tiny_BLE/</loc>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -175,7 +187,7 @@
         
     <url>
      <loc>http://seeed.wiki/IoT/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -185,25 +197,43 @@
         
     <url>
      <loc>http://seeed.wiki/Grove_Starter_kit_for_Arduino_101/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/Grove-Maker_Kit_for_Intel_Joule/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/Grove_Indoor_Environment_Kit_for_Edison/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/Grove_Smart_Plant_Care_Kit/</loc>
+     <lastmod>2017-11-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/Grove-Serial_Camera_Kit/</loc>
+     <lastmod>2017-11-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/Sidekick_Basic_Kit_for_Arduino_V2/</loc>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/Techbox_Tricks/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -213,43 +243,43 @@
         
     <url>
      <loc>http://seeed.wiki/MakerPro/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/2KM_Long_Range_RF_link_kits_w_encoder_and_decoder/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/Piezo_Sensor-MiniSense_100/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/Arduboy/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/3.6V_Micro_hydro_generator/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/PIR_Motion_sensor_module/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/RF_Explorer_Software/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -259,31 +289,31 @@
         
     <url>
      <loc>http://seeed.wiki/Tutorial/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/How_to_install_Arduino_Library/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/Upload_Code/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/Getting_Started_with_Seeeduino/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://seeed.wiki/How_to_edit_Wiki/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -292,7 +322,7 @@
     
     <url>
      <loc>http://seeed.wiki/license/</loc>
-     <lastmod>2017-10-30</lastmod>
+     <lastmod>2017-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
