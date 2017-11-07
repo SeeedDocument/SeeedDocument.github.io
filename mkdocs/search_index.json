@@ -7607,12 +7607,12 @@
         }, 
         {
             "location": "/MakerPro/", 
-            "text": "\u6df1\u5733\u5c31\u50cfMaker\u7684\u5929\u5802\u3002 \u4f5c\u4e3a\u4e00\u5bb6\u603b\u90e8\u4f4d\u4e8e\u6df1\u5733\u7684\u5f00\u6e90\u516c\u53f8\uff0cSeeedStudio\u5177\u6709\u4e3a\u4e16\u754c\u5404\u5730\u7684\u5236\u9020\u5546\u63d0\u4f9b\u6240\u6709\u6700\u4f73\u8d44\u6e90\u7684\u4f18\u52bf\u548c\u80fd\u529b\u3002 MakerPro\u4e0d\u662fSeeed\u5f00\u53d1\u4ea7\u54c1\u7684\u90e8\u5206\uff0c\u800c\u662f\u76f4\u63a5\u4ece\u6df1\u5733\u91c7\u8d2d\u3002\n\n\n\u4ea7\u54c1\u6e05\u5355\n\n\n\n\n\u4ee5\u4e0b\u662f\u60a8\u53ef\u4ee5\u5728Seeed WiKi\u4e2d\u627e\u5230\u7684MakerPro\u677f\u5217\u8868\u3002 \u8be5\u5217\u8868\u5c06\u4e0d\u65ad\u66f4\u65b0\u3002\n\n\n\n\n0.5w_Solar_Panel_55x70\n\n\n1w_Solar_Panel_80x100\n\n\n2.5W_Solar_Panel_116x160\n\n\n2KM_Long_Range_RF_link_kits_w_encoder_and_decoder\n\n\n3.6V_Micro_hydro_generator\n\n\n3W_Solar_Panel_138x160\n\n\nArduboy\n\n\nBus_Pirate_v3_assembled\n\n\nG1-8_Water_Flow_Sensor\n\n\nG1_and_2_inch_Water_Flow_Sensor\n\n\nG3-4_Water_Flow_sensor\n\n\nPiezo_Sensor-MiniSense_100\n\n\nPIR_Motion_sensor_module\n\n\nRF_Explorer_Software\n\n\nWireLess_Gate_Shield_V1.0", 
+            "text": "\u6df1\u5733\u5c31\u50cfMaker\u7684\u5929\u5802\u3002 \u4f5c\u4e3a\u4e00\u5bb6\u603b\u90e8\u4f4d\u4e8e\u6df1\u5733\u7684\u5f00\u6e90\u516c\u53f8\uff0cSeeedStudio\u5177\u6709\u4e3a\u4e16\u754c\u5404\u5730\u7684\u5236\u9020\u5546\u63d0\u4f9b\u6240\u6709\u6700\u4f73\u8d44\u6e90\u7684\u4f18\u52bf\u548c\u80fd\u529b\u3002 MakerPro\u4e0d\u662fSeeed\u5f00\u53d1\u4ea7\u54c1\u7684\u90e8\u5206\uff0c\u800c\u662f\u76f4\u63a5\u4ece\u6df1\u5733\u91c7\u8d2d\u3002\n\n\n\u4ea7\u54c1\u6e05\u5355\n\n\n\n\n\u4ee5\u4e0b\u662f\u60a8\u53ef\u4ee5\u5728Seeed WiKi\u4e2d\u627e\u5230\u7684MakerPro\u677f\u5217\u8868\u3002 \u8be5\u5217\u8868\u5c06\u4e0d\u65ad\u66f4\u65b0\u3002\n\n\n\n\n0.5w_Solar_Panel_55x70\n\n\n1w_Solar_Panel_80x100\n\n\n2.5W_Solar_Panel_116x160\n\n\n2KM_Long_Range_RF_link_kits_w_encoder_and_decoder\n\n\n3.6V_Micro_hydro_generator\n\n\n3W_Solar_Panel_138x160\n\n\nArduboy\n\n\nBus_Pirate_v3_assembled\n\n\nG1-8_Water_Flow_Sensor\n\n\nG1_and_2_inch_Water_Flow_Sensor\n\n\nG3-4_Water_Flow_sensor\n\n\nGrove-PIR_Motion_Sensor_Large_Lens_version\n\n\nPiezo_Sensor-MiniSense_100\n\n\nRF_Explorer_Software\n\n\nWireLess_Gate_Shield_V1.0", 
             "title": "MakerPro"
         }, 
         {
             "location": "/MakerPro/#_1", 
-            "text": "\u4ee5\u4e0b\u662f\u60a8\u53ef\u4ee5\u5728Seeed WiKi\u4e2d\u627e\u5230\u7684MakerPro\u677f\u5217\u8868\u3002 \u8be5\u5217\u8868\u5c06\u4e0d\u65ad\u66f4\u65b0\u3002   0.5w_Solar_Panel_55x70  1w_Solar_Panel_80x100  2.5W_Solar_Panel_116x160  2KM_Long_Range_RF_link_kits_w_encoder_and_decoder  3.6V_Micro_hydro_generator  3W_Solar_Panel_138x160  Arduboy  Bus_Pirate_v3_assembled  G1-8_Water_Flow_Sensor  G1_and_2_inch_Water_Flow_Sensor  G3-4_Water_Flow_sensor  Piezo_Sensor-MiniSense_100  PIR_Motion_sensor_module  RF_Explorer_Software  WireLess_Gate_Shield_V1.0", 
+            "text": "\u4ee5\u4e0b\u662f\u60a8\u53ef\u4ee5\u5728Seeed WiKi\u4e2d\u627e\u5230\u7684MakerPro\u677f\u5217\u8868\u3002 \u8be5\u5217\u8868\u5c06\u4e0d\u65ad\u66f4\u65b0\u3002   0.5w_Solar_Panel_55x70  1w_Solar_Panel_80x100  2.5W_Solar_Panel_116x160  2KM_Long_Range_RF_link_kits_w_encoder_and_decoder  3.6V_Micro_hydro_generator  3W_Solar_Panel_138x160  Arduboy  Bus_Pirate_v3_assembled  G1-8_Water_Flow_Sensor  G1_and_2_inch_Water_Flow_Sensor  G3-4_Water_Flow_sensor  Grove-PIR_Motion_Sensor_Large_Lens_version  Piezo_Sensor-MiniSense_100  RF_Explorer_Software  WireLess_Gate_Shield_V1.0", 
             "title": "\u4ea7\u54c1\u6e05\u5355"
         }, 
         {
@@ -7751,32 +7751,32 @@
             "title": "\u4f7f\u7528\u65b9\u6cd5"
         }, 
         {
-            "location": "/PIR_Motion_sensor_module/", 
+            "location": "/Grove-PIR_Motion_Sensor_Large_Lens_version/", 
             "text": "PIR\uff08\u88ab\u52a8\u7ea2\u5916\u68c0\u6d4b\uff09\u7528\u4e8e\u68c0\u6d4b\u4eba\u4f53\u8fd0\u52a8\u3002\u8be5\u7248\u672c\u6709\u4e00\u4e2a\u53ef\u4ee5\u652f\u6301\u8fdc\u7a0b\u548c\u5e7f\u89d2\u6d4b\u91cf\u7684\u5927\u955c\u5934\u30022.54mm \u6807\u51c6\u8fde\u63a5\u5668\u6613\u4e8e\u5728\u4efb\u4f55\u4f4d\u7f6e\u56fa\u5b9a\u3002\n\n\n\n\n\u4ea7\u54c1\u7279\u6027\n\n\n\n\n\n\n\n\n\u957f\u8ddd\u79bb\n\n\n\n\n\n\n\u5e7f\u89d2\u5ea6\n\n\n\n\n\n\n\u4f4e\u6d88\u8017\n\n\n\n\n\n\nDC 3.0-5.5V \u7535\u6e90\u4f9b\u5e94\n\n\n\n\n\n\n\u89c4\u683c\u53c2\u6570\n\n\n\n\n\n\n\n\n\u8f93\u5165\u7535\u538b: DC3.0-5.5V\n\n\n\n\n\n\n\u7535\u6d41: 100uA(\u6700\u5927)\n\n\n\n\n\n\n\u68c0\u6d4b\u8ddd\u79bb: 9m(\u6700\u5927)\n\n\n\n\n\n\n\u8f93\u51fa\u4fe1\u53f7: 0,3 VCC (\u68c0\u6d4b\u5230\u8fd0\u52a8\u65f6\u8f93\u51fa\u9ad8\u7535\u5e73)\n\n\n\n\n\n\n\u68c0\u6d4b\u89d2: 120\u00b0\n\n\n\n\n\n\n\u63a5\u53e3:3\u4e2a\u5f15\u811a 2.54mm \u95f4\u8ddd\n\n\n\n\n\u5c3a\u5bf8\uff1a L36*W26*H21(mm)\n\n\n\n\n\u7528\u6cd5\n\n\n\n\n\u4ee5\u4e0b\u793a\u4f8b\u5c55\u793a\u4e86\u611f\u5e94\u5355\u5143\u7684\u7b80\u5355\u5e94\u7528\u3002\u5f53\u6709\u4eba\u5728\u5176\u68c0\u6d4b\u8303\u56f4\u5185\u79fb\u52a8\u65f6\uff0c\u5b83\u5c06\u901a\u8fc7 \nSIG\n \u5f15\u811a\u8f93\u51fa\u9ad8\u7535\u5e73\uff0cLED \u5c06\u70b9\u4eae\u3002\u5426\u5219\uff0c\u5b83\u5c06\u8f93\u51fa\u4f4e\u7535\u5e73\u3002\u4f60\u53ef\u4ee5\u4ee5\u6b64\u7528\u5b83\u6765\u68c0\u6d4b\u4eba\u7684\u52a8\u4f5c\u3002\n\n\n\n\n\u7a0b\u5e8f\u8bbe\u8ba1\n\n\n\u5305\u62ec\u91cd\u8981\u7684\u4ee3\u7801\u6bb5\u3002\n\u6f14\u793a\u4ee3\u7801\u5982\u4e0b\uff1a\n\n/*******************************************************************************/\n/*macro definitions of PIR motion sensor pin and LED pin*/\n#define PIR_MOTION_SENSOR 8//Use pin 8 to receive the signal from the module\n#define LED    4//the Grove - LED is connected to D4 of Arduino\n\nvoid setup()\n{\n    pinsInit();\n}\n\nvoid loop()\n{\n    if(isPeopleDetected())//if it detects the moving people?\n    turnOnLED();\n    else\n    turnOffLED();\n}\nvoid pinsInit()\n{\n    pinMode(PIR_MOTION_SENSOR, INPUT);\n    pinMode(LED,OUTPUT);\n}\nvoid turnOnLED()\n{\n    digitalWrite(LED,HIGH);\n}\nvoid turnOffLED()\n{\n    digitalWrite(LED,LOW);\n}\n/***************************************************************/\n/*Function: Detect whether anyone moves in it\ns detecting range*/\n/*Return:-boolean, ture is someone detected.*/\nboolean isPeopleDetected()\n{\n    int sensorValue = digitalRead(PIR_MOTION_SENSOR);\n    if(sensorValue == HIGH)//if the sensor value is HIGH?\n    {\n        return true;//yes,return ture\n    }\n    else\n    {\n        return false;//no,return false\n    }\n}\n\n\n\n\u8d44\u6e90\u4e0b\u8f7d\n\n\n\n\n\n\nPIR Motion sensor Eagle file", 
-            "title": "PIR Motion sensor module"
+            "title": "PIR Motion Sensor Large Lens version"
         }, 
         {
-            "location": "/PIR_Motion_sensor_module/#_1", 
+            "location": "/Grove-PIR_Motion_Sensor_Large_Lens_version/#_1", 
             "text": "\u957f\u8ddd\u79bb    \u5e7f\u89d2\u5ea6    \u4f4e\u6d88\u8017    DC 3.0-5.5V \u7535\u6e90\u4f9b\u5e94", 
             "title": "\u4ea7\u54c1\u7279\u6027"
         }, 
         {
-            "location": "/PIR_Motion_sensor_module/#_2", 
+            "location": "/Grove-PIR_Motion_Sensor_Large_Lens_version/#_2", 
             "text": "\u8f93\u5165\u7535\u538b: DC3.0-5.5V    \u7535\u6d41: 100uA(\u6700\u5927)    \u68c0\u6d4b\u8ddd\u79bb: 9m(\u6700\u5927)    \u8f93\u51fa\u4fe1\u53f7: 0,3 VCC (\u68c0\u6d4b\u5230\u8fd0\u52a8\u65f6\u8f93\u51fa\u9ad8\u7535\u5e73)    \u68c0\u6d4b\u89d2: 120\u00b0    \u63a5\u53e3:3\u4e2a\u5f15\u811a 2.54mm \u95f4\u8ddd   \u5c3a\u5bf8\uff1a L36*W26*H21(mm)", 
             "title": "\u89c4\u683c\u53c2\u6570"
         }, 
         {
-            "location": "/PIR_Motion_sensor_module/#_3", 
+            "location": "/Grove-PIR_Motion_Sensor_Large_Lens_version/#_3", 
             "text": "\u4ee5\u4e0b\u793a\u4f8b\u5c55\u793a\u4e86\u611f\u5e94\u5355\u5143\u7684\u7b80\u5355\u5e94\u7528\u3002\u5f53\u6709\u4eba\u5728\u5176\u68c0\u6d4b\u8303\u56f4\u5185\u79fb\u52a8\u65f6\uff0c\u5b83\u5c06\u901a\u8fc7  SIG  \u5f15\u811a\u8f93\u51fa\u9ad8\u7535\u5e73\uff0cLED \u5c06\u70b9\u4eae\u3002\u5426\u5219\uff0c\u5b83\u5c06\u8f93\u51fa\u4f4e\u7535\u5e73\u3002\u4f60\u53ef\u4ee5\u4ee5\u6b64\u7528\u5b83\u6765\u68c0\u6d4b\u4eba\u7684\u52a8\u4f5c\u3002", 
             "title": "\u7528\u6cd5"
         }, 
         {
-            "location": "/PIR_Motion_sensor_module/#_4", 
+            "location": "/Grove-PIR_Motion_Sensor_Large_Lens_version/#_4", 
             "text": "\u5305\u62ec\u91cd\u8981\u7684\u4ee3\u7801\u6bb5\u3002\n\u6f14\u793a\u4ee3\u7801\u5982\u4e0b\uff1a /*******************************************************************************/\n/*macro definitions of PIR motion sensor pin and LED pin*/\n#define PIR_MOTION_SENSOR 8//Use pin 8 to receive the signal from the module\n#define LED    4//the Grove - LED is connected to D4 of Arduino\n\nvoid setup()\n{\n    pinsInit();\n}\n\nvoid loop()\n{\n    if(isPeopleDetected())//if it detects the moving people?\n    turnOnLED();\n    else\n    turnOffLED();\n}\nvoid pinsInit()\n{\n    pinMode(PIR_MOTION_SENSOR, INPUT);\n    pinMode(LED,OUTPUT);\n}\nvoid turnOnLED()\n{\n    digitalWrite(LED,HIGH);\n}\nvoid turnOffLED()\n{\n    digitalWrite(LED,LOW);\n}\n/***************************************************************/\n/*Function: Detect whether anyone moves in it s detecting range*/\n/*Return:-boolean, ture is someone detected.*/\nboolean isPeopleDetected()\n{\n    int sensorValue = digitalRead(PIR_MOTION_SENSOR);\n    if(sensorValue == HIGH)//if the sensor value is HIGH?\n    {\n        return true;//yes,return ture\n    }\n    else\n    {\n        return false;//no,return false\n    }\n}", 
             "title": "\u7a0b\u5e8f\u8bbe\u8ba1"
         }, 
         {
-            "location": "/PIR_Motion_sensor_module/#_5", 
+            "location": "/Grove-PIR_Motion_Sensor_Large_Lens_version/#_5", 
             "text": "PIR Motion sensor Eagle file", 
             "title": "\u8d44\u6e90\u4e0b\u8f7d"
         }, 
