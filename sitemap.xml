@@ -243,6 +243,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>http://seeed.wiki/Wio_Link_Environment_Kit/</loc>
+     <lastmod>2017-11-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
@@ -285,6 +291,12 @@
         
     <url>
      <loc>http://seeed.wiki/RF_Explorer_Software/</loc>
+     <lastmod>2017-11-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/Codec-Adaptive_Wireless_Relay/</loc>
      <lastmod>2017-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
