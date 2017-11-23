@@ -1030,6 +1030,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#faq" title="FAQ(疑问解答)" class="md-nav__link">
+    FAQ(疑问解答)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_7" title="资源下载" class="md-nav__link">
     资源下载
   </a>
@@ -3725,6 +3732,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#faq" title="FAQ(疑问解答)" class="md-nav__link">
+    FAQ(疑问解答)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_7" title="资源下载" class="md-nav__link">
     资源下载
   </a>
@@ -3797,7 +3811,9 @@
 <p>因为当前的Pi内核目前不支持AC108编解码器，所以我们需要手动构建。</p>
 <h4 id="1-piraspbiandebian-9-20170915">1. 确保您正在您的Pi上运行<a href="https://www.raspberrypi.org/downloads/raspbian/">最新的Raspbian操作系统（debian 9）</a>。 <em>（更新于2017.09.15）</em><a class="headerlink" href="#1-piraspbiandebian-9-20170915" title="Permanent link">&para;</a></h4>
 <h4 id="2">2. 根据以下流程安装驱动：<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>git clone https://github.com/respeaker/seeed-voicecard.git
+<div class="codehilite"><pre><span></span>sudo apt-get update
+sudo apt-get upgrade
+git clone https://github.com/respeaker/seeed-voicecard.git
 cd seeed-voicecard
 sudo ./install.sh 4mic
 reboot
@@ -3858,9 +3874,9 @@ aplay hello.wav                                      // 确保选择默认设备
 <p>每个板载APA102 LED都有一个额外的驱动芯片，驱动芯片设置LED的颜色，然后保持该颜色，直到接收到新的命令。</p>
 <p><img alt="" src="https://github.com/SeeedDocument/ReSpeaker-4-Mic-Array-for-Raspberry-Pi/blob/master/img/rainbow.jpg?raw=true" /></p>
 <h4 id="1-spi">1. 打开SPI:<a class="headerlink" href="#1-spi" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>- 输入： `sudo raspi-config`; 
-- 选择 &quot;Interfacing Options&quot;; 
-- 选择 &quot;SPI&quot;; 
+<div class="codehilite"><pre><span></span>- 输入： `sudo raspi-config`;
+- 选择 &quot;Interfacing Options&quot;;
+- 选择 &quot;SPI&quot;;
 - 选择 “Yes”  
 - 选择 “OK”
 - 选择 “Finish”
@@ -3972,6 +3988,12 @@ def main():
 <img alt="" src="https://github.com/SeeedDocument/ReSpeaker-4-Mic-Array-for-Raspberry-Pi/raw/master/img/alexa.png" /></p>
 <h4 id="3-high">3. 让我们High起来!<a class="headerlink" href="#3-high" title="Permanent link">&para;</a></h4>
 <p>现在请在虚拟环境下运行 <code>python ns_kws_doa_alexa.py</code> , 我们会在终端看到很多debug的消息. 当我们看到 **status code: 204**的时候, 请说 <code>snowboy</code>来唤醒respeaker。接下来respeaker上的led灯亮起来, 我们可以跟他对话, 比如问，"谁是最帅的?" 或者 "播放刘德华的男人哭吧哭吧不是罪"。小伙伴，尽情的High起来吧。</p>
+<h2 id="faq">FAQ(疑问解答)<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
+<p>1.</p>
+<p>Q:严格按照本 wiki 操作，驱动还是安装失败，怎么办？</p>
+<p>A:如果按照上述方法安装驱动均失败，请点击下面固件安装</p>
+<p><a href="https://pan.baidu.com/s/1bprWJr5">我是固件</a></p>
+<p>下载密码：t1m7</p>
 <h2 id="_7">资源下载<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>[PDF 原理图]</strong> <a href="https://github.com/SeeedDocument/ReSpeaker-4-Mic-Array-for-Raspberry-Pi/blob/master/src/ReSpeaker%204-Mic%20Array%20for%20Raspberry%20Pi%20%20v1.0.pdf">ReSpeaker 4-Mic Array for Raspberry Pi(PDF)</a></li>
