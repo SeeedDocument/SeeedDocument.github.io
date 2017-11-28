@@ -1,0 +1,5423 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Seeed产品文档-中文">
+      
+      
+        <link rel="canonical" href="http://seeed.wiki/Wifi_Shield_V2.0/">
+      
+      
+        <meta name="author" content="Loovee">
+      
+      
+        <link rel="shortcut icon" href="../images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+    
+    
+      
+        <title>Wifi Shield V2.0</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-769c285a91.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="light-green" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://seeed.wiki" title="Seeed产品文档" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  平台
+                </span>
+              
+                <span class="md-header-nav__parent">
+                  Shield
+                </span>
+              
+            
+            Wifi Shield V2.0
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      SeeedDocument/SeeedDocument.github.io
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Seeed产品文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      SeeedDocument/SeeedDocument.github.io
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Seeed文档中文站点介绍" class="md-nav__link">
+      Seeed文档中文站点介绍
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      平台
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        平台
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Arduino
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Arduino
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Arduino/" title="Arduino" class="md-nav__link">
+      Arduino
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seeeduino_v4.2/" title="Seeeduino v4.2" class="md-nav__link">
+      Seeeduino v4.2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seeeduino_Lite/" title="Seeeduino Lite" class="md-nav__link">
+      Seeeduino Lite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seeeduino_Lotus/" title="Seeeduino Lotus" class="md-nav__link">
+      Seeeduino Lotus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seeeduino_Cloud/" title="Seeeduino Cloud" class="md-nav__link">
+      Seeeduino Cloud
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seeeduino_LoRAWAN/" title="Seeeduino LoRAWAN" class="md-nav__link">
+      Seeeduino LoRAWAN
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seeeduino_Mega/" title="Seeeduino Mega" class="md-nav__link">
+      Seeeduino Mega
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../UartSBee_v5/" title="UartSBee v5" class="md-nav__link">
+      UartSBee v5
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      BeagleBone
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        BeagleBone
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BeagleBone/" title="BeagleBone" class="md-nav__link">
+      BeagleBone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BeagleBone_Green/" title="BeagleBone Green" class="md-nav__link">
+      BeagleBone Green
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BeagleBone_Green_Wireless/" title="BeagleBone Green Wireless" class="md-nav__link">
+      BeagleBone Green Wireless
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BeagleBone_Green_HDMI_Cape/" title="BeagleBone Green HDMI Cape" class="md-nav__link">
+      BeagleBone Green HDMI Cape
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_Base_Cape_for_BeagleBone_v2/" title="Grove Base Cape for BeagleBone v2" class="md-nav__link">
+      Grove Base Cape for BeagleBone v2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Raspberry
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        Raspberry
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Raspberry/" title="Raspberry" class="md-nav__link">
+      Raspberry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Raspberry_Pi_3_Model_B/" title="Raspberry_Pi_3_Model_B" class="md-nav__link">
+      Raspberry_Pi_3_Model_B
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Wio
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        Wio
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wio/" title="Wio" class="md-nav__link">
+      Wio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wio_Link/" title="Wio Link" class="md-nav__link">
+      Wio Link
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      LinkIt
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        LinkIt
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LinkIt/" title="LinkIt" class="md-nav__link">
+      LinkIt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LinkIt_Smart_7688/" title="LinkIt Smart 7688" class="md-nav__link">
+      LinkIt Smart 7688
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LinkIt_Smart_7688_Duo/" title="LinkIt Smart 7688_Duo" class="md-nav__link">
+      LinkIt Smart 7688_Duo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Breakout_for_LinkIt_Smart_7688_v2.0/" title="Breakout for LinkIt Smart 7688 v2.0" class="md-nav__link">
+      Breakout for LinkIt Smart 7688 v2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Arduino_Breakout_for_LinkIt_Smart_7688_Duo/" title="Arduino Breakout for LinkIt Smart 7688 Duo" class="md-nav__link">
+      Arduino Breakout for LinkIt Smart 7688 Duo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LinkIt_ONE/" title="LinkIt ONE" class="md-nav__link">
+      LinkIt ONE
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
+      mbed
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        mbed
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mbed/" title="mbed" class="md-nav__link">
+      mbed
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Tiny_BLE/" title="Tiny BLE" class="md-nav__link">
+      Tiny BLE
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
+      Rephone
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        Rephone
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Rephone/" title="Rephone" class="md-nav__link">
+      Rephone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Xadow_Audio/" title="Xadow Audio" class="md-nav__link">
+      Xadow Audio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Xadow_GPS_V2/" title="Xadow GPS V2" class="md-nav__link">
+      Xadow GPS V2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Xadow_GSM_Breakout/" title="Xadow GSM Breakout" class="md-nav__link">
+      Xadow GSM Breakout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Xadow_GSMPlusBLE/" title="Xadow GSMPlusBLE" class="md-nav__link">
+      Xadow GSMPlusBLE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Xadow_Basic_Sensors/" title="Xadow Basic Sensors" class="md-nav__link">
+      Xadow Basic Sensors
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8" type="checkbox" id="nav-2-8">
+    
+    <label class="md-nav__link" for="nav-2-8">
+      Respeaker
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-8">
+        Respeaker
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker/" title="Respeaker" class="md-nav__link">
+      Respeaker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_Mic_Array/" title="Respeaker Mic Array" class="md-nav__link">
+      Respeaker Mic Array
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_Core/" title="Respeaker Core" class="md-nav__link">
+      Respeaker Core
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_2-Mics_Pi_HAT/" title="Respeaker 2-Mics Pi HAT" class="md-nav__link">
+      Respeaker 2-Mics Pi HAT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Respeaker_4-Mics_Pi_HAT/" title="Respeaker 4-Mics Pi HAT" class="md-nav__link">
+      Respeaker 4-Mics Pi HAT
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-9" type="checkbox" id="nav-2-9" checked>
+    
+    <label class="md-nav__link" for="nav-2-9">
+      Shield
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-9">
+        Shield
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Shield/" title="Shield" class="md-nav__link">
+      Shield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Base_Shield_V2/" title="Base Shield V2" class="md-nav__link">
+      Base Shield V2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../CAN-BUS_Shield_V1.2/" title="CAN-BUS Shield V1.2" class="md-nav__link">
+      CAN-BUS Shield V1.2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../CAN-BUS_Shield_V2.0/" title="CAN-BUS Shield V2.0" class="md-nav__link">
+      CAN-BUS Shield V2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Music_Shield_V2.2/" title="Music Shield V2.2" class="md-nav__link">
+      Music Shield V2.2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../W5500_Ethernet_Shield_v1.0/" title="W5500 Ethernet Shield v1.0" class="md-nav__link">
+      W5500 Ethernet Shield v1.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_Shield_for_Intel_Joule/" title="Grove Shield for Intel Joule" class="md-nav__link">
+      Grove Shield for Intel Joule
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Mega_Shield/" title="Grove Mega Shield" class="md-nav__link">
+      Grove Mega Shield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../XBee_Shield_V2.0/" title="XBee Shield V2.0" class="md-nav__link">
+      XBee Shield V2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-XBee_Carrier/" title="Grove XBee Carrier" class="md-nav__link">
+      Grove XBee Carrier
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Relay_Shield_v3/" title="Relay Shield v3" class="md-nav__link">
+      Relay Shield v3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../GrovePi_Plus/" title="GrovePi Plus" class="md-nav__link">
+      GrovePi Plus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../WireLess_Gate_Shield_V1.0/" title="WireLess Gate Shield V1.0" class="md-nav__link">
+      WireLess Gate Shield V1.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Solar_Charger_Shield_V2.2/" title="Solar Charger Shield V2.2" class="md-nav__link">
+      Solar Charger Shield V2.2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Bluetooth_Shield_V2/" title="Bluetooth Shield V2" class="md-nav__link">
+      Bluetooth Shield V2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../NFC_Shield_V2.0/" title="NFC Shield V2.0" class="md-nav__link">
+      NFC Shield V2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Wifi Shield V2.0
+      </label>
+    
+    <a href="./" title="Wifi Shield V2.0" class="md-nav__link md-nav__link--active">
+      Wifi Shield V2.0
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="版本更替" class="md-nav__link">
+    版本更替
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="规格参数" class="md-nav__link">
+    规格参数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="兼容性" class="md-nav__link">
+    兼容性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="硬件概述" class="md-nav__link">
+    硬件概述
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="引脚使用 / 扩展板兼容性" class="md-nav__link">
+    引脚使用 / 扩展板兼容性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rn171-wifi-module" title="RN171 WiFi Module" class="md-nav__link">
+    RN171 WiFi Module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led" title="LED 状态指示灯" class="md-nav__link">
+    LED 状态指示灯
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi" title="WiFi 库" class="md-nav__link">
+    WiFi 库
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup" title="Setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="函数" class="md-nav__link">
+    函数
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#join" title="join()" class="md-nav__link">
+    join()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive" title="receive()" class="md-nav__link">
+    receive()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendcommand" title="sendCommand()" class="md-nav__link">
+    sendCommand()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi-shield" title="WiFi Shield 示例 / 应用" class="md-nav__link">
+    WiFi Shield 示例 / 应用
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-arduino-wifi-shield" title="示例 1: 通过 Arduino 串行监视器窗口发送命令到 WiFi Shield 并接收响应" class="md-nav__link">
+    示例 1: 通过 Arduino 串行监视器窗口发送命令到 WiFi Shield 并接收响应
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-access-point-internet-router" title="Example 2: 连接到 Access Point / Internet Router" class="md-nav__link">
+    Example 2: 连接到 Access Point / Internet Router
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="通过输入命令连接" class="md-nav__link">
+    通过输入命令连接
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wifi-libraries" title="使用 WiFi Libraries 连接" class="md-nav__link">
+    使用 WiFi Libraries 连接
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="配置扩展板上电连接" class="md-nav__link">
+    配置扩展板上电连接
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ip" title="设置静态 IP 地址" class="md-nav__link">
+    设置静态 IP 地址
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3" title="Example 3: 您网络通信" class="md-nav__link">
+    Example 3: 您网络通信
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-wifi-shield-webserver" title="Example 4: 使用 WiFi Shield 作为 Webserver (来自扩展板的服务网页)" class="md-nav__link">
+    Example 4: 使用 WiFi Shield 作为 Webserver (来自扩展板的服务网页)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-5-arduino" title="Example 5: 从网页端控制 Arduino 数字引脚" class="md-nav__link">
+    Example 5: 从网页端控制 Arduino 数字引脚
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-6-wifi-shield-android-app" title="Example 6: WiFi Shield 和 Android App" class="md-nav__link">
+    Example 6: WiFi Shield 和 Android App
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-7" title="Example 7: 将数据发送到外部服务器并从中检索数据" class="md-nav__link">
+    Example 7: 将数据发送到外部服务器并从中检索数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-8-tcp" title="Example 8 : 与终端 TCP 通信" class="md-nav__link">
+    Example 8 : 与终端 TCP 通信
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-9-wifi-shield-relay-shield" title="Example 9: WiFi Shield 和 Relay Shield 配合使用" class="md-nav__link">
+    Example 9: WiFi Shield 和 Relay Shield 配合使用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-10-adhoc" title="Example 10: Adhoc 模式" class="md-nav__link">
+    Example 10: Adhoc 模式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" title="资源下载" class="md-nav__link">
+    资源下载
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RS232_Shield/" title="RS232 Shield" class="md-nav__link">
+      RS232 Shield
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-10" type="checkbox" id="nav-2-10">
+    
+    <label class="md-nav__link" for="nav-2-10">
+      Essentials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-10">
+        Essentials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Essentials/" title="Essentials" class="md-nav__link">
+      Essentials
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-11" type="checkbox" id="nav-2-11">
+    
+    <label class="md-nav__link" for="nav-2-11">
+      Wireless
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-11">
+        Wireless
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wireless/" title="Wireless" class="md-nav__link">
+      Wireless
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BLE_Nitrogen/" title="BLE Nitrogen" class="md-nav__link">
+      BLE Nitrogen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Bluetooth_V4.0_HM_11_BLE_Module/" title="Bluetooth_V4.0_HM_11_BLE_Module" class="md-nav__link">
+      Bluetooth_V4.0_HM_11_BLE_Module
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Grove
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Grove
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_System/" title="Grove系统" class="md-nav__link">
+      Grove系统
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      传感器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        传感器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sensor/" title="Sensor" class="md-nav__link">
+      Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Encoder/" title="Grove-Encoder" class="md-nav__link">
+      Grove-Encoder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Multichannel_Gas_Sensor/" title="Grove-Multichannel Gas Sensor" class="md-nav__link">
+      Grove-Multichannel Gas Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Piezo_Vibration_Sensor/" title="Grove-Piezo Vibration Sensor" class="md-nav__link">
+      Grove-Piezo Vibration Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Sound_Sensor/" title="Grove-Sound Sensor" class="md-nav__link">
+      Grove-Sound Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Ultrasonic_Ranger/" title="Grove-Ultrasonic Ranger" class="md-nav__link">
+      Grove-Ultrasonic Ranger
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-GSR_Sensor/" title="Grove-GSR Sensor" class="md-nav__link">
+      Grove-GSR Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Dust_Sensor/" title="Grove-Dust Sensor" class="md-nav__link">
+      Grove-Dust Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Air_Quality_Sensor_v1.3/" title="Grove-Air Quality Sensor v1.3" class="md-nav__link">
+      Grove-Air Quality Sensor v1.3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Barometer_Sensor-BMP280/" title="Grove-Barometer Sensor BMP280" class="md-nav__link">
+      Grove-Barometer Sensor BMP280
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Barometer_Sensor-BME280/" title="Grove-Barometer Sensor BME280" class="md-nav__link">
+      Grove-Barometer Sensor BME280
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Ear-clip_Heart_Rate_Sensor/" title="Grove-Ear clip Heart Rate Sensor" class="md-nav__link">
+      Grove-Ear clip Heart Rate Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Finger-clip_Heart_Rate_Sensor/" title="Grove-Finger clip Heart Rate Sensor" class="md-nav__link">
+      Grove-Finger clip Heart Rate Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Finger-clip_Heart_Rate_Sensor_with_shell/" title="Grove-Finger clip Heart Rate Sensor with shell" class="md-nav__link">
+      Grove-Finger clip Heart Rate Sensor with shell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gas_Sensor-O2/" title="Grove-Gas Sensor O2" class="md-nav__link">
+      Grove-Gas Sensor O2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-CO2_Sensor/" title="Grove-CO2 Sensor" class="md-nav__link">
+      Grove-CO2 Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gas_Sensor-MQ2/" title="Grove-Gas Sensor MQ2" class="md-nav__link">
+      Grove-Gas Sensor MQ2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gas_Sensor-MQ3/" title="Grove-Gas Sensor MQ3" class="md-nav__link">
+      Grove-Gas Sensor MQ3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gas_Sensor-MQ5/" title="Grove-Gas Sensor MQ5" class="md-nav__link">
+      Grove-Gas Sensor MQ5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gas_Sensor-MQ9/" title="Grove-Gas Sensor MQ9" class="md-nav__link">
+      Grove-Gas Sensor MQ9
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Alcohol_Sensor/" title="Grove-Alcohol Sensor" class="md-nav__link">
+      Grove-Alcohol Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Light_Sensor/" title="Grove-Light Sensor" class="md-nav__link">
+      Grove-Light Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Sunlight_Sensor/" title="Grove-Sunlight Sensor" class="md-nav__link">
+      Grove-Sunlight Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-MOSFET/" title="Grove-MOSFET" class="md-nav__link">
+      Grove-MOSFET
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_Sensor/" title="Grove-Temperature Sensor" class="md-nav__link">
+      Grove-Temperature Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_Sensor_V1.2/" title="Grove-Temperature Sensor-V1.2" class="md-nav__link">
+      Grove-Temperature Sensor-V1.2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-High_Temperature_Sensor/" title="Grove-High Temperature Sensor" class="md-nav__link">
+      Grove-High Temperature Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Infrared_Temperature_Sensor/" title="Grove-Infrared Temperature Sensor" class="md-nav__link">
+      Grove-Infrared Temperature Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Digital_Infrared_Temperature_Sensor/" title="Grove-Digital Infrared Temperature Sensor" class="md-nav__link">
+      Grove-Digital Infrared Temperature Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_and_Humidity_Sensor_Pro/" title="Grove-Temperature and Humidity Sensor Pro" class="md-nav__link">
+      Grove-Temperature and Humidity Sensor Pro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Temperature_and_Humidity_Sensor/" title="Grove-Temperature and Humidity Sensor" class="md-nav__link">
+      Grove-Temperature and Humidity Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-TempAndHumi_Sensor-SHT31/" title="Grove-Temperature and Humidity Sensor-SHT31" class="md-nav__link">
+      Grove-Temperature and Humidity Sensor-SHT31
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-TemptureAndHumidity_Sensor_High_Accuracy_AndMini-v1.0/" title="Grove-Tempture and Humidity Sensor High Accuracy Mini-v1.0" class="md-nav__link">
+      Grove-Tempture and Humidity Sensor High Accuracy Mini-v1.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-UV_Sensor/" title="Grove-UV Sensor" class="md-nav__link">
+      Grove-UV Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Vibration_Motor/" title="Grove-Vibration Motor" class="md-nav__link">
+      Grove-Vibration Motor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Barometer_High_Accuracy/" title="Grove-Barometer High Accuracy" class="md-nav__link">
+      Grove-Barometer High Accuracy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Digital_Light_Sensor/" title="Grove-Digital Light Sensor" class="md-nav__link">
+      Grove-Digital Light Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Electromagnet/" title="Grove-Electromagnet" class="md-nav__link">
+      Grove-Electromagnet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-EMG_Detector/" title="Grove-EMG Detector" class="md-nav__link">
+      Grove-EMG Detector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Flame_Sensor/" title="Grove-Flame Sensor" class="md-nav__link">
+      Grove-Flame Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-HCHO_Sensor/" title="Grove-HCHO Sensor" class="md-nav__link">
+      Grove-HCHO Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-I2C_Color_Sensor/" title="Grove-I2C Color Sensor" class="md-nav__link">
+      Grove-I2C Color Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Loudness_Sensor/" title="Grove-Loudness Sensor" class="md-nav__link">
+      Grove-Loudness Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Moisture_Sensor/" title="Grove-Moisture Sensor" class="md-nav__link">
+      Grove-Moisture Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Touch_Sensor/" title="Grove-Touch Sensor" class="md-nav__link">
+      Grove-Touch Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Q_Touch_Sensor/" title="Grove-Q Touch Sensor" class="md-nav__link">
+      Grove-Q Touch Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-I2C_Touch_Sensor/" title="Grove-I2C Touch Sensor" class="md-nav__link">
+      Grove-I2C Touch Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Gesture_v1.0/" title="Grove-Gesture v1.0" class="md-nav__link">
+      Grove-Gesture v1.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-IMU_9DOF_v2.0/" title="Grove-IMU 9DOF v2.0" class="md-nav__link">
+      Grove-IMU 9DOF v2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-IMU_10DOF_v2.0/" title="Grove-IMU 10DOF v2.0" class="md-nav__link">
+      Grove-IMU 10DOF v2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-PIR_Motion_Sensor/" title="Grove-PIR Motion Sensor" class="md-nav__link">
+      Grove-PIR Motion Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Hall_Sensor/" title="Grove-Hall Sensor" class="md-nav__link">
+      Grove-Hall Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-3-Axis_Compass_V1.0/" title="Grove-3 Axis Compass V1.0" class="md-nav__link">
+      Grove-3 Axis Compass V1.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-6-Axis_AccelerometerAndGyroscope/" title="Grove-6 Axis AccelerometerAndGyroscope" class="md-nav__link">
+      Grove-6 Axis AccelerometerAndGyroscope
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-6-Axis_AccelerometerAndCompass_V2.0/" title="Grove-6-Axis AccelerometerAndCompass V2.0" class="md-nav__link">
+      Grove-6-Axis AccelerometerAndCompass V2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-3-Axis_Analog_Accelerometer/" title="Grove-3 Axis Analog Accelerometer" class="md-nav__link">
+      Grove-3 Axis Analog Accelerometer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-3-Axis_Digital_Accelerometer-1.5g/" title="Grove-3 Axis Digital Accelerometer 1.5g" class="md-nav__link">
+      Grove-3 Axis Digital Accelerometer 1.5g
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-3-Axis_Digital_Accelerometer-16g/" title="Grove-3 Axis Digital Accelerometer 16g" class="md-nav__link">
+      Grove-3 Axis Digital Accelerometer 16g
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-3-Axis_Digital_Accelerometer-400g/" title="Grove-3 Axis Digital Accelerometer 400g" class="md-nav__link">
+      Grove-3 Axis Digital Accelerometer 400g
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-3-Axis_Digital_Gyro/" title="Grove-3 Axis Digital Gyro" class="md-nav__link">
+      Grove-3 Axis Digital Gyro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Fingerprint_Sensor/" title="Grove-Fingerprint Sensor" class="md-nav__link">
+      Grove-Fingerprint Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-GPS/" title="Grove-GPS" class="md-nav__link">
+      Grove-GPS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Line_Finder/" title="Grove-Line Finder" class="md-nav__link">
+      Grove-Line Finder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Rotary_Angle_Sensor/" title="Grove-Rotary Angle Sensor" class="md-nav__link">
+      Grove-Rotary Angle Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Collision_Sensor/" title="Grove-Collision Sensor" class="md-nav__link">
+      Grove-Collision Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Water_Sensor/" title="Grove-Water Sensor" class="md-nav__link">
+      Grove-Water Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Speech_Recognizer/" title="Grove-Speech Recognizer" class="md-nav__link">
+      Grove-Speech Recognizer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Electricity_Sensor/" title="Grove-Electricity Sensor" class="md-nav__link">
+      Grove-Electricity Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Luminance_Sensor/" title="Grove-Luminance Sensor" class="md-nav__link">
+      Grove-Luminance Sensor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      执行器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        执行器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Actuator/" title="Actuator" class="md-nav__link">
+      Actuator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-MP3_v2.0/" title="Grove-MP3 v2.0" class="md-nav__link">
+      Grove-MP3 v2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Infrared_Receiver/" title="Grove-Infrared Receiver" class="md-nav__link">
+      Grove-Infrared Receiver
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Relay/" title="Grove-Relay" class="md-nav__link">
+      Grove-Relay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Dry-Reed_Relay/" title="Grove-Dry Reed Relay" class="md-nav__link">
+      Grove-Dry Reed Relay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Solid_State_Relay/" title="Grove-Solid State Relay" class="md-nav__link">
+      Grove-Solid State Relay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-SPDT_Relay_30A/" title="Grove-SPDT Relay 30A" class="md-nav__link">
+      Grove-SPDT Relay 30A
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Buzzer/" title="Grove-Buzzer" class="md-nav__link">
+      Grove-Buzzer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Chainable_RGB_LED/" title="Grove-Chainable RGB LED" class="md-nav__link">
+      Grove-Chainable RGB LED
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-I2C_Motor_Driver_V1.3/" title="Grove-I2C Motor Driver V1.3" class="md-nav__link">
+      Grove-I2C Motor Driver V1.3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Mini_I2C_Motor_Driver_v1.0/" title="Grove-Mini I2C Motor Driver v1.0" class="md-nav__link">
+      Grove-Mini I2C Motor Driver v1.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Haptic_Motor/" title="Grove-Haptic Motor" class="md-nav__link">
+      Grove-Haptic Motor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-DMX512/" title="Grove-DMX512" class="md-nav__link">
+      Grove-DMX512
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-NFC/" title="Grove-NFC" class="md-nav__link">
+      Grove-NFC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-NFC_Tag/" title="Grove-NFC Tag" class="md-nav__link">
+      Grove-NFC Tag
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-UART_Wifi/" title="Grove-UART Wifi" class="md-nav__link">
+      Grove-UART Wifi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Serial_RF_Pro/" title="Grove-Serial RF Pro" class="md-nav__link">
+      Grove-Serial RF Pro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Mouse_Encoder/" title="Grove-Mouse Encoder" class="md-nav__link">
+      Grove-Mouse Encoder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Switch-P/" title="Grove-Switch-P" class="md-nav__link">
+      Grove-Switch-P
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Magnetic_Switch/" title="Grove-Magnetic Switch" class="md-nav__link">
+      Grove-Magnetic Switch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Bee_Socket/" title="Grove-Bee Socket" class="md-nav__link">
+      Grove-Bee Socket
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Mini_Track_Ball/" title="Grove-Mini Track Ball" class="md-nav__link">
+      Grove-Mini Track Ball
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-RTC/" title="Grove-RTC" class="md-nav__link">
+      Grove-RTC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-I2C_ADC/" title="Grove-I2C ADC" class="md-nav__link">
+      Grove-I2C ADC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Red_LED/" title="Grove-Red LED" class="md-nav__link">
+      Grove-Red LED
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-RJ45_Adapter/" title="Grove-RJ45 Adapter" class="md-nav__link">
+      Grove-RJ45 Adapter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Wrapper/" title="Grove-Wrapper" class="md-nav__link">
+      Grove-Wrapper
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Tilt_Switch/" title="Grove-Tilt Switch" class="md-nav__link">
+      Grove-Tilt Switch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Protoshield/" title="Grove-Protoshield" class="md-nav__link">
+      Grove-Protoshield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Button/" title="Grove-Button" class="md-nav__link">
+      Grove-Button
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Mini_Fan/" title="Grove-Mini Fan." class="md-nav__link">
+      Grove-Mini Fan.
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Speaker/" title="Grove-Speaker" class="md-nav__link">
+      Grove-Speaker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Water_Atomization/" title="Grove-Water Atomization" class="md-nav__link">
+      Grove-Water Atomization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Recorder_v3.0/" title="Grove-Recorder v3.0" class="md-nav__link">
+      Grove-Recorder v3.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Servo/" title="Grove-Servo" class="md-nav__link">
+      Grove-Servo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-LED_String_Light/" title="Grove-LED String Light" class="md-nav__link">
+      Grove-LED String Light
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-LED_Bar/" title="Grove-LED Bar" class="md-nav__link">
+      Grove-LED Bar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Variable_Color_LED/" title="Grove-Variable Color LED" class="md-nav__link">
+      Grove-Variable Color LED
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-EL_Driver/" title="Grove-EL Driver" class="md-nav__link">
+      Grove-EL Driver
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-2-Coil_Latching_Relay/" title="Grove-2 Coil Latching Relay" class="md-nav__link">
+      Grove-2 Coil Latching Relay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-BLE_v1/" title="Grove-BLE v1" class="md-nav__link">
+      Grove-BLE v1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Infrared_Emitter/" title="Grove-Infrared Emitter" class="md-nav__link">
+      Grove-Infrared Emitter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Screw_Terminal/" title="Grove-Screw Terminal" class="md-nav__link">
+      Grove-Screw Terminal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Slide_Potentiometer/" title="Grove-Slide Potentiometer" class="md-nav__link">
+      Grove-Slide Potentiometer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Thumb_Joystick/" title="Grove-Thumb Joystick" class="md-nav__link">
+      Grove-Thumb Joystick
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_LoRa_Radio/" title="Grove-LoRa Radio" class="md-nav__link">
+      Grove-LoRa Radio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-125KHz_RFID_Reader/" title="Grove-125KHz RFID Reader" class="md-nav__link">
+      Grove-125KHz RFID Reader
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-I2C_Hub/" title="Grove-I2C Hub" class="md-nav__link">
+      Grove-I2C Hub
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      显示器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        显示器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Display/" title="Display" class="md-nav__link">
+      Display
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-LCD_RGB_Backlight/" title="Grove-LCD RGB Backlight" class="md-nav__link">
+      Grove-LCD RGB Backlight
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-4-Digit_Display/" title="Grove-4 Digit Display" class="md-nav__link">
+      Grove-4 Digit Display
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-OLED_Display_0.96inch/" title="Grove-OLED Display 0.96inch" class="md-nav__link">
+      Grove-OLED Display 0.96inch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Circular_LED/" title="Grove-Circular LED" class="md-nav__link">
+      Grove-Circular LED
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
+    
+    <label class="md-nav__link" for="nav-3-5">
+      Communication
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-5">
+        Communication
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Communication/" title="Communication" class="md-nav__link">
+      Communication
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      其他
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        其他
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3W_Solar_Panel_138x160/" title="3W Solar Panel 138x160" class="md-nav__link">
+      3W Solar Panel 138x160
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../2.5W_Solar_Panel_116x160/" title="2.5W Solar Panel 116x160" class="md-nav__link">
+      2.5W Solar Panel 116x160
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../1w_Solar_Panel_80x100/" title="1w Solar Panel 80x100" class="md-nav__link">
+      1w Solar Panel 80x100
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../0.5w_Solar_Panel_55x70/" title="0.5w Solar Panel 55x70" class="md-nav__link">
+      0.5w Solar Panel 55x70
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Lipo_Rider_V1.3/" title="Lipo Rider V1.3" class="md-nav__link">
+      Lipo Rider V1.3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../G3-4_Water_Flow_sensor/" title="G3-4 Water Flow sensor" class="md-nav__link">
+      G3-4 Water Flow sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../G1_and_2_inch_Water_Flow_Sensor/" title="G1-2 inch Water Flow Sensor" class="md-nav__link">
+      G1-2 inch Water Flow Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../G1-8_Water_Flow_Sensor/" title="G1-8 Water Flow Sensor" class="md-nav__link">
+      G1-8 Water Flow Sensor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      IoT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        IoT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../IoT/" title="IoT" class="md-nav__link">
+      IoT
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      kit套件
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        kit套件
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_Inventor_Kit_for_microbit/" title="Grove Inventor Kit for microbit" class="md-nav__link">
+      Grove Inventor Kit for microbit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_Starter_kit_for_Arduino_101/" title="Grove Starter kit for Arduino 101" class="md-nav__link">
+      Grove Starter kit for Arduino 101
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_Starter_Kit_for_BeagleBone_Green/" title="Grove Starter Kit for BeagleBone Green" class="md-nav__link">
+      Grove Starter Kit for BeagleBone Green
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Starter_Kit_for_LinkIt_ONE/" title="Grove Starter Kit for LinkIt ONE" class="md-nav__link">
+      Grove Starter Kit for LinkIt ONE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Maker_Kit_for_Intel_Joule/" title="Grove Maker Kit for Intel Joule" class="md-nav__link">
+      Grove Maker Kit for Intel Joule
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_Indoor_Environment_Kit_for_Edison/" title="Grove Indoor Environment Kit for Edison" class="md-nav__link">
+      Grove Indoor Environment Kit for Edison
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_Smart_Plant_Care_Kit/" title="Grove Smart Plant Care Kit" class="md-nav__link">
+      Grove Smart Plant Care Kit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-Serial_Camera_Kit/" title="Grove Serial Camera Kit" class="md-nav__link">
+      Grove Serial Camera Kit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/" title="Grove IoT Developer Kit Microsoft Azure Edition" class="md-nav__link">
+      Grove IoT Developer Kit Microsoft Azure Edition
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove_Starter_Kit_for_IoT_based_on_Raspberry_Pi/" title="Grove Starter Kit for IoT based on Raspberry Pi" class="md-nav__link">
+      Grove Starter Kit for IoT based on Raspberry Pi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Grove-433MHz_Simple_RF_Link_Kit/" title="Grove 433MHz Simple RF Link Kit" class="md-nav__link">
+      Grove 433MHz Simple RF Link Kit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LoRa_LoRaWan_Gateway_Kit/" title="LoRa LoRaWan Gateway Kit" class="md-nav__link">
+      LoRa LoRaWan Gateway Kit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sidekick_Basic_Kit_for_Arduino_V2/" title="Sidekick Basic Kit for Arduino V2" class="md-nav__link">
+      Sidekick Basic Kit for Arduino V2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Techbox_Tricks/" title="Techbox Tricks" class="md-nav__link">
+      Techbox Tricks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wio_Link_Environment_Kit/" title="Wio Link Environment Kit" class="md-nav__link">
+      Wio Link Environment Kit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wio_Link_Starter_Kit/" title="Wio Link Starter Kit" class="md-nav__link">
+      Wio Link Starter Kit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wio_Link_Deluxe_Kit/" title="Wio Link Deluxe Kit" class="md-nav__link">
+      Wio Link Deluxe Kit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Wio_Link_Deluxe_Plus_Kit/" title="Wio Link Deluxe Plus Kit" class="md-nav__link">
+      Wio Link Deluxe Plus Kit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sidekick_Basic_Kit_for_LinkIt_ONE/" title="Sidekick Basic Kit for LinkIt ONE" class="md-nav__link">
+      Sidekick Basic Kit for LinkIt ONE
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      MakerPro
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        MakerPro
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MakerPro/" title="MakerPro" class="md-nav__link">
+      MakerPro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../2KM_Long_Range_RF_link_kits_w_encoder_and_decoder/" title="2KM Long Range RF link kits w encoder and decoder" class="md-nav__link">
+      2KM Long Range RF link kits w encoder and decoder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Piezo_Sensor-MiniSense_100/" title="Piezo Sensor MiniSense 100" class="md-nav__link">
+      Piezo Sensor MiniSense 100
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Arduboy/" title="Arduboy" class="md-nav__link">
+      Arduboy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3.6V_Micro_hydro_generator/" title="3.6V Micro hydro generator" class="md-nav__link">
+      3.6V Micro hydro generator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../PIR_Motion_Sensor_Large_Lens_version/" title="PIR Motion Sensor Large Lens version" class="md-nav__link">
+      PIR Motion Sensor Large Lens version
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RF_Explorer_Software/" title="RF Explorer Software" class="md-nav__link">
+      RF Explorer Software
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Codec-Adaptive_Wireless_Relay/" title="Codec Adaptive Wireless Relay" class="md-nav__link">
+      Codec Adaptive Wireless Relay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DC_framework_miniature_solenoid_VL-0063/" title="DC framework miniature solenoid VL-0063" class="md-nav__link">
+      DC framework miniature solenoid VL-0063
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Bus_Pirate_v3_assembled/" title="Bus Pirate v3 assembled" class="md-nav__link">
+      Bus Pirate v3 assembled
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Photo_Reflective_Sensor/" title="Photo Reflective Sensor" class="md-nav__link">
+      Photo Reflective Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../WiFi_Serial_Transceiver_Module/" title="WiFi Serial Transceiver Module" class="md-nav__link">
+      WiFi Serial Transceiver Module
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      使用教程
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        使用教程
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial/" title="Tutorial" class="md-nav__link">
+      Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../How_to_install_Arduino_Library/" title="如何安装Arduino库" class="md-nav__link">
+      如何安装Arduino库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Upload_Code/" title="如何上传代码" class="md-nav__link">
+      如何上传代码
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Getting_Started_with_Seeeduino/" title="Seeeduino入门指导" class="md-nav__link">
+      Seeeduino入门指导
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../How_to_edit_Wiki/" title="如何编辑Wiki" class="md-nav__link">
+      如何编辑Wiki
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../license/" title="文档协议" class="md-nav__link">
+      文档协议
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="版本更替" class="md-nav__link">
+    版本更替
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="规格参数" class="md-nav__link">
+    规格参数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="兼容性" class="md-nav__link">
+    兼容性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="硬件概述" class="md-nav__link">
+    硬件概述
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="引脚使用 / 扩展板兼容性" class="md-nav__link">
+    引脚使用 / 扩展板兼容性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rn171-wifi-module" title="RN171 WiFi Module" class="md-nav__link">
+    RN171 WiFi Module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led" title="LED 状态指示灯" class="md-nav__link">
+    LED 状态指示灯
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi" title="WiFi 库" class="md-nav__link">
+    WiFi 库
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup" title="Setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="函数" class="md-nav__link">
+    函数
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#join" title="join()" class="md-nav__link">
+    join()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive" title="receive()" class="md-nav__link">
+    receive()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendcommand" title="sendCommand()" class="md-nav__link">
+    sendCommand()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi-shield" title="WiFi Shield 示例 / 应用" class="md-nav__link">
+    WiFi Shield 示例 / 应用
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-arduino-wifi-shield" title="示例 1: 通过 Arduino 串行监视器窗口发送命令到 WiFi Shield 并接收响应" class="md-nav__link">
+    示例 1: 通过 Arduino 串行监视器窗口发送命令到 WiFi Shield 并接收响应
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-access-point-internet-router" title="Example 2: 连接到 Access Point / Internet Router" class="md-nav__link">
+    Example 2: 连接到 Access Point / Internet Router
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="通过输入命令连接" class="md-nav__link">
+    通过输入命令连接
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wifi-libraries" title="使用 WiFi Libraries 连接" class="md-nav__link">
+    使用 WiFi Libraries 连接
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="配置扩展板上电连接" class="md-nav__link">
+    配置扩展板上电连接
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ip" title="设置静态 IP 地址" class="md-nav__link">
+    设置静态 IP 地址
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3" title="Example 3: 您网络通信" class="md-nav__link">
+    Example 3: 您网络通信
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-wifi-shield-webserver" title="Example 4: 使用 WiFi Shield 作为 Webserver (来自扩展板的服务网页)" class="md-nav__link">
+    Example 4: 使用 WiFi Shield 作为 Webserver (来自扩展板的服务网页)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-5-arduino" title="Example 5: 从网页端控制 Arduino 数字引脚" class="md-nav__link">
+    Example 5: 从网页端控制 Arduino 数字引脚
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-6-wifi-shield-android-app" title="Example 6: WiFi Shield 和 Android App" class="md-nav__link">
+    Example 6: WiFi Shield 和 Android App
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-7" title="Example 7: 将数据发送到外部服务器并从中检索数据" class="md-nav__link">
+    Example 7: 将数据发送到外部服务器并从中检索数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-8-tcp" title="Example 8 : 与终端 TCP 通信" class="md-nav__link">
+    Example 8 : 与终端 TCP 通信
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-9-wifi-shield-relay-shield" title="Example 9: WiFi Shield 和 Relay Shield 配合使用" class="md-nav__link">
+    Example 9: WiFi Shield 和 Relay Shield 配合使用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-10-adhoc" title="Example 10: Adhoc 模式" class="md-nav__link">
+    Example 10: Adhoc 模式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" title="资源下载" class="md-nav__link">
+    资源下载
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Wifi Shield V2.0</h1>
+                
+                <p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi_Shield_v2.jpg" /></p>
+<p>这个 WiFi shield 以 RN171 TCP/IP 模块为特色，能够使您的 Arduino/Seeeduino 连接到 802.11b/g 高速无线网络。</p>
+<p>这个扩展板与 Arduino 的默认通信协议是 UART/Serial，您可以选择使用哪个数字引脚 (<strong>D0</strong> to <strong>D7</strong>) 用于 <strong>RX</strong> 和 <strong>TX</strong>，需要的两跳线排已包含在内。扩展板还具有两个用于 I2C 和 Serial 的板载 Grove 连接器，使得扩展板可以与任何我们的 Grove 设备一起使用。</p>
+<p>板载天线可以使扩展板覆盖范围更广并传输信号的强度增加。RN171 模块支持 TCP，UDP，FTP 和 HTTP 通信协议，以满足大多数无线和物联网 (IoT) 网络项目的需求，例如 : 智能家居网，机器人控制，个人气象站。</p>
+<p>后面的例子很好地论述了这个扩展板 : <a href="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/res/WiFly-RN-UM.pdf">使用手册</a>.</p>
+<p><a href="https://item.taobao.com/item.htm?spm=a230r.1.14.66.526a7c6bPuhwwp&amp;id=45538497026&amp;ns=1&amp;abbucket=1#detail"><img alt="" src="https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG" /></a></p>
+<h2 id="_1">版本更替<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<hr />
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>Wifi Shield V1.0</th>
+<th>Wifi Shield V1.1(v1.2)</th>
+<th>Wifi Shield V2.0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>电压</td>
+<td>+3.5V~+5V</td>
+<td>+3.5V~+5V</td>
+<td>+3.5V~+5V</td>
+</tr>
+<tr>
+<td>校准扩展板</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+</tr>
+<tr>
+<td>通信模式</td>
+<td>Serial port</td>
+<td>Serial port</td>
+<td>Serial port</td>
+</tr>
+<tr>
+<td>校准扩展板</td>
+<td>否</td>
+<td>是</td>
+<td>是</td>
+</tr>
+<tr>
+<td>天线类型</td>
+<td>桅杆式天线</td>
+<td>PCB 板载天线</td>
+<td>板载天线</td>
+</tr>
+<tr>
+<td>库文件</td>
+<td><a href="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/res/WifiShield.zip">Wifi Shield Library V1.0</a></td>
+<td><a href="https://github.com/Seeed-Studio/WiFi_Shield">New Wifi Shield Library</a></td>
+<td><a href="https://github.com/Seeed-Studio/WiFi_Shield">New Wifi Shield Library</a> <strong>和 v1.2 是一样的</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">规格参数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<hr />
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工作电压</td>
+<td>3.3~5.5 V</td>
+</tr>
+<tr>
+<td>兼容板</td>
+<td>Arduino Uno/Seeeduino</td>
+</tr>
+<tr>
+<td>电流</td>
+<td>25~400mA</td>
+</tr>
+<tr>
+<td>发射功率</td>
+<td>0-10 dBm</td>
+</tr>
+<tr>
+<td>频率</td>
+<td>2402~2480 MHz</td>
+</tr>
+<tr>
+<td>通道</td>
+<td>0~13</td>
+</tr>
+<tr>
+<td>网络速率</td>
+<td>1-11 Mbps for 802.11b/6-54Mbps for 802.11g</td>
+</tr>
+<tr>
+<td>尺寸</td>
+<td>60X56X19 mm</td>
+</tr>
+<tr>
+<td>净重</td>
+<td>24±1 g</td>
+</tr>
+<tr>
+<td>WiFi 安全认证</td>
+<td>WEP-128, WPA-PSK (TKIP), WPA2-PSK (AES)</td>
+</tr>
+<tr>
+<td>内置网络应用</td>
+<td>DHCP client, DNS client, ARP, ICMP ping, FTP, TELNET, HTTP, UDP, TCP</td>
+</tr>
+<tr>
+<td>认证</td>
+<td>RN171: FCC, CE</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">兼容性<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>我们研发了许多扩展板，可以使您的平台板更加强大，但是并不是所有的扩展板都兼容所有的平台板，这里我们用一张表来说明这些板与平台板的兼容性。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>请注意，“不推荐”意味着它可能与平台板兼容，但需要额外的工作，如跳线或重写代码。如果您有兴趣发掘更多信息，欢迎与 <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#101;&#99;&#104;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#115;&#101;&#101;&#101;&#100;&#46;&#99;&#99;">&#116;&#101;&#99;&#104;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#115;&#101;&#101;&#101;&#100;&#46;&#99;&#99;</a>.联系。</p>
+</div>
+<p><strong>点击查看全图</strong>
+<a href="https://raw.githubusercontent.com/SeeedDocument/Seeed-WiKi/master/docs/images/Shield%20Compatibility.png"><img alt="" src="https://github.com/SeeedDocument/Seeed-WiKi/raw/master/docs/images/Shield%20Compatibility.png" /></a></p>
+<h2 id="_4">硬件概述<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<hr />
+<p>WiFi shield 与任何 Arduino/Seeeduino 开发板兼容，因为它只需要在您选择的板中的 <strong>D0-D7</strong> 之间用于 UART/serial 通信的两个数字引脚。 安装时，只需将扩展板堆叠在 Arduino/Seeeduino 板上即可。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi_shield_v2_breakout.png" /></p>
+<ol>
+<li>
+<p><strong>Serial Peripheral Interface (SPI) Connections (MOSI, SCK, MISO):</strong> 这些引脚没有连接到任何 Arduino 的引脚，它们是独立的，它们的逻辑电平输出/输入是 3.3V。它们可以用来通过 SPI 与 Arduino 进行通信，但是需要一个 3.3V 的逻辑转换器。 SPI模式下的数据传输速率可以达到 2Mbps。</p>
+<p><strong>RES_Wifi:</strong> Wifi shield 有一个用于 RN-171 模块的板载 "Rest Button"，您也可以通过发送复位命令通过软件复位 RN-171。此外，如果您想将此引脚连接到 Arduino 的数字 6 引脚，只需在扩展板上焊上标有 "P5" 的焊盘即可。</p>
+</li>
+<li>
+<p><strong>RN171:</strong> 内置 TCP/IP 协议栈的超低功耗无线模块。</p>
+</li>
+<li>
+<p><strong>Antenna:</strong> I.PEX 连接器。</p>
+</li>
+<li>
+<p><strong>RN171 breakout section:</strong> RN171 模块具有自己的模拟输入和 GPIO 引脚，扩展板可通过此 breakout section 进行访问。 GPIO 引脚 (IO3, IO7, IO8 和 IO9) 的能承受最大电压为 3.3V，模拟输入引脚 (S_0 和 S_1) 可以读取 0-400mV (不超过 1.2V)。 RN171 可以被配置为通过软件使用这些引脚，或者可以连接到其他引脚来使用其他 RN171 功能，例如 adhoc 模式。VCC 的电压取决于 WiFi shield 的电源。</p>
+</li>
+<li>
+<p><strong>UART/Serial Select area:</strong> 两个跳线行，让您选择要使用哪个 RX 和 TX 引脚与 Arduino 进行通信。</p>
+</li>
+<li>
+<p><strong>Grove connectors:</strong> Analog I2C Grove (如果使用 Arduino UNO 或 Seeeduino) 对应引脚 <strong>A4</strong> 和 <strong>A5</strong> 以及 Digital Serial Grove 对应引脚 <strong>D8</strong> 和 <strong>D9</strong>。VCC 的电压取决于 WiFi shield 的电源。</p>
+</li>
+</ol>
+<h3 id="_5">引脚使用 / 扩展板兼容性<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>WiFi shield 使用 <strong>D0</strong> 和 <strong>D7</strong> 之间的任意两个数字引脚与 RN171 WiFi 模块进行通信，但请记住，Arduino 使用 <strong>D0</strong> 和 <strong>D1</strong> 进行编程和串行通信，WiFi shield 使用这两个引脚可能会导致程序下载时报错。</p>
+<p>在本页面的示例代码中，我们使用 <strong>D2</strong> 和 <strong>D3</strong> 作为扩展板的 RX 和 TX。在这种情况下，排线应如下图所示 :</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi_shield_v1.1_pinout.png" />
+<strong>D2 对应 WIFI_TX, D3 对应 WIFI_RX</strong></p>
+<h3 id="rn171-wifi-module">RN171 WiFi Module<a class="headerlink" href="#rn171-wifi-module" title="Permanent link">&para;</a></h3>
+<p>RN-171 是一个独立的完整的 TCP/IP 无线网络模块。由于其小巧的外形和极低的功耗，RN-171 非常适合移动无线应用。它搭载了 2.4GHz 无线电，32 位 SPARC 处理器，TCP/IP 协议栈，实时时钟，加密加速器，电源管理和模拟传感器接口。</p>
+<p>在最简单的配置中，硬件仅需要连接四个引脚 (PWR, TX, RX 和 GND) 就可以创建无线 WiFi 数据连接。此外，RN171 的模拟传感器输入可用作模拟输入引脚，其额定值为 0-400 mV (不超过 1.2V DC)。</p>
+<p><strong>Power:</strong> RN-171 模块的工作电压一般为 3.3VDC，因此在 WiFi shield 上有一个电压调节器和逻辑电平转换器。扩展板上的 LD1117 调节器将电压转换为 3.3VDC，为 RN171 模块提供电源。但由于电源的自动判断原理，RN-171 可以通过 3V3 引脚和 5V 引脚供电。他们如果在同时供电，电源电压将是5V。如果使用 Arduino/Seeeduino，只需将 WiFi shield 堆叠在板上。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi_shield_v1.1_communicate.png" />
+<strong>RN171 模块连接到 Arduino 示意图</strong></p>
+<p><strong>GPIO_6 :</strong> 默认情况下 RN171 WiFi 模块的 <strong>GPIO6</strong> 引脚连接到 WiFi shield 上标记为 <strong>D5</strong> 的 LED。该 LED 用于显示 Access Point (AP) 的连接的状态。但是如果您想将 <strong>GPIO6</strong> 连接到 Arduino 的数字引脚 <strong>5</strong>，只需在 WiFi shield 焊上标有 "P6" 的焊盘即可。</p>
+<h3 id="led">LED 状态指示灯<a class="headerlink" href="#led" title="Permanent link">&para;</a></h3>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>名称</th>
+<th>说明</th>
+<th>状态</th>
+<th>硬件连接</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>D5</td>
+<td>Green LED. 网络连接状态</td>
+<td><strong>OFF:</strong> 模块未连接到网络<br />
+<strong>Solid ON:</strong> 模块已连接到网络</td>
+<td>连接到 RN171 模块的 **GPIO6** 引脚</td>
+</tr>
+<tr class="even">
+<td>D1</td>
+<td>Red LED. TCP/IP 连接状态</td>
+<td><strong>Solid ON:</strong> 通过 TCP 连接<br />
+
+<p><strong>Fast Toggle (2 times/second):</strong> 没有 IP 地址和模块处于命令模式<br />
+</p>
+<p><strong>Slow Toggle (once/second):</strong> IP 地址正常</p></td>
+<td>连接到 RN171 模块的 **GPIO4** 引脚</td>
+</tr>
+<tr class="odd">
+<td>RST</td>
+<td>Red LED. WiFi 模块重置状态</td>
+<td><strong>Solid ON:</strong> 按下重置按钮 (WIFI_RST)<br />
+</td>
+<td>连接到 RN171 模块的 **Reset** 引脚</td>
+</tr>
+<tr class="even">
+<td>PWR</td>
+<td>Green LED. WiFi 模块启动状态</td>
+<td><strong>Solid ON:</strong>模块已启动</td>
+<td>连接到 LD1117 电压调节器的 3.3V 输出</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="wifi">WiFi 库<a class="headerlink" href="#wifi" title="Permanent link">&para;</a></h2>
+<p>我们创建了一个库来帮助您与扩展板交互，在本节中，我们将向您展示如何设置库并介绍它的一些功能。</p>
+<h3 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h3>
+<ol>
+<li><em>从 Wifi Shield github 页面下载 <a href="https://github.com/Seeed-Studio/WiFi_Shield">library code as a zip file</a>。</em></li>
+<li><em>将下载的文件解压缩到 <strong>…/arduino/libraries/</strong> 文件夹。</em></li>
+<li><em>重命名解压文件夹为 "WifiShield"。</em></li>
+<li><em>打开 Arduino IDE。</em></li>
+</ol>
+<h3 id="_6">函数<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>这些是库中最重要也最有用的函数，希望您自己查看 .h 文件以查看所有函数。</p>
+<h4 id="join">join()<a class="headerlink" href="#join" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>描述:</strong><ul>
+<li>使用该函数进入一个 WiFi 热点</li>
+</ul>
+</li>
+<li><strong>语法:</strong><ul>
+<li>join(const char *ssid, const char *phrase, int auth)</li>
+</ul>
+</li>
+<li><strong>参数:</strong><ul>
+<li><strong>ssid:</strong> 您想让扩展板接入的 Wifi 热点的名字</li>
+<li><strong>phrase:</strong> 您想让扩展板接入的 Wifi 热点的密码</li>
+<li><strong>auth:</strong> 您希望扩展板连接的Wifi热点的身份验证类型。 可能是以下列表中的某一种:<ul>
+<li>WIFLY_AUTH_OPEN</li>
+<li>WIFLY_AUTH_WEP</li>
+<li>WIFLY_AUTH_WPA1</li>
+<li>WIFLY_AUTH_WPA1_2</li>
+<li>WIFLY_AUTH_WPA2_PSK</li>
+<li>WIFLY_AUTH_ADHOC</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>返回值:</strong><ul>
+<li><strong>boolean:</strong> 如果到接入点的连接成功，则为true，否则为false。</li>
+</ul>
+</li>
+<li><strong>例程:</strong></li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;SoftwareSerial.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;WiFly.h&quot;</span><span class="cp"></span>
+
+<span class="n">SoftwareSerial</span> <span class="nf">uart</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span> <span class="c1">// create a serial connection to the WiFi shield TX and RX pins.</span>
+<span class="n">WiFly</span> <span class="nf">wifly</span><span class="p">(</span><span class="o">&amp;</span><span class="n">uart</span><span class="p">);</span> <span class="c1">// create a WiFly library object using the serial connection to the WiFi shield we created above.</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">uart</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span> <span class="c1">// start the serial connection to the shield</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span> <span class="c1">// start the Arduino serial monitor window connection</span>
+    <span class="n">wifly</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span> <span class="c1">// reset the shield</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="s">&quot;mySSID&quot;</span><span class="p">,</span><span class="s">&quot;mySSIDpassword&quot;</span><span class="p">,</span><span class="n">WIFLY_AUTH_WPA2_PSK</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Failed to connect to accesspoint. Will try again.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Connected to access point!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+
+<span class="p">}</span>
+</pre></div>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>本示例是基于 Arduino UNO 并我们用 <strong>D2/D3</strong> 作为 SoftwareSerial 引脚。如果您使用的是 Arduino Mega，<strong>D2</strong> 是不可用的。更多详情请点击 <a href="https://www.arduino.cc/en/Tutorial/SoftwareSerialExample">Arduino Software Serial</a>
+这里是一个示例。</p>
+</div>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/connect_mega.jpg" /></p>
+<p>代码需要做出以下的修改 :</p>
+<div class="codehilite"><pre><span></span><span class="n">SoftwareSerial</span> <span class="nf">uart</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span> <span class="c1">// create a serial connection to the WiFi shield TX and RX pins.</span>
+</pre></div>
+
+<h4 id="receive">receive()<a class="headerlink" href="#receive" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>描述:</strong><ul>
+<li>可以用于从扩展板读取数据, Arduino's read() 函数的替代函数。</li>
+</ul>
+</li>
+<li><strong>语法:</strong><ul>
+<li>receive(uint8_t *buf, int len, int timeout)</li>
+</ul>
+</li>
+<li><strong>参数:</strong><ul>
+<li><strong>buf:</strong> 存储从扩展板读取的字节的缓冲数组</li>
+<li><strong>len:</strong> 该缓冲数组的长度</li>
+<li><strong>timeout:</strong> 设定超时值用于知道何时应该停止读取</li>
+</ul>
+</li>
+<li><strong>返回值:</strong><ul>
+<li><strong>int:</strong> 返回从扩展板中读到的字节数</li>
+</ul>
+</li>
+<li><strong>例程:</strong></li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">receive</span><span class="p">((</span><span class="kt">uint8_t</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">((</span><span class="kt">char</span><span class="p">)</span><span class="n">c</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>查看 <strong>File(文件)-&gt;Examples(示例)-&gt;WiFi_Shield-&gt;wifly_test sketch</strong> 以获得完整示例。</p>
+<h4 id="sendcommand">sendCommand()<a class="headerlink" href="#sendcommand" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>描述:</strong><ul>
+<li>我们提供的一些函数（例如，join（），reboot（），save（））都是封装好之后罗列在 RN171 模块的用户手册中。sendCommand() 函数允许您封装自己的函数，如果您觉得我们提供的函数不尽人意的话。</li>
+</ul>
+</li>
+<li><strong>语法:</strong><ul>
+<li>sendCommand(const char *cmd, const char *ack, int timeout)</li>
+</ul>
+</li>
+<li><strong>参数:</strong><ul>
+<li><strong>cmd:</strong> 任何来自 RN-171's 用户指南的指令均可.</li>
+<li><strong>ack:</strong> 选取的指令对应的返回字符串</li>
+<li><strong>timeout:</strong> 在输出被认定为无效请求或无效响应之前允许的超时值</li>
+</ul>
+</li>
+<li>
+<p><strong>返回值:</strong></p>
+<ul>
+<li><strong>boolean:</strong> 如果WiFi Shild 扩展板使用ack字符串响应，则返回true，否则返回false。</li>
+</ul>
+</li>
+<li>
+<p><strong>例程:</strong>
+<div class="codehilite"><pre><span></span><span class="c1">// our join() function is wrapper for the join command, as seen below.</span>
+<span class="c1">//The string &quot;Associated&quot; is what the user manual says the RN171 will return on success.</span>
+<span class="k">if</span><span class="p">(</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;join</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;Associated&quot;</span><span class="p">,</span><span class="n">DEFAULT_WAIT_RESPONSE_TIME</span><span class="o">*</span><span class="mi">10</span><span class="p">))</span>
+<span class="p">{</span>
+    <span class="c1">// joined</span>
+<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+    <span class="c1">// not able to join</span>
+<span class="p">}</span>
+</pre></div></p>
+</li>
+</ul>
+<p>查看 <strong>File(文件)-&gt;Examples(示例)-&gt;WiFi_Shield-&gt;wifly_test sketch</strong> 以获得完整示例。</p>
+<h2 id="wifi-shield">WiFi Shield 示例 / 应用<a class="headerlink" href="#wifi-shield" title="Permanent link">&para;</a></h2>
+<h3 id="1-arduino-wifi-shield">示例 1: 通过 Arduino 串行监视器窗口发送命令到 WiFi Shield 并接收响应<a class="headerlink" href="#1-arduino-wifi-shield" title="Permanent link">&para;</a></h3>
+<p>WiFi Shield 的 RN-171 模块通过发送内建在 <a href="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/res/WiFly-RN-UM.pdf">datasheet</a> 的命令经行配置。</p>
+<p>我们创建了一个视频演示完成下面的步骤，如果您想看请点击 <a href="https://www.youtube.com/watch?v=8dCrAaN16lE">Video - Getting Started With Seeeduino's WiFi Shield.</a> （注意：此视频源来自Youtube,您可能需要自备梯子）</p>
+<p><strong>步骤 1: WiFi Shield 跳线配置</strong></p>
+<p>在 WiFi shield 中配置跳线使 WIFI_TX 对应 <strong>D2</strong>，WIFI_RX 对应 <strong>D3</strong>，如下图所示。这些是我们用来发送和接收来自 RN-171 信息的引脚。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi_shield_v1.1_front.png" /></p>
+<p><strong>D2</strong> 对应 <strong>TX</strong>，<strong>D3</strong> 对应 <strong>RX</strong></p>
+<p><strong>步骤 2: 软件/代码</strong></p>
+<p>在下面的工程中我们创建了一个 UART object，允许我们从 RN-171/WiFi Shield 发送和接收数据。然后，我们将 UART object 与 WiFly 库一起使用来将数据发送到扩展板。Arduino's Serial object 用来打印我们从扩展板接收到的数据，并通过 WiFly/UART object 接收我们想要发送给扩展板的命令。</p>
+<p>上传代码到您的 Arduino :</p>
+<div class="codehilite"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;SoftwareSerial.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;WiFly.h&quot;</span><span class="cp"></span>
+
+<span class="c1">// set up a new serial port.</span>
+<span class="n">SoftwareSerial</span> <span class="nf">uart</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span> <span class="c1">// create a serial connection to the WiFi shield TX and RX pins.</span>
+<span class="n">WiFly</span> <span class="nf">wifly</span><span class="p">(</span><span class="o">&amp;</span><span class="n">uart</span><span class="p">);</span> <span class="c1">// create a WiFly library object using the serial connection to the WiFi shield we created above.</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">uart</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span> <span class="c1">// start the serial connection to the shield</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span> <span class="c1">// start the Arduino serial monitor window connection</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span> <span class="c1">// wait 3 second to allow the serial/uart object to start</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">available</span><span class="p">())</span>  <span class="c1">// if there is data available from the shield</span>
+    <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">read</span><span class="p">());</span> <span class="c1">// display the data in the Serial monitor window.</span>
+    <span class="p">}</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">Serial</span><span class="p">.</span><span class="n">available</span><span class="p">())</span> <span class="c1">// if we typed a command</span>
+    <span class="p">{</span>
+        <span class="n">wifly</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">Serial</span><span class="p">.</span><span class="n">read</span><span class="p">());</span> <span class="c1">// send the command to the WiFi shield.</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p><strong>步骤 3: 进入 command 模式</strong></p>
+<p>WiFi shield 中的 WiFly RN-171 模块可以以两种模式运行：data 和 command。 在 data 模式下，扩展板可以接收和发起连接。在 command 模式下，我们可以使用 datasheet 中列出的命令来配置模块。</p>
+<p>通过以下步骤进入 command 模式 :</p>
+<ol>
+<li>打开 Arduino 串口监视器。</li>
+<li>在窗口右下角将串口监视器设置为 “No line ending（没有结束符）”，波特率设置为 9600。</li>
+<li>在串口监视器输入 "$$$" 并敲击回车键。</li>
+<li>模块返回字符 “CMD”，表示它已进入 command 模式。</li>
+</ol>
+<p>通过以下步骤来测试一些命令 :</p>
+<ol>
+<li>在 Arduino 串口监视器窗口右下角选择 “Carriage return（回车）” 并设置波特率为 9600。</li>
+<li>在 Arduino 串口监视器窗口输入下表出的每种命令并敲击回车键。</li>
+<li>该模块将为每个命令输出一个响应，如表中所述。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scan</td>
+<td>该命令对所有 13 个通道上的接入点执行主动探测扫描。当您使用此命令时，模块会返回它检测到的接入点的 MAC 地址，信号强度，SSID 名称和安全模式。</td>
+</tr>
+<tr>
+<td>get ip</td>
+<td>此命令显示 IP 地址和端口号设置</td>
+</tr>
+</tbody>
+</table>
+<p>有关配置命令的完整列表，请参阅 RN-171 的 <a href="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/res/WiFly-RN-UM.pdf">Reference Guide</a> 11 页开头。</p>
+<h3 id="example-2-access-point-internet-router">Example 2: 连接到 Access Point / Internet Router<a class="headerlink" href="#example-2-access-point-internet-router" title="Permanent link">&para;</a></h3>
+<p>在这个例子中，我们将向您展示在无需输入所需的命令的情况下如何将 WiFi shield 连接到接入点 (您的互联网路由器) :</p>
+<h4 id="_7">通过输入命令连接<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p>本节将教您如何使用 RN-171 datasheet 中的命令将 WiFi shield 连接到接入点，通过阅读本节，您将了解使用 WiFi Arduino 库时实际发生了什么。</p>
+<p>跟着说明做 :</p>
+<ol>
+<li>上传 Example One 中的代码到 Arduino。</li>
+<li>
+<p><strong>进入 command 模式:</strong></p>
+<ol>
+<li>将串口监视器设置为 “No line ending” 并把波特率设置为 9600。</li>
+<li>在串口监视器输入 <em>$$$</em> 然后敲击回车键。</li>
+</ol>
+</li>
+<li>
+<p>将串口监视器设置为 “Carriage return”.</p>
+</li>
+<li>
+<p><strong>扫描可用的接入点 :</strong></p>
+<ol>
+<li>输入 <em>scan</em>，然后按回车键。Arduino 串口监视器窗口将输出 WiFi shield 找到的每个接入点的 CSV 列表。从左到右，第三个值是安全模式，最后一个值是SSID。此示例显示安全模式为 4，SSID 名称为 MySSID: 01,01,-88,<strong>04</strong>,1104,1c,00,45:56:78<img alt="🇧🇪" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f1e7-1f1ea.svg" title=":be:" />93:1f,<strong>MySSID</strong></li>
+</ol>
+</li>
+<li>
+<p>从找到的接入点列表中，找到与您的 Internet 路由器相对应的接入点，并记下安全模式和 SSID，因为我们需要这两个值。</p>
+</li>
+<li>
+<p><strong>在扩展版中设置安全模式 :</strong></p>
+<ol>
+<li>输入 <em>set wlan auth m</em>，把 <em>m</em> 替换成您希望连接到的接入点的安全模式数(本例中应该是4)。</li>
+<li>WiFi shield 支持的安全模式如下图一所示。</li>
+</ol>
+</li>
+<li>
+<p><strong>设置接入点 Phrase</strong></p>
+<ol>
+<li>
+<p>输入 <em>set wlan phrase myPhrase</em>，把 <em>myPhrase</em> 替换成接入点的安全码。
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+如果您的接入点的安全类型是 WEP，请在上面的命令中使用 <em>key</em> 而不是 <em>phrase</em> 。
+</div></p>
+</li>
+<li>
+<p>接入点(互联网路由器) Phrase 是您用来从 PC 连接到它的密码。在 Windows 中，您可以找到它如下面的动态图所示 :
+    <img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/How_to_find_network_security_key_password.gif" />
+    如何显示网络的安全码</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>加入连接点</strong></p>
+<ol>
+<li>现在我们已经设置了接入点的安全类型和 phrase，我们可以连接到它。</li>
+<li>输入 <em>join MySSID</em>，把 MySSID 替换成接入点的 broadcast name。</li>
+<li>成功后会在 Arduino 的串口监视器上显示 "Associated!"。</li>
+</ol>
+</li>
+</ol>
+<p>下表中提供了您在上述步骤中输入的命令的说明。更详细的说明可以在 RN171 的用户手册中找到。</p>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>scan</td>
+<td>该命令对所有 13 个通道上的接入点执行主动探测扫描。当您使用此命令时，模块会返回它检测到的接入点的 MAC 地址，信号强度，SSID 名称和安全模式。</td>
+</tr>
+<tr>
+<td>2</td>
+<td>set wlan auth 4</td>
+<td>在接入点上查找与安全协议相对应的值。然后，告诉 WiFly 使用什么安全协议，这里 <strong>图1</strong> 中显示的数字对应于接入点的安全协议。这里我们选择 <strong>4</strong>。</td>
+</tr>
+<tr>
+<td>3</td>
+<td>set wlan phrase seeed-mkt</td>
+<td>告诉 WiFi shield 您的密码</td>
+</tr>
+<tr>
+<td>4</td>
+<td>join SEEED-MKT</td>
+<td>告诉 WiFi shield 加入，“SEEED-MKT“ 是我们选择连接的接入点的名称。发送命令后，模块现在执行连接并打印出有关连接的信息。(如果连接失败，请尝试再次发送该命令直到成功)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>安全模式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Open (Default)</td>
+</tr>
+<tr>
+<td>1</td>
+<td>WEP-128</td>
+</tr>
+<tr>
+<td>2</td>
+<td>WPA1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Mixed WPA1 and WPA2-PSK</td>
+</tr>
+<tr>
+<td>4</td>
+<td>WPA2-PSK</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Not used</td>
+</tr>
+<tr>
+<td>6</td>
+<td>AD hoc mode (join any ad hoc network)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>WPE-64</td>
+</tr>
+</tbody>
+</table>
+<p><em>图一</em></p>
+<h4 id="wifi-libraries">使用 WiFi Libraries 连接<a class="headerlink" href="#wifi-libraries" title="Permanent link">&para;</a></h4>
+<p>您已经知道如何通过输入命令来连接到接入点，现在可以使用我们提供的库和示例了。</p>
+<p>要查看连接到接入点所需的代码，请转到 <strong>File(文件) -&gt; Examples(示例) -&gt; Wifi_Shield -&gt; wifi_test</strong>。使用您自己的 SSID (访问点名称)和 KEY (您的访问点的密码)，然后将代码上传到您的 Arduino IDE。</p>
+<div class="codehilite"><pre><span></span>#define SSID      &quot; SEEED-MKT &quot;
+#define KEY       &quot; seeed-mkt &quot;
+</pre></div>
+
+
+<p>随着代码上传到您的 Arduino 板，打开串行监视器窗口。如果扩展板成功加入接入点，将显示 "OK" 消息以及 "get everything" 命令产生的连接信息。如果扩展板无法加入接入点，将显示 "Failed" 消息。</p>
+<h4 id="_8">配置扩展板上电连接<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p>通过以下步骤扩展版可以实现上电连接 :</p>
+<ol>
+<li>发送 "set wlan ssid mySSID" 命令以用您的SSID 替换 mySSID</li>
+<li>发送 "set wlan join 1" 命令</li>
+<li>发送 "save" 命令</li>
+</ol>
+<p>现在扩展板可以在上电后自动连接到接入点。</p>
+<p>每个命令的功能说明可以在 RN-171 datasheet 和下表中找到。</p>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>set wlan ssid <ssid></td>
+<td>"<ssid>" 使您希望自动连接到的接入点名称</td>
+</tr>
+<tr>
+<td>2</td>
+<td>set wlan join 1</td>
+<td>告诉模块自动连接到储存在内存中的 SSID 接入点</td>
+</tr>
+<tr>
+<td>3</td>
+<td>save</td>
+<td>将这些设置保存在 WIFI 的配置文件中</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ip">设置静态 IP 地址<a class="headerlink" href="#ip" title="Permanent link">&para;</a></h4>
+<p>要使扩展板从接入点获得静态 IP 地址，一旦连接到接入点，请发送以下命令 :</p>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>set ip dhcp 0</td>
+<td>关闭 DHCP</td>
+</tr>
+<tr>
+<td>2</td>
+<td>set ip address <address></td>
+<td>设置 IP 地址</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-3">Example 3: 您网络通信<a class="headerlink" href="#example-3" title="Permanent link">&para;</a></h3>
+<p>这个例子将告诉您，您的设备，比如您的手机或者电脑如何和 WiFi shield 通信。</p>
+<p>遵循以下步骤 :</p>
+<ol>
+<li>根据 Example 2 的 <em>Connecting By Typing Commands</em> 的部分步骤 1-7 配置模块。</li>
+<li>通过发送命令 "set ip local 80" 将 listening IP 端口设置为 "80"。</li>
+<li>根据 Example 2 的 <em>Connecting By Typing Commands</em> 的部分步骤 8 把扩展板连接到接入点。</li>
+<li>通过发送 "save" 命令保存这些设置。</li>
+<li>用 "get ip" 命令获取您的扩展板的 IP 地址。IP 地址和端口将显示在 "IP=" 的右侧 (e.g. IP=192.168.0.10:80)</li>
+<li>打开您的浏览器，在您的浏览器的网址栏中输入您的扩展板的 IP 地址，然后按回车键来访问它。</li>
+<li>您的 Arduino 串口监视器窗口将显示类似于下面的 HTTP 响应。这是您的浏览器发送给扩展板以请求数据的信息。</li>
+</ol>
+<div class="codehilite"><pre><span></span>*OPEN*GET / HTTP/1.1
+Host: 192.168.0.10
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+</pre></div>
+
+<p>浏览器现在正在等待数据，Wifi 模块可以将传感器值，服务网页或任何其他数据直接发送回浏览器! 在这种情况下，浏览器正在等待网页。如果 Wifi 模块响应 HTML 格式的页面，浏览器将显示它。 接下来的例子会教您如何做所有这些有趣的事情。</p>
+<h3 id="example-4-wifi-shield-webserver">Example 4: 使用 WiFi Shield 作为 Webserver (来自扩展板的服务网页)<a class="headerlink" href="#example-4-wifi-shield-webserver" title="Permanent link">&para;</a></h3>
+<p>正如您在 Example 3 中看到的，浏览器可以连接到 WiFi shield。一旦建立了连接(当浏览器发送 HTTP 请求时)，WiFi shield 可以发回 HTML 代码以使浏览器显示网页。在这个例子中，您将了解扩展板响应浏览器需要什么。</p>
+<p><strong>步骤 1: Arduino Code</strong></p>
+<p>上传以下代码到您的 Arduino，分别用您的 Wifi 热点信息替换 "myssid" 和 "mypassword" :</p>
+<div class="codehilite"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;SoftwareSerial.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;WiFly.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#define SSID      &quot;myssid&quot;</span>
+<span class="cp">#define KEY       &quot;mypassword&quot;</span>
+<span class="c1">// check your access point&#39;s security mode, mine was WPA20-PSK</span>
+<span class="c1">// if yours is different you&#39;ll need to change the AUTH constant, see the file WiFly.h for avalable security codes</span>
+<span class="cp">#define AUTH      WIFLY_AUTH_WPA2_PSK</span>
+
+<span class="kt">int</span> <span class="n">flag</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="c1">// Pins&#39; connection</span>
+<span class="c1">// Arduino       WiFly</span>
+<span class="c1">//  2    &lt;----&gt;    TX</span>
+<span class="c1">//  3    &lt;----&gt;    RX</span>
+
+<span class="n">SoftwareSerial</span> <span class="nf">wiflyUart</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span> <span class="c1">// create a WiFi shield serial object</span>
+<span class="n">WiFly</span> <span class="nf">wifly</span><span class="p">(</span><span class="o">&amp;</span><span class="n">wiflyUart</span><span class="p">);</span> <span class="c1">// pass the wifi siheld serial object to the WiFly class</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">wiflyUart</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span> <span class="c1">// start wifi shield uart port</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span> <span class="c1">// start the arduino serial port</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;--------- WIFLY Webserver --------&quot;</span><span class="p">);</span>
+
+    <span class="c1">// wait for initilization of wifly</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span> <span class="c1">// reset the shield</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+    <span class="c1">//set WiFly params</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set ip local 80</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// set the local comm port to 80</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set comm remote 0</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// do not send a default string when a connection opens</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set comm open *OPEN*</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// set the string that the wifi shield will output when a connection is opened</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Join &quot;</span> <span class="n">SSID</span> <span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">SSID</span><span class="p">,</span> <span class="n">KEY</span><span class="p">,</span> <span class="n">AUTH</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;OK&quot;</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Failed&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;get ip</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">receive</span><span class="p">((</span><span class="kt">uint8_t</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// print the response from the get ip command</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">((</span><span class="kt">char</span><span class="p">)</span><span class="n">c</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Web server ready&quot;</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">available</span><span class="p">())</span>
+    <span class="p">{</span> <span class="c1">// the wifi shield has data available</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">wiflyUart</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="s">&quot;*OPEN*&quot;</span><span class="p">))</span> <span class="c1">// see if the data available is from an open connection by looking for the *OPEN* string</span>
+        <span class="p">{</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;New Browser Request!&quot;</span><span class="p">);</span>
+            <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span> <span class="c1">// delay enough time for the browser to complete sending its HTTP request string</span>
+            <span class="c1">// send HTTP header</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;HTTP/1.1 200 OK&quot;</span><span class="p">);</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Content-Type: text/html; charset=UTF-8&quot;</span><span class="p">);</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Content-Length: 244&quot;</span><span class="p">);</span> <span class="c1">// length of HTML code</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Connection: close&quot;</span><span class="p">);</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">();</span>
+
+            <span class="c1">// send webpage&#39;s HTML code</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;html&gt;&quot;</span><span class="p">);</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;head&gt;&quot;</span><span class="p">);</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;title&gt;My WiFI Shield Webpage&lt;/title&gt;&quot;</span><span class="p">);</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;/head&gt;&quot;</span><span class="p">);</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;body&gt;&quot;</span><span class="p">);</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;h1&gt;Hello World!&lt;/h1&gt;&quot;</span><span class="p">);</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;h3&gt;This website is served from my WiFi module&lt;/h3&gt;&quot;</span><span class="p">);</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="s">http://yahoo.com</span><span class="se">\&quot;</span><span class="s">&gt;Yahoo!&lt;/a&gt; &lt;a href=</span><span class="se">\&quot;</span><span class="s">http://google.com</span><span class="se">\&quot;</span><span class="s">&gt;Google&lt;/a&gt;&quot;</span><span class="p">);</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;br/&gt;&lt;button&gt;My Button&lt;/button&gt;&quot;</span><span class="p">);</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;/body&gt;&quot;</span><span class="p">);</span>
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;/html&gt;&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p><strong>步骤 2: 获取 Wifi Shield 的 IP 地址</strong></p>
+<p>打开串口监视器窗口，等待显示 "Web server ready" 消息。串口监视器也将显示 WiFi shield 的IP地址 :</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi-shield-led-control-serial-comm-window.png" /></p>
+<p><em>Arduino 程序自带的串口打印窗口输出，扩展版地址高亮。</em></p>
+<p><strong>步骤 3: 访问网页</strong></p>
+<p>现在在您的浏览器中访问该 IP 地址。应该显示下面的网页，它包含一个链接到 Yahoo! 和 Google 和一个暂时还没用到的按钮 :</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi-shield-simple-webserver-page.png" /></p>
+<p><em>带有两个链接和一个按钮的网页</em></p>
+<p>当网页被访问时，串口监视器窗口也将显示 "New Browser Request!" 字符串如下所示 :</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi-shield-simple-webserver-arduino-serial-window-response.png" /></p>
+<p><em>检测到新的浏览器访问请求</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+在使用某些浏览器(如 Google Chrome) 的情况下，即使在栏中输入 URL 也会发送网页请求，这是因为这些浏览器在用户访问网页之前就会尝试获取网页的标题。
+</div>
+
+<h3 id="example-5-arduino">Example 5: 从网页端控制 Arduino 数字引脚<a class="headerlink" href="#example-5-arduino" title="Permanent link">&para;</a></h3>
+<p>在这个例子中，我们将创建一个带有三个按钮的网页来控制 Arduino 中的三个不同的数字引脚。</p>
+<p>请按照以下步骤操作。我们还创建了一个视频以更详细地解释代码。</p>
+<p><a href="https://www.youtube.com/watch?v=ek63patAl80">Video - WiFi Shield Arduino Digital Pin Control From Webpage</a></p>
+<p><strong>步骤 1: 硬件连接</strong></p>
+<p>将三个 LED 和电阻连接到数字引脚 <strong>11</strong>,<strong>12</strong> 和 <strong>13</strong>，如下图所示 :</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi-shield-led-control-schematic.png" /></p>
+<p><em>三个LED灯和3个1K欧的电阻连接到引脚11、12和13</em></p>
+<p><strong>步骤 2: 打开 Arduino 新建工程</strong></p>
+<p>将代码上传到 Arduino，使用您的接入热点的 SSID 名称和密码替换 "mySSID" 和 "myPassword" :</p>
+<div class="codehilite"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;SoftwareSerial.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;WiFly.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#define SSID      &quot;mySSID&quot;</span>
+<span class="cp">#define KEY       &quot;myPassword&quot;</span>
+<span class="c1">// check your access point&#39;s security mode, mine was WPA20-PSK</span>
+<span class="c1">// if yours is different you&#39;ll need to change the AUTH constant, see the file WiFly.h for avalable security codes</span>
+<span class="cp">#define AUTH      WIFLY_AUTH_WPA2_PSK</span>
+
+<span class="kt">int</span> <span class="n">flag</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="c1">// Pins&#39; connection</span>
+<span class="c1">// Arduino       WiFly</span>
+<span class="c1">//  2    &lt;----&gt;    TX</span>
+<span class="c1">//  3    &lt;----&gt;    RX</span>
+
+<span class="n">SoftwareSerial</span> <span class="nf">wiflyUart</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span> <span class="c1">// create a WiFi shield serial object</span>
+<span class="n">WiFly</span> <span class="nf">wifly</span><span class="p">(</span><span class="o">&amp;</span><span class="n">wiflyUart</span><span class="p">);</span> <span class="c1">// pass the wifi siheld serial object to the WiFly class</span>
+<span class="kt">char</span> <span class="n">ip</span><span class="p">[</span><span class="mi">16</span><span class="p">];</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">pinMode</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="n">OUTPUT</span><span class="p">);</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+
+    <span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="n">OUTPUT</span><span class="p">);</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+
+    <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">OUTPUT</span><span class="p">);</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+
+    <span class="n">wiflyUart</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span> <span class="c1">// start wifi shield uart port</span>
+
+    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span> <span class="c1">// start the arduino serial port</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;--------- WIFLY Webserver --------&quot;</span><span class="p">);</span>
+
+    <span class="c1">// wait for initilization of wifly</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span> <span class="c1">// reset the shield</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+    <span class="c1">//set WiFly params</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set ip local 80</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// set the local comm port to 80</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set comm remote 0</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// do not send a default string when a connection opens</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set comm open *OPEN*</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// set the string that the wifi shield will output when a connection is opened</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Join &quot;</span> <span class="n">SSID</span> <span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">SSID</span><span class="p">,</span> <span class="n">KEY</span><span class="p">,</span> <span class="n">AUTH</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;OK&quot;</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Failed&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;get ip</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span>
+
+    <span class="n">wiflyUart</span><span class="p">.</span><span class="n">setTimeout</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">wiflyUart</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="s">&quot;IP=&quot;</span><span class="p">))</span>
+    <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;can not get ip&quot;</span><span class="p">);</span>
+        <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">);;</span>
+    <span class="p">}</span><span class="k">else</span>
+    <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;IP:&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">receive</span><span class="p">((</span><span class="kt">uint8_t</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// print the response from the get ip command</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">c</span> <span class="o">==</span> <span class="sc">&#39;:&#39;</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">ip</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">ip</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">((</span><span class="kt">char</span><span class="p">)</span><span class="n">c</span><span class="p">);</span>
+        <span class="o">?</span>
+    <span class="p">}</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">();</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">receive</span><span class="p">((</span><span class="kt">uint8_t</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">);;</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Web server ready&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">available</span><span class="p">())</span>       <span class="c1">// the wifi shield has data available</span>
+    <span class="p">{</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="n">wiflyUart</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="s">&quot;*OPEN*&quot;</span><span class="p">))</span> <span class="c1">// see if the data available is from an open connection by looking for the *OPEN* string</span>
+        <span class="p">{</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;New Browser Request!&quot;</span><span class="p">);</span>
+            <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span> <span class="c1">// delay enough time for the browser to complete sending its HTTP request string</span>
+
+            <span class="k">if</span><span class="p">(</span><span class="n">wiflyUart</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="s">&quot;pin=&quot;</span><span class="p">))</span> <span class="c1">// look for the string &quot;pin=&quot; in the http request, if it&#39;s there then we want to control the LED</span>
+            <span class="p">{</span>
+                <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;LED Control&quot;</span><span class="p">);</span>
+                <span class="c1">// the user wants to toggle the LEDs</span>
+                <span class="kt">int</span> <span class="n">pinNumber</span> <span class="o">=</span> <span class="p">(</span><span class="n">wiflyUart</span><span class="p">.</span><span class="n">read</span><span class="p">()</span><span class="o">-</span><span class="mi">48</span><span class="p">);</span> <span class="c1">// get first number i.e. if the pin 13 then the 1st number is 1</span>
+                <span class="kt">int</span> <span class="n">secondNumber</span> <span class="o">=</span> <span class="p">(</span><span class="n">wiflyUart</span><span class="p">.</span><span class="n">read</span><span class="p">()</span><span class="o">-</span><span class="mi">48</span><span class="p">);</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">secondNumber</span><span class="o">&gt;=</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">secondNumber</span><span class="o">&lt;=</span><span class="mi">9</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="n">pinNumber</span><span class="o">*=</span><span class="mi">10</span><span class="p">;</span>
+                    <span class="n">pinNumber</span> <span class="o">+=</span><span class="n">secondNumber</span><span class="p">;</span> <span class="c1">// get second number, i.e. if the pin number is 13 then the 2nd number is 3, then add to the first number</span>
+                <span class="p">}</span>
+                <span class="n">digitalWrite</span><span class="p">(</span><span class="n">pinNumber</span><span class="p">,</span> <span class="o">!</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">pinNumber</span><span class="p">));</span> <span class="c1">// toggle pin</span>
+                <span class="c1">// Build pinstate string. The Arduino replies to the browser with this string.</span>
+                <span class="n">String</span> <span class="n">pinState</span> <span class="o">=</span> <span class="s">&quot;Pin &quot;</span><span class="p">;</span>
+                <span class="n">pinState</span><span class="o">+=</span><span class="n">pinNumber</span><span class="p">;</span>
+                <span class="n">pinState</span><span class="o">+=</span><span class="s">&quot; is &quot;</span><span class="p">;</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">pinNumber</span><span class="p">))</span> <span class="c1">// check if the pin is ON or OFF</span>
+                <span class="p">{</span>
+                    <span class="n">pinState</span><span class="o">+=</span><span class="s">&quot;ON&quot;</span><span class="p">;</span> <span class="c1">// the pin is on</span>
+                <span class="p">}</span>
+                <span class="k">else</span>
+                <span class="p">{</span>
+                    <span class="n">pinState</span><span class="o">+=</span><span class="s">&quot;OFF&quot;</span><span class="p">;</span>  <span class="c1">// the pin is off</span>
+                <span class="p">}</span>
+                <span class="c1">// build HTTP header Content-Length string.</span>
+                <span class="n">String</span> <span class="n">contentLength</span><span class="o">=</span><span class="s">&quot;Content-Length: &quot;</span><span class="p">;</span>
+                <span class="n">contentLength</span><span class="o">+=</span><span class="n">pinState</span><span class="p">.</span><span class="n">length</span><span class="p">();</span> <span class="c1">// the value of the length is the lenght of the string the Arduino is replying to the browser with.</span>
+                <span class="c1">// send HTTP header</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;HTTP/1.1 200 OK&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Content-Type: text/html; charset=UTF-8&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">contentLength</span><span class="p">);</span> <span class="c1">// length of HTML code</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Connection: close&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">();</span>
+                <span class="c1">// send response</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">pinState</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="k">else</span>
+            <span class="p">{</span>
+                <span class="c1">// send HTTP header</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;HTTP/1.1 200 OK&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Content-Type: text/html; charset=UTF-8&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Content-Length: 540&quot;</span><span class="p">);</span> <span class="c1">// length of HTML code</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Connection: close&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">println</span><span class="p">();</span>
+
+                <span class="c1">// send webpage&#39;s HTML code</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;html&gt;&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;head&gt;&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;title&gt;WiFi Shield Webpage&lt;/title&gt;&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;/head&gt;&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;body&gt;&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;h1&gt;LED Toggle Webpage&lt;/h1&gt;&quot;</span><span class="p">);</span>
+                <span class="c1">// In the &lt;button&gt; tags, the ID attribute is the value sent to the arduino via the &quot;pin&quot; GET parameter</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;button id=</span><span class="se">\&quot;</span><span class="s">11</span><span class="se">\&quot;</span><span class="s"> class=</span><span class="se">\&quot;</span><span class="s">led</span><span class="se">\&quot;</span><span class="s">&gt;Toggle Pin 11&lt;/button&gt; &quot;</span><span class="p">);</span> <span class="c1">// button for pin 11</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;button id=</span><span class="se">\&quot;</span><span class="s">12</span><span class="se">\&quot;</span><span class="s"> class=</span><span class="se">\&quot;</span><span class="s">led</span><span class="se">\&quot;</span><span class="s">&gt;Toggle Pin 12&lt;/button&gt; &quot;</span><span class="p">);</span> <span class="c1">// button for pin 12</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;button id=</span><span class="se">\&quot;</span><span class="s">13</span><span class="se">\&quot;</span><span class="s"> class=</span><span class="se">\&quot;</span><span class="s">led</span><span class="se">\&quot;</span><span class="s">&gt;Toggle Pin 13&lt;/button&gt; &quot;</span><span class="p">);</span> <span class="c1">// button for pin 13</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;script src=</span><span class="se">\&quot;</span><span class="s">http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js</span><span class="se">\&quot;</span><span class="s">&gt;&lt;/script&gt;&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;script type=</span><span class="se">\&quot;</span><span class="s">text/javascript</span><span class="se">\&quot;</span><span class="s">&gt;&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;$(document).ready(function(){&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;$(</span><span class="se">\&quot;</span><span class="s">.led</span><span class="se">\&quot;</span><span class="s">).click(function(){&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;var p = $(this).attr(&#39;id&#39;);&quot;</span><span class="p">);</span> <span class="c1">// get id value (i.e. pin13, pin12, or pin11)</span>
+                <span class="c1">// send HTTP GET request to the IP address with the parameter &quot;pin&quot; and value &quot;p&quot;, then execute the function</span>
+                <span class="c1">// IMPORTANT: dont&#39; forget to replace the IP address and port with YOUR shield&#39;s IP address and port</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;$.get(</span><span class="se">\&quot;</span><span class="s">http://&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">ip</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;:80/a</span><span class="se">\&quot;</span><span class="s">, {pin:p},function(data){alert(data)});&quot;</span><span class="p">);</span><span class="c1">// execute get request. Upon return execute the &quot;function&quot; (display an alert with the &quot;data&quot; send back to the browser.</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;});&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;});&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;/script&gt;&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;/body&gt;&quot;</span><span class="p">);</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;&lt;/html&gt;&quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Data sent to browser&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p><strong>步骤 3: 串口监视器</strong></p>
+<p>打开串口监视器，等待 "Web server ready" 消息显示。串口监视器还会显示 WiFi shield 的 IP 地址 :</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi-shield-led-control-serial-comm-window.png" /></p>
+<p><em>Arduino 程序自带的串口打印窗口输出，扩展版地址高亮。</em></p>
+<p><strong>步骤 4: 浏览网页</strong></p>
+<p>在网页浏览器中访问 IP 地址。会显示一个带有三个按钮的网页，如下图所示。点击按钮来控制LED。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi-shield-led-control-webpage.png" /></p>
+<p><em>通过网页端控制 LED 灯</em></p>
+<p>Arduino 也会反馈给网页浏览器引脚的状态，它们会在警告窗中显示。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi-shield-led-control-arduino-response.png" /></p>
+<p><em>警告对话框将显示 Arduino 发来的 引脚12的状态信息 “The string Pin12 is ON”。</em></p>
+<p>当浏览器发送请求访问网页或控制 LED 引脚时，串行监视器也将显示请求。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi-shield-led-control-serial-comm-response.png" /></p>
+<p><em>当 HTTP 请求发送到 Wifi shield 时，Arduino 程序自带的串口打印窗口将输出该请求</em></p>
+<h3 id="example-6-wifi-shield-android-app">Example 6: WiFi Shield 和 Android App<a class="headerlink" href="#example-6-wifi-shield-android-app" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Androidapp-ethernet-shield-led-toggle.png" /></p>
+<p><em>使用这个 Android app 您可以通过 WiFi 或者 Ethernet Shield 来控制 Arduino 的引脚。</em></p>
+<p><strong>Android App</strong></p>
+<p>我们创建了一个 Android APP，可以通过 WiFi shield 来切换 Arduino 中的数字引脚。在 <a href="https://www.youtube.com/watch?v=0R709uGvkWM">Video - WiFi Shield Android App for Arduino Pin Control</a> 中观看视频，以查看应用程序是如何工作的，并了解代码:</p>
+<p><strong>软件部分</strong></p>
+<p>从这个 <a href="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/res/WiFiShieldLEDControl.zip" title="WiFiShieldLEDControl.zip">链接</a> 下载 Android Studio 项目和源代码。</p>
+<h3 id="example-7">Example 7: 将数据发送到外部服务器并从中检索数据<a class="headerlink" href="#example-7" title="Permanent link">&para;</a></h3>
+<p>WiFi shield 中的 RN-171 模块可以充当 HTML 客户端(基于文本的网页浏览器)，这意味着我们可以使用扩展板来发送和接收来自 Web 服务器的数据。在这个例子中，您将学习如何使用具有 Web 应用程序编程接口 (API) 的扩展板来显示任何城市的天气数据(即温度，湿度等)。</p>
+<p>我们将使用的 API 的名称是 <a href="http://openweathermap.org/api">OpenWeatherMap</a>，当您将城市和国家的名称发送到该网站时，它会返回一个包含天气信息的 JSON 字符串。例如，如果您想显示伦敦英国的天气，请参阅此链接 : <a href="http://openweathermap.org/appid">http://openweathermap.org/appid</a> 。从 2015 年 10 月 9 日开始，该网站要求用户在访问 API 前注册 API 密钥。获得API密钥后，您将可以访问以下URL <a href="http://api.openweathermap.org/data/2.5/weather?q=London,uk">http://api.openweathermap.org/data/2.5/weather?q=London,uk</a> 它将返回如下所示的 JSON 字符串，其中包含了天气数据和其他信息。
+<div class="codehilite"><pre><span></span>{
+    &quot;coord&quot;:{&quot;lon&quot;:-0.13,&quot;lat&quot;:51.51},
+    &quot;sys&quot;:{&quot;type&quot;:3,&quot;id&quot;:60992,&quot;message&quot;:0.0079,&quot;country&quot;:&quot;GB&quot;,&quot;sunrise&quot;:1421395087,&quot;sunset&quot;:1421425352},
+    &quot;weather&quot;:[{&quot;id&quot;:802,&quot;main&quot;:&quot;Clouds&quot;,&quot;description&quot;:&quot;scattered clouds&quot;,&quot;icon&quot;:&quot;03n&quot;}],
+    &quot;base&quot;:&quot;cmc stations&quot;,
+    &quot;main&quot;:{
+        &quot;temp&quot;:277.25,&quot;humidity&quot;:79,&quot;pressure&quot;:998.4,
+        &quot;temp_min&quot;:277.25,&quot;temp_max&quot;:277.25
+    },
+    &quot;wind&quot;:{
+    &quot;speed&quot;:2,&quot;gust&quot;:5,&quot;deg&quot;:180},
+    &quot;rain&quot;:{&quot;3h&quot;:0},&quot;clouds&quot;:{&quot;all&quot;:32},
+    &quot;dt&quot;:1421372140,&quot;id&quot;:2643743,&quot;name&quot;:&quot;London&quot;,&quot;cod&quot;:200
+}
+</pre></div></p>
+<p><strong>步骤 1: The URL</strong></p>
+<p>让我们继续为美国旧金山检索天气 JSON 字符串。我们的 WiFi shield 需要访问的URL如下 :</p>
+<div class="codehilite"><pre><span></span>http://api.openweathermap.org/data/2.5/weather?q=San%20Francisco,US
+</pre></div>
+
+
+<p><strong>步骤 2: Arduino 代码</strong></p>
+<p><a href="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/res/WiFly-RN-UM.pdf">WiFly manual</a> 的第 13 部分展示了连接到 Web 服务器的不同方法，但是无论如何，我们需要指定服务器的名称(如果服务器没有域名就指定IP地址)，然后是我们希望发送的数据。</p>
+<p>我们需要发送到 WiFi shield 以接收来自 OpenWeatherMap 服务器的 JSON 字符串的命令如下 :</p>
+<div class="codehilite"><pre><span></span>set ip proto 18 //enable html client
+set dns name api.openweathermap.org //name of your webserver
+set ip address 0 // so WiFly will use DNS
+set ip remote 80 // standard webserver port
+set com remote 0 // turn off the REMOTE string so it does not interfere with the post
+open // to open the connection
+GET /data/2.5/weather?q=San%20Francisco,US \n\n // to send the data
+</pre></div>
+
+
+<p>这是将发送命令的 arduino 代码 :</p>
+<div class="codehilite"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;SoftwareSerial.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;WiFly.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#define SSID      &quot;mySSID&quot;</span>
+<span class="cp">#define KEY       &quot;myPassword&quot;</span>
+<span class="c1">// check your access point&#39;s security mode, mine was WPA20-PSK</span>
+<span class="c1">// if yours is different you&#39;ll need to change the AUTH constant, see the file WiFly.h for avalable security codes</span>
+<span class="cp">#define AUTH      WIFLY_AUTH_WPA2_PSK</span>
+
+<span class="c1">// Pins&#39; connection</span>
+<span class="c1">// Arduino       WiFly</span>
+<span class="c1">//  2    &lt;----&gt;    TX</span>
+<span class="c1">//  3    &lt;----&gt;    RX</span>
+
+<span class="n">SoftwareSerial</span> <span class="nf">wiflyUart</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span> <span class="c1">// create a WiFi shield serial object</span>
+<span class="n">WiFly</span> <span class="nf">wifly</span><span class="p">(</span><span class="o">&amp;</span><span class="n">wiflyUart</span><span class="p">);</span> <span class="c1">// pass the wifi siheld serial object to the WiFly class</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">wiflyUart</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span> <span class="c1">// start wifi shield uart port</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span> <span class="c1">// start the arduino serial port</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;--------- OpenWeatherMap API --------&quot;</span><span class="p">);</span>
+
+    <span class="c1">// wait for initilization of wifly</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span>
+    <span class="n">wifly</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span> <span class="c1">// reset the shield</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Join &quot;</span> <span class="n">SSID</span> <span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">SSID</span><span class="p">,</span> <span class="n">KEY</span><span class="p">,</span> <span class="n">AUTH</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;OK&quot;</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Failed&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set ip proto 18</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">//enable html client</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set dns name api.openweathermap.org</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// name of the webserver we want to connect to</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set ip address 0</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// so WiFly will use DNS</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set ip remote 80</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">/// standard webserver port</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set com remote 0</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// turn off the REMOTE string so it does not interfere with the post</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;open</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// open connection</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;GET /data/2.5/weather?q=San%20Francisco,US </span><span class="se">\n\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">//As soon as the data  received from the Internet ,output the data through the UART Port .</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">available</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">read</span><span class="p">());</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p><strong>步骤 3: 查看结果</strong></p>
+<p>打开串口监视器，可以看到您在浏览器中看到的相同的 JSON 字符串。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Open-weather-api-json-string.png" /></p>
+<p><em>JSON 天气字符将显示在 Arduino 串行监视器窗口</em></p>
+<h3 id="example-8-tcp">Example 8 : 与终端 TCP 通信<a class="headerlink" href="#example-8-tcp" title="Permanent link">&para;</a></h3>
+<p>在这个例子中，我们将向您展示如何将 WiFi shield 的信息发送到 PC 终端程序。我们将制作一个简单的 Arduino 控制台，这个控制台包含一些菜单，让您可以选择查看 Arduino 数字引脚的状态并切换。</p>
+<p><strong>步骤 1: 下载一个 TCP 终端</strong></p>
+<p><a href="http://sourceforge.net/projects/realterm/files/Realterm/2.0.0.70/Realterm_2.0.0.70_setup.exe/download">下载并安装 RealTerm</a>，这个链接是一个公用事业终端，可以连接到 WiFi shield。</p>
+<p><strong>步骤 2: Arduino Code</strong></p>
+<p>将下面的代码上传到 Arduino，用您自己的接入点信息替换 "mySSID"，"myPassword" 和验证码 :</p>
+<div class="codehilite"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;SoftwareSerial.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;WiFly.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#define SSID      &quot;mySSID&quot;</span>
+<span class="cp">#define KEY       &quot;myPassword&quot;</span>
+<span class="c1">// check your access point&#39;s security mode, mine was WPA20-PSK</span>
+<span class="c1">// if yours is different you&#39;ll need to change the AUTH constant, see the file WiFly.h for avalable security codes</span>
+<span class="cp">#define AUTH      WIFLY_AUTH_WPA2_PSK</span>
+
+<span class="cp">#define FLAG_MAIN_MENU 1</span>
+<span class="cp">#define FLAG_SUB_MENU_2 2</span>
+
+<span class="kt">int</span> <span class="n">flag</span> <span class="o">=</span> <span class="n">FLAG_MAIN_MENU</span><span class="p">;</span>
+
+<span class="c1">// Pins&#39; connection</span>
+<span class="c1">// Arduino       WiFly</span>
+<span class="c1">//  2    &lt;----&gt;    TX</span>
+<span class="c1">//  3    &lt;----&gt;    RX</span>
+
+<span class="n">SoftwareSerial</span> <span class="nf">wiflyUart</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span> <span class="c1">// create a WiFi shield serial object</span>
+<span class="n">WiFly</span> <span class="nf">wifly</span><span class="p">(</span><span class="o">&amp;</span><span class="n">wiflyUart</span><span class="p">);</span> <span class="c1">// pass the wifi siheld serial object to the WiFly class</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+
+    <span class="c1">// define the pins we can control</span>
+    <span class="n">pinMode</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="n">OUTPUT</span><span class="p">);</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+
+    <span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="n">OUTPUT</span><span class="p">);</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+
+    <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">OUTPUT</span><span class="p">);</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+
+    <span class="n">pinMode</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="n">OUTPUT</span><span class="p">);</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+
+    <span class="n">wiflyUart</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span> <span class="c1">// start wifi shield uart port</span>
+
+    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span> <span class="c1">// start the arduino serial port</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;--------- TCP Communication --------&quot;</span><span class="p">);</span>
+
+    <span class="c1">// wait for initilization of wifly</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span> <span class="c1">// reset the shield</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set ip local 80</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// set the local comm port to 80</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set comm remote 0</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// do not send a default string when a connection opens</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set comm open *</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// set the string or character that the wifi shield will output when a connection is opened &quot;*&quot;</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;set ip protocol 2</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// set TCP protocol</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Join &quot;</span> <span class="n">SSID</span> <span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">SSID</span><span class="p">,</span> <span class="n">KEY</span><span class="p">,</span> <span class="n">AUTH</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;OK&quot;</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Failed&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">wifly</span><span class="p">.</span><span class="n">sendCommand</span><span class="p">(</span><span class="s">&quot;get ip</span><span class="se">\r</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">receive</span><span class="p">((</span><span class="kt">uint8_t</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// print the response from the get ip command</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">((</span><span class="kt">char</span><span class="p">)</span><span class="n">c</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;TCP Ready&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">wifly</span><span class="p">.</span><span class="n">available</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span> <span class="c1">// wait for all the characters to be sent to the WiFi shield</span>
+        <span class="kt">char</span> <span class="n">val</span> <span class="o">=</span> <span class="n">wiflyUart</span><span class="p">.</span><span class="n">read</span><span class="p">();</span> <span class="c1">// read the first character</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="n">flag</span> <span class="o">==</span> <span class="n">FLAG_MAIN_MENU</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">switch</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">case</span> <span class="sc">&#39;*&#39;</span><span class="o">:</span> <span class="c1">// search for the new connection string</span>
+                <span class="n">printMainMenu</span><span class="p">();</span>
+                <span class="k">break</span><span class="p">;</span>
+                <span class="k">case</span> <span class="sc">&#39;1&#39;</span><span class="o">:</span> <span class="c1">// the user typed 1, display the pin states</span>
+                <span class="n">printPinStates</span><span class="p">();</span>
+                <span class="n">printMainMenu</span><span class="p">();</span>
+                <span class="k">break</span><span class="p">;</span>
+                <span class="k">case</span> <span class="sc">&#39;2&#39;</span><span class="o">:</span> <span class="c1">// the user typed 2, display the sub menu (option to select a particular pin)</span>
+                <span class="n">printSubMenu2</span><span class="p">();</span>
+                <span class="n">flag</span> <span class="o">=</span> <span class="n">FLAG_SUB_MENU_2</span><span class="p">;</span> <span class="c1">// flag to enter the sub menu</span>
+                <span class="k">break</span><span class="p">;</span>
+                <span class="k">default</span><span class="o">:</span>
+                <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;INVALID SUBMENU</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">);</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">flag</span> <span class="o">==</span> <span class="n">FLAG_SUB_MENU_2</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">pinNumber</span> <span class="o">=</span> <span class="n">val</span><span class="o">-</span><span class="mi">48</span><span class="p">;</span> <span class="c1">// get first number i.e. if the pin 13 then the 1st number is 1</span>
+            <span class="kt">int</span> <span class="n">secondNumber</span> <span class="o">=</span> <span class="p">(</span><span class="n">wiflyUart</span><span class="p">.</span><span class="n">read</span><span class="p">()</span><span class="o">-</span><span class="mi">48</span><span class="p">);</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">secondNumber</span><span class="o">&gt;=</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">secondNumber</span><span class="o">&lt;=</span><span class="mi">9</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">pinNumber</span><span class="o">*=</span><span class="mi">10</span><span class="p">;</span>
+                <span class="n">pinNumber</span> <span class="o">+=</span><span class="n">secondNumber</span><span class="p">;</span> <span class="c1">// get second number, i.e. if the pin number is 13 then the 2nd number is 3, then add to the first number</span>
+            <span class="p">}</span>
+
+            <span class="c1">// Create the &quot;You want to toggle pin x?? OK...&quot; string.</span>
+            <span class="n">String</span> <span class="n">response</span> <span class="o">=</span> <span class="s">&quot;</span><span class="se">\r\n</span><span class="s">You want to toggle pin &quot;</span><span class="p">;</span>
+            <span class="n">response</span><span class="o">+=</span><span class="n">pinNumber</span><span class="p">;</span>
+            <span class="n">response</span><span class="o">+=</span><span class="s">&quot;? OK...</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">;</span>
+
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">response</span><span class="p">);</span>
+
+            <span class="n">digitalWrite</span><span class="p">(</span><span class="n">pinNumber</span><span class="p">,</span> <span class="o">!</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">pinNumber</span><span class="p">));</span> <span class="c1">// toggle pin</span>
+
+            <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Pin Toggled!</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">);</span> <span class="c1">// let user know the pin was toggled.</span>
+            <span class="n">printMainMenu</span><span class="p">();</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="n">FLAG_MAIN_MENU</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+
+<span class="cm">/*</span>
+<span class="cm">* Prints the main menu options</span>
+<span class="cm">*/</span>
+<span class="kt">void</span> <span class="nf">printMainMenu</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\r\n\r\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Arduino Console Menu: </span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;1. Show digital pin states</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;2. Toggle a digital pin&#39;s state</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\r\n\r\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// displays the pin states</span>
+<span class="kt">void</span> <span class="nf">printPinStates</span><span class="p">()</span>
+<span class="p">{</span>
+
+    <span class="n">String</span> <span class="n">pinState</span> <span class="o">=</span> <span class="s">&quot;Pin 7 is &quot;</span><span class="p">;</span>
+    <span class="n">pinState</span><span class="o">+=</span><span class="n">getPinState</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span>
+    <span class="n">pinState</span><span class="o">+=</span><span class="s">&quot;</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">;</span>
+
+    <span class="n">pinState</span> <span class="o">+=</span> <span class="s">&quot;Pin 11 is &quot;</span><span class="p">;</span>
+    <span class="n">pinState</span><span class="o">+=</span><span class="n">getPinState</span><span class="p">(</span><span class="mi">11</span><span class="p">);</span>
+    <span class="n">pinState</span><span class="o">+=</span><span class="s">&quot;</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">;</span>
+
+    <span class="n">pinState</span> <span class="o">+=</span> <span class="s">&quot;Pin 12 is &quot;</span><span class="p">;</span>
+    <span class="n">pinState</span><span class="o">+=</span><span class="n">getPinState</span><span class="p">(</span><span class="mi">12</span><span class="p">);</span>
+    <span class="n">pinState</span><span class="o">+=</span><span class="s">&quot;</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">;</span>
+
+    <span class="n">pinState</span> <span class="o">+=</span> <span class="s">&quot;Pin 13 is &quot;</span><span class="p">;</span>
+    <span class="n">pinState</span><span class="o">+=</span><span class="n">getPinState</span><span class="p">(</span><span class="mi">13</span><span class="p">);</span>
+    <span class="n">pinState</span><span class="o">+=</span><span class="s">&quot;</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">;</span>
+
+    <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">pinState</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// prints the option to enter a pin number</span>
+<span class="kt">void</span> <span class="nf">printSubMenu2</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">wiflyUart</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\r\n</span><span class="s">Enter the pin number you wish to toggle: &quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="o">?</span>
+<span class="c1">// get a pin state as a string.</span>
+<span class="n">String</span> <span class="n">getPinState</span><span class="p">(</span><span class="kt">int</span> <span class="n">pinNumber</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">pinNumber</span><span class="p">))</span> <span class="c1">// check if the pin is ON or OFF</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="s">&quot;ON&quot;</span><span class="p">;</span> <span class="c1">// the pin is on</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="s">&quot;OFF&quot;</span><span class="p">;</span>  <span class="c1">// the pin is off</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p><strong>步骤 3: 获取扩展板的 IP 地址和端口</strong></p>
+<p>打开 Arduino 串口监视器，获取 WiFi Shield 的 IP 地址和端口号，如下图所示。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Tcp-arduino-serial-comm.png" /></p>
+<p><strong>Arduino 程序自带的串口打印窗口输出 TCP 例程, the ip 地址和端口号在图中高亮</strong></p>
+<p>上图中的 IP 地址和端口 :</p>
+<div class="codehilite"><pre><span></span>192.168.0.10:80
+</pre></div>
+
+
+<p><strong>步骤 4: 配置 TCP 终端然后连接到 Shield</strong></p>
+<p>打开 RealTerm 并在 "Display" 选项卡中为 "Rows" 输入 "30" 并选择 "Scrollback" 选项 :</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Realterm-display-tab.png" /></p>
+<p><em>RealTerm window: rows = 30, 并且勾选 Scrollback 选项.</em></p>
+<p>在 RealTerm 程序的 "Port" 选项卡中，输入扩展板的 IP 地址和端口，例如 192.168.0.10:80，然后点击 "Open" 按钮，Arduino 的硬编码主菜单应该显示在终端上。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Realterm-port-tab.png" /></p>
+<p><em>RealTerm window. 端口栏有 WiFi shield's 的 IP 地址和端口号</em></p>
+<p>在 "Send" 标签中选择菜单 "1" 或 "2" 中的一个选项，在文本框中输入，然后按 "Send ASCII" 发送值。</p>
+<p>例如，要切换引脚 <strong>13</strong> 状态，输入 "2" 并按 "Send ASCII"，当提示 "Enter the pin number you wish you toggle" 时，输入 "13" 并点击 "Send ASCII"。Arduino 会回复 "Pin Toggled!" 并返回到主菜单。现在输入 "1"，然后按 "Send ASCII" 查看引脚的当前状态。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Realterm-send-tab.png" /></p>
+<p><em>RealTerm window. 正如黄色文本所示，引脚13的状态已经从 <strong>OFF</strong> 变成了 <strong>ON</strong>。</em></p>
+<h3 id="example-9-wifi-shield-relay-shield">Example 9: WiFi Shield 和 Relay Shield 配合使用<a class="headerlink" href="#example-9-wifi-shield-relay-shield" title="Permanent link">&para;</a></h3>
+<p>现在您明白如何发送和接收来自 WiFi shield 的信息，可以看见通过网络控制任何类型的设备都很容易。</p>
+<p>如果您希望通过网页或电话应用程序控制台灯，电机或水泵等大功率设备，我们推荐使用 <a href="http://seeed.wiki/Relay_Shield_v3/#_7">Relay Shield V2.0</a>.</p>
+<p>Relay Shield V3 使用引脚 <strong>4</strong>，引脚 <strong>5</strong>，引脚 <strong>6</strong> 和引脚 <strong>7</strong>，因此它完全兼容本页示例中的代码。</p>
+<h3 id="example-10-adhoc">Example 10: Adhoc 模式<a class="headerlink" href="#example-10-adhoc" title="Permanent link">&para;</a></h3>
+<p>要在 Adhoc 模式下使用扩展板作为接入点，只需将扩展板的引脚 <strong>IO9</strong> 连接到 Arduino 中的 3.3V 引脚(如下所示)，然后重置扩展板(如果打开)。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/img/Wifi-shield-adhoc-mode-hardware-connection.png" /></p>
+<p><em>Shield 连接需要 adhoc 模式. IO9 引脚连接到3.3V。</em></p>
+<p>为了获得扩展板的 SSID，将 Example 1 中的代码上传到 Arduino 并打开串口监视器，扩展板将会响应它的 SSID，如下例所示，在这种情况下 <strong>WiFly-EZX-1b</strong> 是 SSID。</p>
+<div class="codehilite"><pre><span></span>AP mode as WiFly-EZX-1b on chan 1
+</pre></div>
+
+
+<p>现在能够连接到 WiFi shield 作为一个接入点，例如 SSID 可以在电脑的 WiFi 网络列表中可见。</p>
+<p>要了解有关 adhoc 模式的更多信息，请查看 <a href="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/res/WiFly-RN-UM.pdf">WiFly RN 用户手册</a> 的 16 章的 "Adhoc Networking Mode"</p>
+<h2 id="_9">资源下载<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<hr />
+<ul>
+<li><strong>[Eagle 文件]</strong> <a href="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/res/Wifi_Shield_v2.0.zip">WiFi Shield V2.0 Eagle Files</a></li>
+<li><strong>[原理图 PDF]</strong> <a href="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/res/Wifi_shield_v2_schematic.pdf">Schematic PDF</a></li>
+<li><strong>[库文件]</strong> <a href="https://github.com/Seeed-Studio/WiFi_Shield">Wifi Shield Library</a></li>
+<li><strong>[芯片数据手册]</strong> <a href="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/res/WiFly-RN-171.pdf">RN-171 Datasheet</a></li>
+<li><strong>[用户手册]</strong> <a href="https://raw.githubusercontent.com/SeeedDocument/Wifi_Shield_V2.0/master/res/WiFly-RN-UM.pdf">WiFi Module User Manual</a> <em>-- This is where you'll find all the commands for the RN-171 module in the shield.</em></li>
+<li><strong>[其他资源]</strong> <a href="../Seeeduino_v4.2">What is a Seeeduino</a></li>
+<li><strong>[其他资源]</strong> <a href="http://www.w3schools.com/">w3schools</a> Great website to learn HTML, Javascript, and JQuery</li>
+</ul>
+<!-- This Markdown file was created from http://www.seeedstudio.com/wiki/Wifi_Shield_V2.0 -->
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../NFC_Shield_V2.0/" title="NFC Shield V2.0" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                NFC Shield V2.0
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../RS232_Shield/" title="RS232 Shield" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                RS232 Shield
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Seeedstudio 2017
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.facebook.com/seeedstudiosz/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://github.com/SeeedDocument" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-c35428f87f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>

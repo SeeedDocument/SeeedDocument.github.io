@@ -202,6 +202,12 @@
     </url>
         
     <url>
+     <loc>http://seeed.wiki/Grove-Starter_Kit_for_LinkIt_ONE/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>http://seeed.wiki/Grove-Maker_Kit_for_Intel_Joule/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
@@ -267,6 +273,30 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>http://seeed.wiki/Wio_Link_Starter_Kit/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/Wio_Link_Deluxe_Kit/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/Wio_Link_Deluxe_Plus_Kit/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/Sidekick_Basic_Kit_for_LinkIt_ONE/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
@@ -327,6 +357,18 @@
         
     <url>
      <loc>http://seeed.wiki/Bus_Pirate_v3_assembled/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/Photo_Reflective_Sensor/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://seeed.wiki/WiFi_Serial_Transceiver_Module/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
