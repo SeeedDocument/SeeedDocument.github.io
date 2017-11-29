@@ -743,18 +743,12 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#hello-world" title="演示: 一个输出 Hello world 的例子" class="md-nav__link">
     演示: 一个输出 Hello world 的例子
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#python" title="Python" class="md-nav__link">
@@ -3924,18 +3918,12 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#hello-world" title="演示: 一个输出 Hello world 的例子" class="md-nav__link">
     演示: 一个输出 Hello world 的例子
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#python" title="Python" class="md-nav__link">
@@ -4266,17 +4254,17 @@
 <li>对于Ubuntu Linux，它应该没有安装驱动程序。 LinkIt Smart 7688 应该在/ dev文件夹中，并安装为 ttyUSB0。 每个 Ubuntu 机器上的 <strong>数字0</strong> 可能不同。</li>
 <li>对于 OS X，也不需要安装驱动程序，LinkIt Smart 7688 Duo 作为串行设备安装在/ dev / tty.usbmodem1413 下。 每个OS X 机器上的号码 1413 可能不同。</li>
 </ul>
-<h2 id="hello-world">演示: 一个输出 Hello world 的例子<a class="headerlink" href="#hello-world" title="Permanent link">&para;</a></h2>
+<h3 id="hello-world">演示: 一个输出 Hello world 的例子<a class="headerlink" href="#hello-world" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>为了避免本地应用程序开发中的内存不足，您应该在更强大的主机环境中设置本机应用程序进行开发环境，从而使您能够交叉编译 LinkIt Smart 7688 目标的可执行格式。 下表显示了 LinkIt Smart 7688 编程语言和主机上相关开发环境的概述。</p>
 </div>
 <h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
 <p><strong>1.</strong> 使用 FileZilla 参考这个<a href="https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_%28en%29">tutorial</a>，服务器IP（替换 <strong>主机名</strong>）的地址是 inet addr 在以前的<a href="https://seeeddoc.github.io/LinkIt_Smart_7688_Duo#Switch_to_Station_mode">切换到station模式</a>部分中找到，用户名是 root，密码是该部分中设置的密码。</p>
-<p><strong>2.</strong> 打开文本编辑器，复制并粘贴以下示例代码，并将其保存为 <strong>helloworld.py <strong>。
+<p><strong>2.</strong> 打开文本编辑器，复制并粘贴以下示例代码，并将其保存为 <strong>helloworld.py</strong>。
 <div class="codehilite"><pre><span></span>print &quot;Hello World!&quot;
 </pre></div>
-**3.</strong> 使用 FileZilla 将文件 **helloworld.py</strong> 复制到目标开发环境（LinkIt Smart 7688）的系统中，将其放在文件夹 <strong>root</strong> 下。</p>
+<strong>3.</strong> 使用 FileZilla 将文件 <strong>helloworld.py</strong> 复制到目标开发环境（LinkIt Smart 7688）的系统中，将其放在文件夹 <strong>root</strong> 下。</p>
 <p><strong>4.</strong> 启动 PuTTy 并使用 USB连接到串行适配器连接到系统。</p>
 <p><strong>5.</strong> 将工作目录设置为 <strong>/ root</strong>，并输入 <strong>python helloworld.py</strong> 来执行。</p>
 <p><strong>6.</strong> 现在你可以看到 <strong>Hello World !</strong>  打印在控制台。</p>
