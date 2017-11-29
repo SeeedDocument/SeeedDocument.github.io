@@ -3981,99 +3981,103 @@ Mode, 180uA@Standby Mode
 <p>Adapter 的固件使用了在 Pebble 官方文档中描述的 <a href="http://developer.getpebble.com/guides/hardware/smartstrap-protocol/">协议</a></p>
 <p>所以从 Watchapp 方面可以调用的资源如下：</p>
 <table>
+<thead>
 <tr>
-<th> Service </th>
-<th> 属性 </th>
-<th> R/W </th>
-<th> 数据类型 </th>
-<th> 资料
-</th></tr>
+<th>服务</th>
+<th>属性</th>
+<th>R/W（读/写）</th>
+<th>数据类型</th>
+<th>相关资料</th>
+</tr>
+</thead>
+<tbody>
 <tr>
-<td> 0x0 Raw Data </td>
-<td> 0x0 Raw Data </td>
-<td> RW </td>
-<td> uint8 缓冲区 </td>
-<td> 在 Adapter 一侧没有处理，保留 Adapter 固件编程可扩展性
-</td></tr>
+<td>0x0 源数据</td>
+<td>0x0 源数据</td>
+<td>RW</td>
+<td>uint8* buffer</td>
+<td>在 Adapter 一侧没有处理，保留 Adapter 固件编程可扩展性</td>
+</tr>
 <tr>
-<td> 0x2003 电池服务 </td>
-<td> 0x1001 获取电池电压 </td>
-<td> R </td>
-<td> uint16 </td>
-<td> 皮带电池的电压为 V ，其电压精度为1/100。 例如，电压是3.70V，测量输出为370
-</td></tr>
+<td>0x2003 电池服务</td>
+<td>0x1001 获取电池电压</td>
+<td>R</td>
+<td>uint16</td>
+<td>外置在表带上的电池单位为V(伏特),其可测精度为1/100。 例如，电压是3.70V，测量输出为370</td>
+</tr>
 <tr>
-<td> 0x2003 电池服务 </td>
-<td> 0x1002 启用或禁止皮带电池给 Pebble 充电 </td>
-<td> RW </td>
-<td> uint8 </td>
-<td> 0：禁止给 Pebble 充电。 1：给 Pebble 充电。
-</td></tr>
+<td>0x2003 电池服务</td>
+<td>0x1002 启用或禁止外置在表带上的电池给 Pebble 充电</td>
+<td>RW</td>
+<td>uint8</td>
+<td>0：禁止给 Pebble 充电。 1：可以给 Pebble 充电。</td>
+</tr>
 <tr>
-<td> 0x2001 定位和导航服务  </td>
-<td> 0x0001 定位 </td>
-<td> R </td>
-<td> sint32[2] </td>
-<td> 当前的经度和纬度，精度为 1/10^7。数据中纬度在经度之前。例如，Pebble 总部在（37.4400662，-122.1583808），将被输出为{374400662，-1221583808}。
-</td></tr>
+<td>0x2001 定位和导航服务</td>
+<td>0x0001 定位</td>
+<td>R</td>
+<td>sint32[2]</td>
+<td>当前的经度和纬度，精度为 1/10^7。数据中纬度在经度之前。例如，Pebble 总部在（37.4400662，-122.1583808），将被输出为{374400662，-1221583808}。</td>
+</tr>
 <tr>
-<td> 0x2001 定位和导航服务 </td>
-<td> 0x0003 速度 </td>
-<td> R </td>
-<td> uint16 </td>
-<td> 当前速度的单位为 m/s，其精度为 1/100。例如，1.5m/s 的速度将被输出为 150。
-</td></tr>
+<td>0x2001 定位和导航服务</td>
+<td>0x0003 速度</td>
+<td>R</td>
+<td>uint16</td>
+<td>当前速度的单位为 m/s，其精度为 1/100。例如，1.5m/s 的速度将被输出为 150。</td>
+</tr>
 <tr>
-<td> 0x2001 定位和导航服务 </td>
-<td> 0x1001 高度 </td>
-<td> R </td>
-<td> uint16 </td>
-<td> 当前的高度的单位为 m，其精度为 1/100。例如，100m 的高度将被输出为 10000
-</td></tr>
+<td>0x2001 定位和导航服务</td>
+<td>0x1001 高度</td>
+<td>R</td>
+<td>uint16</td>
+<td>当前的高度的单位为 m，其精度为 1/100。例如，100m 的高度将被输出为 10000</td>
+</tr>
 <tr>
-<td> 0x2001 定位和导航服务 </td>
-<td> 0x0101 GPS 卫星 </td>
-<td> R </td>
-<td> uint8 </td>
-<td> GPS卫星的数量（通常通过 NMEA 报告）。 请注意，这个数字是针对卫星的。
-</td></tr>
+<td>0x2001 定位和导航服务</td>
+<td>0x0101 GPS 卫星</td>
+<td>R</td>
+<td>uint8</td>
+<td>GPS卫星的数量（通常通过 NMEA 报告）。 请注意，这个数字是针对卫星的。</td>
+</tr>
 <tr>
-<td> 0x2001 定位和导航服务 </td>
-<td> 0x0102 GPS 定位质量 </td>
-<td> R </td>
-<td> uint8 </td>
-<td> GPS定位的质量（通过 NMEA 报告）。 可能的值列在 [NMEA规范](http://www.gpsinformation.org/dale/nmea.htm#GGA).
-</td></tr>
+<td>0x2001 定位和导航服务</td>
+<td>0x0102 GPS 定位质量</td>
+<td>R</td>
+<td>uint8</td>
+<td>GPS定位的质量（通过 NMEA 报告）。 可能的值列在 <a href="http://www.gpsinformation.org/dale/nmea.htm#GGA">NMEA规范</a>.</td>
+</tr>
 <tr>
-<td> 0x1E01 NFC 服务 </td>
-<td> 0x1001 获取 NFC 标签的 UID </td>
-<td> R </td>
-<td> uint8 * </td>
-<td> UID 将以可变长度返回，参数长度由 SmartstrapReadHandler 控制。
-</td></tr>
+<td>0x1E01 NFC 服务</td>
+<td>0x1001 获取 NFC 标签的 UID</td>
+<td>R</td>
+<td>uint8 *</td>
+<td>UID 将以可变长度返回，参数长度由 SmartstrapReadHandler 控制。</td>
+</tr>
 <tr>
-<td> 0x1E01 NFC 服务 </td>
-<td> 0x1002 读 NDEF 数据 </td>
-<td> R </td>
-<td> uint8  </td>
-<td> NDEF UID 将以可变长度返回，参数长度由 SmartstrapReadHandler 控制。
-</td></tr>
+<td>0x1E01 NFC 服务</td>
+<td>0x1002 读 NDEF 数据</td>
+<td>R</td>
+<td>uint8</td>
+<td>NDEF UID 将以可变长度返回，参数长度由 SmartstrapReadHandler 控制。</td>
+</tr>
 <tr>
-<td> 0x1E01 NFC 服务 </td>
-<td> 0x1003 写 NDEF 数据 </td>
-<td> W </td>
-<td> uint8 * </td>
-<td> 向 NFC 标签的缓冲区中写入 uint8 数据
-</td></tr>
+<td>0x1E01 NFC 服务</td>
+<td>0x1003 写 NDEF 数据</td>
+<td>W</td>
+<td>uint8 *</td>
+<td>向 NFC 标签的缓冲区中写入 uint8 数据</td>
+</tr>
 <tr>
-<td> 0x1E01 NFC 服务 </td>
-<td> 0x1004 擦除 NDEF 数据 </td>
-<td> W </td>
-<td> 任何类型 </td>
-<td> 写入随机或空数据来覆盖以前的数据
-</td></tr></table>
-
-<p>Pebble App 的示例代码存放在 github 上，请点击 <a href="https://github.com/Seeed-Studio/Xadow_Strap">这里下载</a></p>
+<td>0x1E01 NFC 服务</td>
+<td>0x1004 擦除 NDEF 数据</td>
+<td>W</td>
+<td>任何类型</td>
+<td>写入随机或空数据来覆盖以前的数据</td>
+</tr>
+</tbody>
+</table>
+<p>Pebble App 的示例代码存放在 github 上，请 <a href="https://github.com/Seeed-Studio/Xadow_Strap">点击这里下载</a></p>
 <p>这个 APP 仅用于部分属性调用的演示，请根据 GPS，NFC 和个人能力开发属于自己的 APP。</p>
 <h3 id="adapter_1">给 Adapter 编程<a class="headerlink" href="#adapter_1" title="Permanent link">&para;</a></h3>
 <p>Adapter 内置 LPC11U35 并运行 mbed 软件。 最初的固件位于 mbed.org，请 <a href="https://developer.mbed.org/teams/Seeed/code/xadow_smartstrap_for_pebble/">点击这里查看</a></p>
