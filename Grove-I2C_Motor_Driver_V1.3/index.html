@@ -3924,27 +3924,28 @@ I2C
 <li>机器人</li>
 <li>家用 RC 车</li>
 <li>风扇</li>
-<li>大功率LED照明总线。
-<div class="admonition danger"></li>
+<li>大功率LED照明总线。</li>
 </ul>
+<div class="admonition danger">
 <p class="admonition-title">警告</p>
+该板在工作电流超过 1A 时板子将会非常热。 请勿触摸！
+</div>
 
-<p>该板在工作电流超过 1A 时板子将会非常热。 请勿触摸！
-</div></p>
 <h2 id="_7">入门<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p>I2C Motor Driver 可以控制基于芯片 L298 的电机。 L298 不仅是双电机驱动器，它是双 H 桥。  h 桥基本上是一个特定的晶体管设置，允许您切换电流方向。 连接电机意味着您可以沿双向旋转; 通过 PWM 输入，您可以使用 Arduino 以任意速度旋转。 因为 L298 有2个 H 桥，所以你可以通过在不同的方向上旋转每个轮子来使机器人转动，当然也可以向前和向后旋转。</p>
 <h3 id="1">1. 安装库<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <ul>
-<li>如果您是第一次安装Arduino库文件，请点击 <a href="http://seeed.wiki/How_to_install_Arduino_Library/">这里</a> 查看库文件的安装方法。</li>
+<li>如果您是第一次安装 Arduino 库文件，请点击 <a href="http://seeed.wiki/How_to_install_Arduino_Library/">这里</a> 查看库文件的安装方法。</li>
 </ul>
-<p>直接运行命令或或者下载<a href="https://github.com/Seeed-Studio/Grove_I2C_Motor_Driver_v1_3/archive/master.zip">zip 文件</a></p>
+<p>直接运行命令或或者下载 <a href="https://github.com/Seeed-Studio/Grove_I2C_Motor_Driver_v1_3/archive/master.zip">zip 文件</a></p>
 <div class="codehilite"><pre><span></span>  git clone https://github.com/Seeed-Studio/Grove_I2C_Motor_Driver_v1_3.git
 </pre></div>
 
 <ul>
-<li>只需将 Grove_I2C_Motor_Driver_v1_3 文件夹复制到 Arduino 库集合中即可。 例如， arduino-1.6.12 / 库。 下次运行 Arduino IDE 时，您将在 <strong>file(文件) - &gt;Sketch - &gt; Include Library - &gt; Grove_I2C_Motor_Driver_v1_3</strong>  中添加一个新选项。 在 Grove_I2C_Motor_Driver_v1_3 中查看包含的示例。 我们提供直流和步进电机控制示例。
-<img alt="" src="https://github.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/raw/master/img/library%20example.jpg" /></li>
+<li>只需将 Grove_I2C_Motor_Driver_v1_3 文件夹复制到 Arduino 库集合中即可。 例如， arduino-1.6.12 / 库。 下次运行 Arduino IDE 时，您可以在 <strong>file(文件) - &gt;Sketch - &gt; Include Library - &gt; Grove_I2C_Motor_Driver_v1_3</strong>  中找到一个新的例程。</li>
 </ul>
+<p>在 Grove_I2C_Motor_Driver_v1_3 中查看包含的示例。 我们提供直流和步进电机控制示例。</p>
+<p><img alt="" src="https://github.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/raw/master/img/library%20example.jpg" /></p>
 <h3 id="2-i2c">2. 设置 I2C 电机驱动程序的地址<a class="headerlink" href="#2-i2c" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
@@ -4009,13 +4010,13 @@ void StepperRun(int _step);
 <p><strong>_step</strong>  表示您设置为步进电机运行的步骤。 可以填-1024〜1024。 当_step&gt; 0时，步进电机顺时针运行，而_step &lt;0时，步进电机逆时针运行。 当_step为512 / -512时，步进电机将运行一整圈，如果_step为1024 / -1024，则步进电机将运行2圈。 步进电机在完成步骤后会自动停止。</p>
 <h2 id="_8">资源下载<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/master/res/Grove-I2C_Motor_Driver_v1.3_Eagle_File.zip">Grove - I2C Motor Driver V1.3 in Eagle Format</a></li>
-<li><a href="https://github.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/raw/master/res/Grove%20-%20I2C%20Motor%20Driver%20%20v1.3b%20PCB.pdf">Grove - I2C Motor Driver V1.3 PCB in PDF Format</a></li>
-<li><a href="https://github.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/raw/master/res/Grove%20-%20I2C%20Motor%20Driver%20%20v1.3b.pdf">Grove - I2C Motor Driver V1.3 Schematic in PDF Format</a></li>
-<li><a href="https://github.com/Seeed-Studio/Grove_I2C_Motor_Driver_v1_3">Grove - I2C Motor Driver V1.3 Library</a></li>
-<li><a href="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/master/res/L298datasheet.pdf">L298 Datasheet</a></li>
-<li><a href="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/master/res/ST_78M05DataSheet.pdf">78M05 Datasheet</a></li>
-<li><a href="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/master/res/On-Chipfirmware_for_Motor_driver.zip">On-Chip Firmware for I2C motor driver</a></li>
+<li><strong>[Eagle]</strong> <a href="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/master/res/Grove-I2C_Motor_Driver_v1.3_Eagle_File.zip">Grove - I2C Motor Driver V1.3 in Eagle Format</a></li>
+<li><strong>[PDF]</strong> <a href="https://github.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/raw/master/res/Grove%20-%20I2C%20Motor%20Driver%20%20v1.3b%20PCB.pdf">Grove - I2C Motor Driver V1.3 PCB in PDF Format</a></li>
+<li><strong>[PDF]</strong> <a href="https://github.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/raw/master/res/Grove%20-%20I2C%20Motor%20Driver%20%20v1.3b.pdf">Grove - I2C Motor Driver V1.3 Schematic in PDF Format</a></li>
+<li><strong>[库文件]</strong> <a href="https://github.com/Seeed-Studio/Grove_I2C_Motor_Driver_v1_3">Grove - I2C Motor Driver V1.3 Library</a></li>
+<li><strong>[数据手册]</strong> <a href="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/master/res/L298datasheet.pdf">L298 Datasheet</a></li>
+<li><strong>[数据手册]</strong> <a href="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/master/res/ST_78M05DataSheet.pdf">78M05 Datasheet</a></li>
+<li><strong>[固件]</strong> <a href="https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/master/res/On-Chipfirmware_for_Motor_driver.zip">On-Chip Firmware for I2C motor driver</a></li>
 </ul>
 <!-- This Markdown file was created from http://www.seeedstudio.com/wiki/Grove_-_I2C_Motor_Driver_V1.3 -->
                 
