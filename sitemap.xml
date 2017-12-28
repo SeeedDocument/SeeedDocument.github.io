@@ -169,12 +169,6 @@
      <changefreq>daily</changefreq>
     </url>
         
-    <url>
-     <loc>http://seeed.wiki/M11_1.25_Water_flow_Sensor/</loc>
-     <lastmod>2017-12-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
     
 
     
@@ -202,12 +196,6 @@
     </url>
         
     <url>
-     <loc>http://seeed.wiki/Grove_Starter_Kit_v3/</loc>
-     <lastmod>2017-12-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>http://seeed.wiki/Grove_Starter_Kit_for_BeagleBone_Green/</loc>
      <lastmod>2017-12-28</lastmod>
      <changefreq>daily</changefreq>
@@ -215,12 +203,6 @@
         
     <url>
      <loc>http://seeed.wiki/Grove-Starter_Kit_for_LinkIt_ONE/</loc>
-     <lastmod>2017-12-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://seeed.wiki/Grove_Starter_kit_for_LinkIt_Smart7688_Duo/</loc>
      <lastmod>2017-12-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -387,12 +369,6 @@
         
     <url>
      <loc>http://seeed.wiki/WiFi_Serial_Transceiver_Module/</loc>
-     <lastmod>2017-12-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://seeed.wiki/Mini_Soldering_Iron/</loc>
      <lastmod>2017-12-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
