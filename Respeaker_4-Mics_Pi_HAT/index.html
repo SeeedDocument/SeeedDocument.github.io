@@ -598,6 +598,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../LinkIt_ONE/" title="LinkIt ONE" class="md-nav__link">
+      LinkIt ONE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../LinkIt_Smart_7688/" title="LinkIt Smart 7688" class="md-nav__link">
       LinkIt Smart 7688
     </a>
@@ -636,18 +648,6 @@
   <li class="md-nav__item">
     <a href="../Arduino_Breakout_for_LinkIt_Smart_7688_Duo/" title="Arduino Breakout for LinkIt Smart 7688 Duo" class="md-nav__link">
       Arduino Breakout for LinkIt Smart 7688 Duo
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../LinkIt_ONE/" title="LinkIt ONE" class="md-nav__link">
-      LinkIt ONE
     </a>
   </li>
 
@@ -4405,10 +4405,10 @@ pi@raspberrypi:~ $ source ~/env/bin/activate                   # 激活 python �
 <h4 id="1-voice-engine">1. 配置Voice engine<a class="headerlink" href="#1-voice-engine" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>pi@raspberrypi:~ $ source ~/env/bin/activate                    # 激活Python虚拟环境, 如果已经激活，调到下一步。
 (env) pi@raspberrypi:~ $ cd ~/4mics_hat
-(env) pi@raspberrypi:~ $ sudo apt install libatlas-base-dev     # 安装 snowboy dependencies
-(env) pi@raspberrypi:~ $ sudo apt install python-pyaudio
-(env) pi@raspberrypi:~ $ pip install ./snowboy*.whl             # 安装 snowboy for KWS
-(env) pi@raspberrypi:~ $ pip install ./webrtc*.whl              # 安装 webrtc for DoA
+(env) pi@raspberrypi:~/4mics_hat $ sudo apt install libatlas-base-dev     # 安装 snowboy dependencies
+(env) pi@raspberrypi:~/4mics_hat $ sudo apt install python-pyaudio
+(env) pi@raspberrypi:~/4mics_hat $ pip install ./snowboy*.whl             # 安装 snowboy for KWS
+(env) pi@raspberrypi:~/4mics_hat $ pip install ./webrtc*.whl              # 安装 webrtc for DoA
 (env) pi@raspberrypi:~ $ cd ~/
 (env) pi@raspberrypi:~ $ git clone https://github.com/voice-engine/voice-engine
 (env) pi@raspberrypi:~ $ cd voice-engine/
@@ -4436,7 +4436,9 @@ def main():
 (env) pi@raspberrypi:~ $ git clone https://github.com/respeaker/avs
 (env) pi@raspberrypi:~ $ cd avs                                 # install Requirements
 (env) pi@raspberrypi:~ $ python setup.py install                               
-(env) pi@raspberrypi:~/avs $ sudo apt install gstreamer1.0 gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly
+(env) pi@raspberrypi:~/avs $ sudo apt install gstreamer1.0
+(env) pi@raspberrypi:~/avs $ sudo apt install gstreamer1.0-plugins-good
+(env) pi@raspberrypi:~/avs $ sudo apt install gstreamer1.0-plugins-ugly
 (env) pi@raspberrypi:~/avs $ sudo apt install python-gi gir1.2-gstreamer-1.0
 (env) pi@raspberrypi:~/avs $ pip install tornado
 </pre></div>
@@ -4454,46 +4456,45 @@ def main():
 (env) pi@raspberrypi:~/respeaker_v2_eval/alexa $ nano ns_kws_doa_alexa.py
 </pre></div>
 按照下面的信息更新第15-50行的设置:</p>
-<p><div class="codehilite"><pre><span></span>    from voice_engine.kws import KWS
-    #from voice_engine.ns import NS
-    #from voice_engine.doa_respeaker_4mic_array import DOA
-    from avs.alexa import Alexa
-    from pixels import pixels
+<p><div class="codehilite"><pre><span></span>    <span class="kn">from</span> <span class="nn">voice_engine.kws</span> <span class="kn">import</span> <span class="n">KWS</span>
+    <span class="c1">#from voice_engine.ns import NS</span>
+    <span class="c1">#from voice_engine.doa_respeaker_4mic_array import DOA</span>
+    <span class="kn">from</span> <span class="nn">avs.alexa</span> <span class="kn">import</span> <span class="n">Alexa</span>
+    <span class="kn">from</span> <span class="nn">pixels</span> <span class="kn">import</span> <span class="n">pixels</span>
 
-    def main():
-        logging.basicConfig(level=logging.DEBUG)
+    <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
 
-        src = Source(rate=16000, channels=4, frames_size=800)
-        ch1 = ChannelPicker(channels=4, pick=1)
-        #ns = NS(rate=16000, channels=1)
-        kws = KWS(model=&#39;snowboy&#39;)
-        #doa = DOA(rate=16000)
-        alexa = Alexa()
+        <span class="n">src</span> <span class="o">=</span> <span class="n">Source</span><span class="p">(</span><span class="n">rate</span><span class="o">=</span><span class="mi">16000</span><span class="p">,</span> <span class="n">channels</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">frames_size</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
+        <span class="n">ch1</span> <span class="o">=</span> <span class="n">ChannelPicker</span><span class="p">(</span><span class="n">channels</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">pick</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="c1">#ns = NS(rate=16000, channels=1)</span>
+        <span class="n">kws</span> <span class="o">=</span> <span class="n">KWS</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;snowboy&#39;</span><span class="p">)</span>
+        <span class="c1">#doa = DOA(rate=16000)</span>
+        <span class="n">alexa</span> <span class="o">=</span> <span class="n">Alexa</span><span class="p">()</span>
 
-        alexa.state_listener.on_listening = pixels.listen
-        alexa.state_listener.on_thinking = pixels.think
-        alexa.state_listener.on_speaking = pixels.speak
-        alexa.state_listener.on_finished = pixels.off
+        <span class="n">alexa</span><span class="o">.</span><span class="n">state_listener</span><span class="o">.</span><span class="n">on_listening</span> <span class="o">=</span> <span class="n">pixels</span><span class="o">.</span><span class="n">listen</span>
+        <span class="n">alexa</span><span class="o">.</span><span class="n">state_listener</span><span class="o">.</span><span class="n">on_thinking</span> <span class="o">=</span> <span class="n">pixels</span><span class="o">.</span><span class="n">think</span>
+        <span class="n">alexa</span><span class="o">.</span><span class="n">state_listener</span><span class="o">.</span><span class="n">on_speaking</span> <span class="o">=</span> <span class="n">pixels</span><span class="o">.</span><span class="n">speak</span>
+        <span class="n">alexa</span><span class="o">.</span><span class="n">state_listener</span><span class="o">.</span><span class="n">on_finished</span> <span class="o">=</span> <span class="n">pixels</span><span class="o">.</span><span class="n">off</span>
 
-        src.link(ch1)
-        ch1.link(kws)
-        #ch1.link(ns)
-        #ns.link(kws)
-        kws.link(alexa)
+        <span class="n">src</span><span class="o">.</span><span class="n">link</span><span class="p">(</span><span class="n">ch1</span><span class="p">)</span>
+        <span class="n">ch1</span><span class="o">.</span><span class="n">link</span><span class="p">(</span><span class="n">kws</span><span class="p">)</span>
+        <span class="c1">#ch1.link(ns)</span>
+        <span class="c1">#ns.link(kws)</span>
+        <span class="n">kws</span><span class="o">.</span><span class="n">link</span><span class="p">(</span><span class="n">alexa</span><span class="p">)</span>
 
-        #src.link(doa)
-        def on_detected(keyword):
-            #logging.info(&#39;detected {} at direction {}&#39;.format(keyword, doa.get_direction()))
-            logging.info(&#39;detected {}&#39;.format(keyword))
-            alexa.listen()
+        <span class="c1">#src.link(doa)</span>
+        <span class="k">def</span> <span class="nf">on_detected</span><span class="p">(</span><span class="n">keyword</span><span class="p">):</span>
+            <span class="c1">#logging.info(&#39;detected {} at direction {}&#39;.format(keyword, doa.get_direction()))</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;detected {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">keyword</span><span class="p">))</span>
+            <span class="n">alexa</span><span class="o">.</span><span class="n">listen</span><span class="p">()</span>
 
-        kws.set_callback(on_detected)
+        <span class="n">kws</span><span class="o">.</span><span class="n">set_callback</span><span class="p">(</span><span class="n">on_detected</span><span class="p">)</span>
 </pre></div>
 <img alt="" src="https://github.com/SeeedDocument/ReSpeaker-4-Mic-Array-for-Raspberry-Pi/raw/master/img/alexa.png" /></p>
 <h4 id="3-high">3. 让我们High起来!<a class="headerlink" href="#3-high" title="Permanent link">&para;</a></h4>
-<p>现在请在虚拟环境下运行 <code>python ns_kws_doa_alexa.py</code> , 我们会在终端看到很多debug的消息. 当我们看到 **status code: 204**的时候, 请说 <code>snowboy</code>来唤醒respeaker。接下来respeaker上的led灯亮起来, 我们可以跟他对话, 比如问，"谁是最帅的?" 或者 "播放刘德华的男人哭吧哭吧不是罪"。小伙伴，尽情的High起来吧。</p>
+<p>现在请在虚拟环境下运行 <code>python ns_kws_doa_alexa.py</code> , 我们会在终端看到很多debug的消息. 当我们看到 <strong>status code: 204</strong> 的时候, 请说 <code>snowboy</code> 来唤醒 respeaker。接下来 respeaker 上的 led 灯亮起来, 我们可以跟他对话, 比如问，"谁是最帅的?" 或者 "播放刘德华的男人哭吧哭吧不是罪"。小伙伴，尽情的 High 起来吧。</p>
 <h2 id="faq">FAQ(疑问解答)<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
-<p>1.</p>
 <p>Q:严格按照本 wiki 操作，驱动还是安装失败，怎么办？</p>
 <p>A:如果按照上述方法安装驱动均失败，请点击下面固件安装</p>
 <p><a href="https://pan.baidu.com/s/1bprWJr5">我是固件</a></p>

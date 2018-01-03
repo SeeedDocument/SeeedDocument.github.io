@@ -596,6 +596,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../LinkIt_ONE/" title="LinkIt ONE" class="md-nav__link">
+      LinkIt ONE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../LinkIt_Smart_7688/" title="LinkIt Smart 7688" class="md-nav__link">
       LinkIt Smart 7688
     </a>
@@ -634,18 +646,6 @@
   <li class="md-nav__item">
     <a href="../Arduino_Breakout_for_LinkIt_Smart_7688_Duo/" title="Arduino Breakout for LinkIt Smart 7688 Duo" class="md-nav__link">
       Arduino Breakout for LinkIt Smart 7688 Duo
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../LinkIt_ONE/" title="LinkIt ONE" class="md-nav__link">
-      LinkIt ONE
     </a>
   </li>
 
@@ -4341,7 +4341,7 @@ SCL
 <li>2 * DC Motor 2V-6V - 连接到 CH1 &amp; CH2 输出接口。</li>
 <li>Seeeduino Lite</li>
 </ul>
-<p>Connect Seeeduino's Grove I2C Interface to Mini Motor Driver's Grove Interface as shown below:</p>
+<p>按下图所示连接好 Seeeduino 的 I2C Grove 接口和 Mini Motor Driver 的 Grove 接口：</p>
 <p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Grove-Mini_I2C_Motor_Driver_v1.0/master/img/Mini_motor_driver_demo.jpg" /></p>
 <h3 id="_10">软件部分<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
 <p><a href="http://https://www.arduino.cc/"><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Grove-Mini_I2C_Motor_Driver_v1.0/master/img/Arduino_mini_i2c_motor_driver.jpg" /></a></p>
@@ -4350,108 +4350,108 @@ SCL
 <p>通过 USB 线缆将 Seeeduino 连接到 PC。</p>
 <p>现在，让我们使用 Grove - Mini I2C Motor Driver 来控制两个直流电机正向或反向旋转。</p>
 <p>下面给出的是一个与 Arduino 一起使用的示例程序。这个代码是非常基础的，您也可以改变它，并以您自己的方式做。</p>
-<div class="codehilite"><pre><span></span>/****************************************************************
-Example code demonstrating the use of the Arduino Library for
-the SparkFun MiniMoto board, which uses the TI DRV8830 IC for I2C
-low-voltage DC motor control.
- 
-This code is beerware; if you use it, please buy me (or any other
-SparkFun employee) a cold beverage next time you run into one of
-us at the local.
- 
-17 Sep 2013- Mike Hord, SparkFun Electronics
- 
-Code developed in Arduino 1.0.5, on a Fio classic board.
- 
-**Updated for Arduino 1.6.4 5/2015**
-****************************************************************/
- 
-#include &lt;SparkFunMiniMoto.h&gt;  // Include the MiniMoto library
- 
-// Create two MiniMoto instances, with different address settings.
-MiniMoto motor0(0xC4); // A1 = 1, A0 = clear
-MiniMoto motor1(0xC0); // A1 = 1, A0 = 1 (default)
- 
-#define FAULTn  16     // Pin used for fault detection.
- 
-// Nothing terribly special in the setup() function- prep the
-//  serial port, print a little greeting, and set up our fault
-//  pin as an input.
-void setup()
-{
-    Serial.begin(9600);
-    Serial.println(&quot;Hello, world!&quot;);
-    pinMode(FAULTn, INPUT);
-}
- 
-// The loop() function just spins the motors one way, then the
-//  other, while constantly monitoring for any fault conditions
-//  to occur. If a fault does occur, it will be reported over
-//  the serial port, and then operation continues.
-void loop()
-{
-    Serial.println(&quot;Forward!&quot;);
-    motor0.drive(100);
-    motor1.drive(100);
-    delayUntil(1000);
-    Serial.println(&quot;Stop!&quot;);
-    motor0.stop();
-    motor1.stop();
-    delay(1000);
-    Serial.println(&quot;Reverse!&quot;);
-    motor0.drive(-100);
-    motor1.drive(-100);
-    delayUntil(1000);
-    Serial.println(&quot;Brake!&quot;);
-    motor0.brake();
-    motor1.brake();
-    delay(1000);
-}
- 
-// delayUntil() is a little function to run the motor either for
-//  a designated time OR until a fault occurs. Note that this is
-//  a very simple demonstration; ideally, an interrupt would be
-//  used to service faults rather than blocking the application
-//  during motion and polling for faults.
-void delayUntil(unsigned long elapsedTime)
-{
-    // See the &quot;BlinkWithoutDelay&quot; example for more details on how
-    //  and why this loop works the way it does.
-    unsigned long startTime = millis();
-    while (startTime + elapsedTime &gt; millis())
-    {
-        // If FAULTn goes low, a fault condition *may* exist. To be
-        //  sure, we&#39;ll need to check the FAULT bit.
-        if (digitalRead(FAULTn) == LOW)
-        {
-            // We&#39;re going to check both motors; the logic is the same
-            //  for each...
-            byte result = motor0.getFault();
-            // If result masked by FAULT is non-zero, we&#39;ve got a fault
-            //  condition, and we should report it.
-            if (result &amp; FAULT)
-            {
-                Serial.print(&quot;Motor 0 fault: &quot;);
-                if (result &amp; OCP) Serial.println(&quot;Chip overcurrent!&quot;);
-                if (result &amp; ILIMIT) Serial.println(&quot;Load current limit!&quot;);
-                if (result &amp; UVLO) Serial.println(&quot;Undervoltage!&quot;);
-                if (result &amp; OTS) Serial.println(&quot;Over temp!&quot;);
-                break; // We want to break out of the motion immediately,
-                //  so we can stop motion in response to our fault.
-            }
-            result = motor1.getFault();
-            if (result &amp; FAULT)
-            {
-                Serial.print(&quot;Motor 1 fault: &quot;);
-                if (result &amp; OCP) Serial.println(&quot;Chip overcurrent!&quot;);
-                if (result &amp; ILIMIT) Serial.println(&quot;Load current limit!&quot;);
-                if (result &amp; UVLO) Serial.println(&quot;Undervoltage!&quot;);
-                if (result &amp; OTS) Serial.println(&quot;Over temp!&quot;);
-                break;
-            }
-        }
-    }
-}
+<div class="codehilite"><pre><span></span><span class="cm">/****************************************************************</span>
+<span class="cm">Example code demonstrating the use of the Arduino Library for</span>
+<span class="cm">the SparkFun MiniMoto board, which uses the TI DRV8830 IC for I2C</span>
+<span class="cm">low-voltage DC motor control.</span>
+<span class="cm"> </span>
+<span class="cm">This code is beerware; if you use it, please buy me (or any other</span>
+<span class="cm">SparkFun employee) a cold beverage next time you run into one of</span>
+<span class="cm">us at the local.</span>
+<span class="cm"> </span>
+<span class="cm">17 Sep 2013- Mike Hord, SparkFun Electronics</span>
+<span class="cm"> </span>
+<span class="cm">Code developed in Arduino 1.0.5, on a Fio classic board.</span>
+<span class="cm"> </span>
+<span class="cm">**Updated for Arduino 1.6.4 5/2015**</span>
+<span class="cm">****************************************************************/</span>
+<span class="err"> </span>
+<span class="cp">#include</span> <span class="cpf">&lt;SparkFunMiniMoto.h&gt;  // Include the MiniMoto library</span><span class="cp"></span>
+<span class="err"> </span>
+<span class="c1">// Create two MiniMoto instances, with different address settings.</span>
+<span class="n">MiniMoto</span> <span class="n">motor0</span><span class="p">(</span><span class="mh">0xC4</span><span class="p">);</span> <span class="c1">// A1 = 1, A0 = clear</span>
+<span class="n">MiniMoto</span> <span class="nf">motor1</span><span class="p">(</span><span class="mh">0xC0</span><span class="p">);</span> <span class="c1">// A1 = 1, A0 = 1 (default)</span>
+<span class="err"> </span>
+<span class="cp">#define FAULTn  16     </span><span class="c1">// Pin used for fault detection.</span>
+<span class="err"> </span>
+<span class="c1">// Nothing terribly special in the setup() function- prep the</span>
+<span class="c1">//  serial port, print a little greeting, and set up our fault</span>
+<span class="c1">//  pin as an input.</span>
+<span class="kt">void</span> <span class="n">setup</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello, world!&quot;</span><span class="p">);</span>
+    <span class="n">pinMode</span><span class="p">(</span><span class="n">FAULTn</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="err"> </span>
+<span class="c1">// The loop() function just spins the motors one way, then the</span>
+<span class="c1">//  other, while constantly monitoring for any fault conditions</span>
+<span class="c1">//  to occur. If a fault does occur, it will be reported over</span>
+<span class="c1">//  the serial port, and then operation continues.</span>
+<span class="kt">void</span> <span class="n">loop</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Forward!&quot;</span><span class="p">);</span>
+    <span class="n">motor0</span><span class="p">.</span><span class="n">drive</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+    <span class="n">motor1</span><span class="p">.</span><span class="n">drive</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+    <span class="n">delayUntil</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Stop!&quot;</span><span class="p">);</span>
+    <span class="n">motor0</span><span class="p">.</span><span class="n">stop</span><span class="p">();</span>
+    <span class="n">motor1</span><span class="p">.</span><span class="n">stop</span><span class="p">();</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Reverse!&quot;</span><span class="p">);</span>
+    <span class="n">motor0</span><span class="p">.</span><span class="n">drive</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">);</span>
+    <span class="n">motor1</span><span class="p">.</span><span class="n">drive</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">);</span>
+    <span class="n">delayUntil</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Brake!&quot;</span><span class="p">);</span>
+    <span class="n">motor0</span><span class="p">.</span><span class="n">brake</span><span class="p">();</span>
+    <span class="n">motor1</span><span class="p">.</span><span class="n">brake</span><span class="p">();</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="err"> </span>
+<span class="c1">// delayUntil() is a little function to run the motor either for</span>
+<span class="c1">//  a designated time OR until a fault occurs. Note that this is</span>
+<span class="c1">//  a very simple demonstration; ideally, an interrupt would be</span>
+<span class="c1">//  used to service faults rather than blocking the application</span>
+<span class="c1">//  during motion and polling for faults.</span>
+<span class="kt">void</span> <span class="n">delayUntil</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">elapsedTime</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// See the &quot;BlinkWithoutDelay&quot; example for more details on how</span>
+    <span class="c1">//  and why this loop works the way it does.</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">startTime</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">startTime</span> <span class="o">+</span> <span class="n">elapsedTime</span> <span class="o">&gt;</span> <span class="n">millis</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="c1">// If FAULTn goes low, a fault condition *may* exist. To be</span>
+        <span class="c1">//  sure, we&#39;ll need to check the FAULT bit.</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">FAULTn</span><span class="p">)</span> <span class="o">==</span> <span class="n">LOW</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="c1">// We&#39;re going to check both motors; the logic is the same</span>
+            <span class="c1">//  for each...</span>
+            <span class="n">byte</span> <span class="n">result</span> <span class="o">=</span> <span class="n">motor0</span><span class="p">.</span><span class="n">getFault</span><span class="p">();</span>
+            <span class="c1">// If result masked by FAULT is non-zero, we&#39;ve got a fault</span>
+            <span class="c1">//  condition, and we should report it.</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&amp;</span> <span class="n">FAULT</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Motor 0 fault: &quot;</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&amp;</span> <span class="n">OCP</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Chip overcurrent!&quot;</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&amp;</span> <span class="n">ILIMIT</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Load current limit!&quot;</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&amp;</span> <span class="n">UVLO</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Undervoltage!&quot;</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&amp;</span> <span class="n">OTS</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Over temp!&quot;</span><span class="p">);</span>
+                <span class="k">break</span><span class="p">;</span> <span class="c1">// We want to break out of the motion immediately,</span>
+                <span class="c1">//  so we can stop motion in response to our fault.</span>
+            <span class="p">}</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">motor1</span><span class="p">.</span><span class="n">getFault</span><span class="p">();</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&amp;</span> <span class="n">FAULT</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Motor 1 fault: &quot;</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&amp;</span> <span class="n">OCP</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Chip overcurrent!&quot;</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&amp;</span> <span class="n">ILIMIT</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Load current limit!&quot;</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&amp;</span> <span class="n">UVLO</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Undervoltage!&quot;</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&amp;</span> <span class="n">OTS</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Over temp!&quot;</span><span class="p">);</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 
 <p>现在点击 Upload(CTRL+U) 上传代码。如果有任何错误提示请参考 <a href="../Arduino_Common_Error" title="Arduino Common Error">这里</a>，您也可以在 <a href="http://www.seeed.cc">社区</a> 讨论。</p>
