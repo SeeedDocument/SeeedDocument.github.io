@@ -18,11 +18,11 @@
       
         <link rel="shortcut icon" href="../images/favicon.ico">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-1.7.4">
     
     
       
-        <title>ReSpeaker 2-Mics Pi HAT</title>
+        <title>R</title>
       
     
     
@@ -130,7 +130,7 @@
   
 
 
-  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -175,7 +175,7 @@
   
 
 
-  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1937,20 +1937,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Grove-Temperature_Sensor/" title="Grove-Temperature Sensor" class="md-nav__link">
-      Grove-Temperature Sensor
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Grove-Temperature_Sensor_V1.2/" title="Grove-Temperature Sensor-V1.2" class="md-nav__link">
-      Grove-Temperature Sensor-V1.2
+    <a href="../Grove-Temperature_Sensor_V1.2/" title="Grove-Temperature Sensor V1.2" class="md-nav__link">
+      Grove-Temperature Sensor V1.2
     </a>
   </li>
 
@@ -4293,6 +4281,8 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io/edit/master/docs/Respeaker_2-Mics_Pi_HAT.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
                 
                   <h1>Respeaker 2-Mics Pi HAT</h1>
                 
@@ -4416,7 +4406,7 @@ source env/bin/activate
 
 <h4 id="4-google-assistant-sdk">4. 授权Google Assistant SDK<a class="headerlink" href="#4-google-assistant-sdk" title="Permanent link">&para;</a></h4>
 <p>授权Google Assistant SDK，使Google Assistant对给定的Google帐户进行查询。 把步骤1中的JSON文件复制到树莓派/home/pi下。</p>
-<div class="codehilite"><pre><span></span>pi@raspberrypi:~ $ google-oauthlib-tool --client-secrets /home/pi/client_secret_client-id.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless
+<div class="codehilite"><pre><span></span>(env) pi@raspberrypi:~ $ google-oauthlib-tool --client-secrets /home/pi/client_secret_client-id.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless
 </pre></div>
 
 <p><strong>/home/pi/client_secret_client-id.json</strong> 是你的JSON文件的路径，确保Json文件的名字匹配。 运行命令后，应该显示如下所示。 复制URL并将其粘贴到浏览器中（这可以在您的树莓派或任何其他电脑上完成）。 同意后，您的浏览器将显示代码，例如“4 / XXXX”。 复制并将此代码粘贴到终端中。</p>
@@ -4493,7 +4483,7 @@ while True:
     time.sleep(1)
 </pre></div>
 
-<p>Save the code as button.py, then run it. It should display "on" when you press the button:</p>
+<p>把代码保存为 button.py，然后运行。在您按下按钮时应该会显示 "on"。</p>
 <div class="codehilite"><pre><span></span>pi@raspberrypi:~ $ python button.py
 off
 off
@@ -4666,6 +4656,10 @@ sudo nano pushtotalk.py
       
       
       <script>app.initialize({url:{base:".."}})</script>
+      
+        <script src="../search/require.js"></script>
+      
+        <script src="../search/search.js"></script>
       
     
     

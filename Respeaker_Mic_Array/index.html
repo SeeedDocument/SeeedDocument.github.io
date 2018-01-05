@@ -18,11 +18,11 @@
       
         <link rel="shortcut icon" href="../images/favicon.ico">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-1.7.4">
     
     
       
-        <title>ReSpeaker Mic Array</title>
+        <title>R</title>
       
     
     
@@ -130,7 +130,7 @@
   
 
 
-  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -175,7 +175,7 @@
   
 
 
-  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1828,20 +1828,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Grove-Temperature_Sensor/" title="Grove-Temperature Sensor" class="md-nav__link">
-      Grove-Temperature Sensor
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Grove-Temperature_Sensor_V1.2/" title="Grove-Temperature Sensor-V1.2" class="md-nav__link">
-      Grove-Temperature Sensor-V1.2
+    <a href="../Grove-Temperature_Sensor_V1.2/" title="Grove-Temperature Sensor V1.2" class="md-nav__link">
+      Grove-Temperature Sensor V1.2
     </a>
   </li>
 
@@ -4075,6 +4063,8 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io/edit/master/docs/Respeaker_Mic_Array.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
                 
                   <h1>Respeaker Mic Array</h1>
                 
@@ -4145,13 +4135,17 @@
 </ul>
 </li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Respeaker 麦克风阵列默认没有焊接耳机口，声音输出使用主机的音频接口即可。如有必要需焊接耳机口使用，请先确认阵列的功能正常，然后寻求焊接经验丰富的专业人士帮助，以防焊接失败造成硬件故障。</p>
+</div>
 <h2 id="respeaker">ReSpeaker 麦克风阵列驱动<a class="headerlink" href="#respeaker" title="Permanent link">&para;</a></h2>
 <ul>
-<li>对于Windows用户, 请单击 <a href="https://github.com/Fuhua-Chen/ReSpeaker_Microphone_Array_Driver">此处</a> 安装驱动程序</li>
+<li>对于 Windows 用户, 请单击 <a href="https://github.com/Fuhua-Chen/ReSpeaker_Microphone_Array_Driver">此处</a> 安装驱动程序</li>
 <li>对于Linux或Mac用户，不需要安装驱动程序</li>
 </ul>
 <h2 id="respeaker-core">用ReSpeaker Core提取声音<a class="headerlink" href="#respeaker-core" title="Permanent link">&para;</a></h2>
-<p>当麦克风阵列堆叠在ReSpeaker Core上时，将自动检测（也可以通过aplay -l来手动检测）。我们建议您可以使用<a href="https://github.com/respeaker/respeaker_python_library">respeaker_python_library</a>来开发语音交互应用程序，以便您不需要关心Mic Array是否打开。我们的库文件会检查并选择麦克风阵列。</p>
+<p>当麦克风阵列插在 ReSpeaker Core 上时，将自动检测（也可以通过aplay -l来手动检测）。我们建议您可以使用<a href="https://github.com/respeaker/respeaker_python_library">respeaker_python_library</a>来开发语音交互应用程序，以便您不需要关心Mic Array是否打开。我们的库文件会检查并选择麦克风阵列。</p>
 <p>此外，在该库中，基于Pyaudio的麦克风类具有名为listen的方法来提取语音。请参阅我们的示例代码以供使用。</p>
 <p>此外，在该库中， <a href="https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/microphone.py"><em>class Microphone</em></a>, 基于 <strong>Pyaudio</strong>, 用 <a href="https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/microphone.py#L207"><em>listen</em></a>, 来提取声音. 请查阅 <a href="https://github.com/respeaker/respeaker_python_library/blob/master/examples/SpeechRecognition_translator.py">example code</a> 关于如何使用.</p>
 <h2 id="pcmaclinuxraspberry-pi">在PC或Mac或Linux或Raspberry Pi上提取语音<a class="headerlink" href="#pcmaclinuxraspberry-pi" title="Permanent link">&para;</a></h2>
@@ -4215,9 +4209,13 @@
 <h2 id="respeaker_1">ReSpeaker麦克风阵列固件<a class="headerlink" href="#respeaker_1" title="Permanent link">&para;</a></h2>
 <p>您可以在<a href="https://github.com/Fuhua-Chen/ReSpeaker_Microphone_Array_Firmware">这里</a>下载适用于DFU的ReSpeaker麦克风阵列固件。我们提供了两个版本：</p>
 <ul>
-<li><strong>xvsm版本</strong>：初始版本，支持dsp输出2通道数据。</li>
-<li><strong>原始版本</strong>：输出8路麦克风原始数据，此固件不支持xvsm dsp，因此不支持某些功能，如DOA，AEC等。</li>
+<li><strong>xvsm版本</strong>：出厂版本，输出 2 通道音频数据。集成了 DSP 降噪，DOA，AEC 等功能，建议使用此版本。</li>
+<li><strong>原始版本</strong>：输出 8 路麦克风 <strong>原始数据</strong>，此固件不支持 xvsm dsp，因此不支持某些功能，如 DOA，AEC 等。</li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>xvsm版本下，阵列上电后会默认开启定位功能，用环形 RGB LED 指示声音方位。原始版本则不会有任何 RGB LED 闪烁。这是区别阵列固件版本的方法之一。</p>
+</div>
 <p>关于请查阅如何在Mac或Linux上更新固件， 请查阅 <a href="https://github.com/respeaker/mic_array_dfu">这里</a> 。</p>
 <h2 id="respeakerhid">用于控制ReSpeaker麦克风阵列的HID<a class="headerlink" href="#respeakerhid" title="Permanent link">&para;</a></h2>
 <p>用户可以通过USB HID控制ReSpeaker麦克风阵列。请参阅我们的<a href="https://github.com/Fuhua-Chen/ReSpeaker-Microphone-Array-HID-tool">通信协议</a>.</p>
@@ -4382,10 +4380,10 @@
 </ul>
 <h2 id="_4">资源下载<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>[Eagle]</strong><a href="hhttps://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0.sch.zip">ReSpeaker Microphone Array SCH</a></li>
-<li><strong>[Eagle]</strong><a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0.brd.zip">ReSpeaker Microphone Array BRD</a></li>
-<li><strong>[PDF]</strong> <a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0%20Sch.pdf">ReSpeaker Microphone Array SCH</a></li>
-<li><strong>[PDF]</strong> <a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0%20PCB.pdf">ReSpeaker Microphone Array PCB</a></li>
+<li><strong>[Eagle文件]</strong><a href="hhttps://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0.sch.zip">ReSpeaker Microphone Array SCH</a></li>
+<li><strong>[Eagle文件]</strong><a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0.brd.zip">ReSpeaker Microphone Array BRD</a></li>
+<li><strong>[PDF文件]</strong> <a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0%20Sch.pdf">ReSpeaker Microphone Array SCH</a></li>
+<li><strong>[PDF文件]</strong> <a href="https://github.com/SeeedDocument/ReSpeaker_Mic_Array/raw/master/res/Respeaker%20Microphone%20Array%20v1.0%20PCB.pdf">ReSpeaker Microphone Array PCB</a></li>
 </ul>
                 
                   
@@ -4474,6 +4472,10 @@
       
       
       <script>app.initialize({url:{base:".."}})</script>
+      
+        <script src="../search/require.js"></script>
+      
+        <script src="../search/search.js"></script>
       
     
     

@@ -18,11 +18,11 @@
       
         <link rel="shortcut icon" href="../images/favicon.ico">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-1.7.4">
     
     
       
-        <title>Respeaker Core</title>
+        <title>R</title>
       
     
     
@@ -130,7 +130,7 @@
   
 
 
-  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -175,7 +175,7 @@
   
 
 
-  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -2067,20 +2067,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Grove-Temperature_Sensor/" title="Grove-Temperature Sensor" class="md-nav__link">
-      Grove-Temperature Sensor
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Grove-Temperature_Sensor_V1.2/" title="Grove-Temperature Sensor-V1.2" class="md-nav__link">
-      Grove-Temperature Sensor-V1.2
+    <a href="../Grove-Temperature_Sensor_V1.2/" title="Grove-Temperature Sensor V1.2" class="md-nav__link">
+      Grove-Temperature Sensor V1.2
     </a>
   </li>
 
@@ -4553,6 +4541,8 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/SeeedDocument/SeeedDocument.github.io/edit/master/docs/Respeaker_Core.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
                 
                   <h1>Respeaker Core</h1>
                 
@@ -4726,8 +4716,10 @@ apcli0    Link encap:Ethernet  HWaddr 9E:65:F9:0D:D3:46
 <p><img alt="" src="https://github.com/SeeedDocument/Respeaker_Core/raw/master/img/wifi2.png" /></p>
 <p>选择要连接的Wi-Fi并输入密码。当您按OK按钮时，ReSpeaker将加入指定的网络。</p>
 <p>现在您的ReSpeaker能够访问互联网。</p>
-<p>!!!注意
-    如果您无法使用上述方法连接Wifi，请通过输入firstboot命令进行出厂设置。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>如果您无法使用上述方法连接Wifi，请通过输入firstboot命令进行出厂设置。</p>
+</div>
 <p>启用Wifi功能后，我们可以使用SSH模式通过以下命令连接Respeaker。我们可以从http://192.168.100.1/#!/overview WAN IP获取Respeaker IP地址。密码是root。</p>
 <div class="codehilite"><pre><span></span>ssh root@ssh *.*.*.*
 </pre></div>
@@ -4775,7 +4767,7 @@ tmpfs                   512.0K         0    512.0K   0% /dev
     p   primary (1 primary, 0 extended, 3 free)
     e   extended (container for logical partitions)
     &gt;Select (default p):p
-    &gt;Partition number (1-4, default 2):2
+    &gt;Partition number (2-4, default 2):2
     &gt;First sector (4196352-15523839, default 4196352):
     &gt;Last sector, +sectors or +size{K,M,G,T,P} (4196352-15523839, default 15523839):
     &gt;Command (m for help):w
@@ -4962,12 +4954,12 @@ File &quot;/usr/lib/python2.7/threading.py&quot;, line 810, in __bootstrap_inner
 </ol>
 <h2 id="respeaker-mic-arrayrespeaker">ReSpeaker Mic Array（ReSpeaker 麦克风阵列）<a class="headerlink" href="#respeaker-mic-arrayrespeaker" title="Permanent link">&para;</a></h2>
 <hr />
-<h3 id="respeaker-mic-array"><a href="https://www.seeedstudio.com/ReSpeaker-Mic-Array-Far-field-w%2F-7-PDM-Microphones--p-2719.html">ReSpeaker Mic Array</a><a class="headerlink" href="#respeaker-mic-array" title="Permanent link">&para;</a></h3>
+<h3 id="respeaker-mic-array"><a href="https://item.taobao.com/item.htm?spm=a1z38n.10678284.0.0.586942b1pPwZsd&amp;id=539003048162">ReSpeaker Mic Array</a><a class="headerlink" href="#respeaker-mic-array" title="Permanent link">&para;</a></h3>
 <p>ReSpeaker麦克风阵列可以堆叠（连接）到ReSpeaker Core的顶部，以显着提高语音交互体验。它是基于XMOS的XVSM-2000智能麦克风开发的。该板集成了7个PDM麦克风，以帮助将ReSpeaker的声学DSP性能提升到更高的水平</p>
 <h2 id="_9">关于软件<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <hr />
 <p>您可页面以点击下列标题来跳转到对应</p>
-<h3 id="respeaker-arduino"><a href="https://github.com/respeaker/get_started_with_respeaker/blob/master/ReSpeakerArduinoLibrary.md#respeaker-arduino-library">ReSpeaker Arduino 库</a><a class="headerlink" href="#respeaker-arduino" title="Permanent link">&para;</a></h3>
+<h3 id="respeaker-arduino"><a href="https://github.com/respeaker/get_started_with_respeaker/blob/master/docs/ReSpeaker/ReSpeakerArduinoLibrary.md#respeaker-arduino-library">ReSpeaker Arduino 库</a><a class="headerlink" href="#respeaker-arduino" title="Permanent link">&para;</a></h3>
 <p>ReSpeaker Arudino库提供以下功能：</p>
 <ul>
 <li>支持电容式触摸感应</li>
@@ -4977,7 +4969,7 @@ File &quot;/usr/lib/python2.7/threading.py&quot;, line 810, in __bootstrap_inner
 <h3 id="respeaker-python"><a href="https://github.com/respeaker/respeaker_python_library">ReSpeaker Python 库</a><a class="headerlink" href="#respeaker-python" title="Permanent link">&para;</a></h3>
 <p>ReSpeaker是一个支持语音交互的开放项目。ReSpeaker python库是一个开源的python库，用于提供语音交互的基本功能。
 它使用PocketSphinx进行关键字查找，并使用webrtcvad进行语音活动检测。</p>
-<h3 id="github"><a href="https://github.com/respeaker">更多的信息请点击这里查看我们的github资料库</a><a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
+<h3 id="github"><a href="https://github.com/respeaker/get_started_with_respeaker/tree/master/docs/ReSpeaker">更多的信息请点击这里查看我们的github资料库</a><a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
 <h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
 <hr />
 <h3 id="q1">Q1: 如何恢复出厂设置?<a class="headerlink" href="#q1" title="Permanent link">&para;</a></h3>
@@ -5113,7 +5105,7 @@ music   M Y UW Z IH K
 cd /mnt
 sysupgrade -n -F ramips-openwrt-latest-LinkIt7688-squashfs-sysupgrade.bin
 </pre></div>
-ReSpeaker安装固件和重启大约需要3分钟，更新时**请勿关闭** ReSpeaker。</p>
+ReSpeaker安装固件和重启大约需要3分钟，更新时 <strong>请勿关闭</strong> ReSpeaker。</p>
 <p><img alt="" src="https://github.com/SeeedDocument/Respeaker_Core/raw/master/img/systemupdate2.png" /></p>
 <h2 id="_10">资源下载<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <hr />
@@ -5211,6 +5203,10 @@ ReSpeaker安装固件和重启大约需要3分钟，更新时**请勿关闭** Re
       
       
       <script>app.initialize({url:{base:".."}})</script>
+      
+        <script src="../search/require.js"></script>
+      
+        <script src="../search/search.js"></script>
       
     
     
